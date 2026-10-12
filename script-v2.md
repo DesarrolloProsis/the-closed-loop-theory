@@ -1,10 +1,13 @@
 # Skyward Sword: the self-correcting timeline theory
 
-**Version 2, revised — narrative script and handoff for the presentation agent.**
+**Version 2, rewritten around five rules — script and presentation handoff.**
 
-This revision incorporates the proposed earlier resealing cycles, the
-bracelet inherited from an already-lived past, and the Triforce wish
-whose result survives the final correction at its original time.
+This revision treats earlier interventions as partial failures, preserves
+completed time journeys and the Triforce wish, and removes the physical
+sword-reset cycle. A fifth rule derives the crystal's disappearance
+instead of stipulating it. The earlier-attempts material now plays as an
+inset at the bracelet rather than as the opening. It supersedes the
+earlier revisions of this draft.
 
 Use this document for the next presentation revision. `script.md` and
 `script.html` still describe the earlier theory. This document supersedes
@@ -19,8 +22,10 @@ that the corrected world no longer remembers.
 “Self-correcting” is the name of this interpretation, not a confirmed law
 stated by the game. This is not a strictly immutable closed loop. It is a
 single revisable history containing causal loops, with no surviving branches.
-The starting history is the product of earlier cycles that the game does
-not show. The adventure we follow is the cycle that ends the recurrence.
+The starting history inherits an earlier intervention that the game does
+not show. Earlier attempts achieve temporary resealing. The adventure we
+follow completes the Triforce wish and Demise's defeat, ending the recurrence.
+These attempts need not repeat the same decisions or every quest in the game.
 
 **Opening caption:**
 
@@ -28,14 +33,56 @@ not show. The adventure we follow is the cycle that ends the recurrence.
 
 **Persistent small label:** `A proposed reading of the game's time travel`
 
+## The five rules
+
+1. **History can be replaced.** There is one currently realized history.
+   Superseded versions do not remain as parallel worlds, although they
+   can be the origin of surviving travelers and effects.
+2. **Completed time journeys survive revision.** A traveler retains their
+   identity, experienced history, carried objects, and departure and
+   arrival events. Revised personal histories connect to those crossings
+   rather than generating additional continuing counterparts. This is a
+   proposed continuity rule, not a guarantee of safety from ordinary harm.
+   Protection covers the crossings and the person carried through them.
+   It does not guarantee that every earlier stage of that person keeps
+   living on into the revised future (see rule 5).
+3. **A fulfilled Triforce wish survives at its original time.** The result
+   of Link's wish remains effective when it originally took effect, even
+   if its original cause belongs to a superseded history. Here the protected
+   physical result includes the descended statue and assembled Triforce.
+4. **Other consequences follow the revised history.** A planted seedling
+   grows, a cured dragon survives the illness, deposited objects age, and
+   residents live through the resulting events. Neither a completed mission
+   nor a previous encounter with time travel makes everything immune.
+5. **One traveler, one continuing line.** A revision can cut off an
+   earlier stage of a traveler from their next protected crossing while
+   their later stage is already present. When that happens, the earlier
+   stage does not continue as a separate person. Two ages of one person
+   may otherwise coexist; presence alone never removes anyone.
+
+Rules 4 and 5 together decide the crystal. Once Demise is defeated, the
+seal no longer needs a sleeper (rule 4), so the vigil no longer leads
+to Zelda's departure from the present in scene 18. The later Zelda who
+made that departure is already standing in the past. Under rule 5 the
+sleeping stage is discontinued rather than woken early: an early
+awakening would leave two continuing Zeldas, one of them with no crossing
+to connect to. Rule 2 still protects her earlier crossing through the
+desert gate and everything she did up to the crystal.
+
+Rule 5 is the most specific of the five and exists for this case. Say so
+in the presentation instead of hiding it inside rule 4. It does not
+apply to Impa: her younger stage reaches her later stage's departure
+through protected crossings (03 → 07 → 10), and Old Impa is her latest
+stage, with no later self present beside her.
+
 ## Agreed interpretation
 
 0. Before the adventure we witness, earlier versions of events have already
-   occurred. In the proposed recurring pattern, Demise escapes confinement,
-   a hero restores a weakened blade and reseals him in the past, and the
-   threat eventually returns. Old Impa's early bracelet comes from a
-   handoff in that already-lived past, not necessarily the final handoff
-   we witness. The exact earlier-cycle chronology remains unspecified.
+   occurred. An earlier intervention reseals Demise but does not complete
+   the successful combination of wish, defeat, and containment we witness.
+   Old Impa's early bracelet comes from a farewell in that already-lived
+   past. The earlier farewell need not reproduce the game's final scene.
+   The exact cause of the earlier attempt's failure is unknown.
 1. Hylia entrusts Impa and Fi with her plan. In this reconstruction, Impa
    waits to meet Hylia's future incarnation before beginning her own journey.
 2. Zelda and the returning Impa reach the past. The returning Impa meets
@@ -50,20 +97,24 @@ not show. The adventure we follow is the cycle that ends the recurrence.
 6. Demise's defeat and containment in the Master Sword prevent his subsequent
    existence as the present-day Imprisoned. There is no leak from the blade.
 7. At this correction, the crystal-bound Zelda disappears as part of the
-   superseded history. This is the theory's explanation of her absence,
-   not an event explicitly shown or explained in the game.
+   superseded history, following rules 4 and 5. This is the theory's
+   explanation of her absence, not an event shown or explained in the game.
 8. Link, Groose, and the rescued Zelda retain their identities, bodies,
-   carried objects, and memories through the correction and their return.
+   carried objects, memories, and completed time crossings through the
+   correction. Their return continues those journeys, without a second
+   native trio waiting alongside them.
 9. Impa lives through the revised centuries, guarding the sword. She
    remembers the ancient conflict and the trio's departure, but, under
    this interpretation, not the erased present-day Imprisoned attacks.
 10. Old Impa's final disappearance ends her fulfilled vigil. It is not
     evidence that she has been erased from all history.
-11. A fulfilled Triforce wish preserves its accomplished outcome at the
-    original time of fulfillment, even when the history that caused the
-    wish is superseded. Here that includes the descended statue and the
-    assembled Triforce. This is an added theoretical rule, not a temporal
-    property explicitly established by the game.
+11. The corrected world retains the wish's result at its original time.
+    An observer sees the statue descend onto empty grounds, followed by
+    the trio's return. No second wish is needed in the corrected history.
+12. Hylia's Goddess Sword is strengthened during Link's adventure. The
+    theory does not require a Master Sword to lose its upgrades, reset Fi,
+    or return to Hylia's statue between attempts. Only the final intervention
+    necessarily includes the sword's deposition shown in the ending.
 
 ## Rules and limits that must remain explicit
 
@@ -85,11 +136,11 @@ Use these history labels where needed:
   continuation of Zelda's crystal vigil are removed by the proposed correction.
 
 These are successive versions of one history, not coexisting universes.
-Use **P — earlier cycles** for the proposed history preceding H0. P is
+Use **P — earlier attempts** for the proposed history preceding H0. P is
 not another branch, nor a known number of complete repetitions of the game.
 H0 already inherits events from an earlier past, including the bracelet.
 H0–H3 track revisions within the adventure being presented; they are not
-four additional full resealing cycles.
+four additional full resealing attempts.
 
 An earlier version is no longer an independently existing world after
 replacement. References to it identify the origin of surviving memories,
@@ -98,9 +149,15 @@ arrivals, and effects, rather than another universe that remains accessible.
 ### Protection is more than being physically in the past
 
 Both Zeldas are in the past at the final intervention. Location alone
-cannot protect one and erase the other. The script assumes that the
-traveling party retains its originating experiences, while the sleeping
-Zelda's continuing vigil belongs to the history being replaced.
+cannot protect one and erase the other. The traveling party retains its
+originating experiences (rule 2). The sleeping Zelda's continuing vigil
+belongs to the history being replaced (rule 4), and her sleeping stage
+cannot continue beside her later self (rule 5).
+
+Rule 2 protects completed departures as well as arrivals. It is possible
+for a protected crossing to retain a cause from superseded history rather
+than acquire a new motive in H3. Do not invent a second Imprisoned attack
+to force the trio to leave again in the corrected account.
 
 This distinction is a proposed rule, not an established game mechanic.
 Avoid the general statement “time deletes people who no longer have a
@@ -118,16 +175,22 @@ it. Zelda's bracelet stays with Impa. None is automatically deleted when
 it stops being carried by a traveler.
 
 Consequently, removing sleeping Zelda while preserving deposited objects
-requires the specific vigil-replacement assumption above. Do not suggest
-that a blanket “anything left in the past vanishes” rule explains it.
+requires rule 5, which concerns stages of a person, not objects. Do not
+suggest that a blanket “anything left in the past vanishes” rule explains it.
 
 ### The bracelet: an inherited past rather than an anticipated final victory
 
 Old Impa already wears Zelda's bracelet during the earlier adventure.
-The revised explanation places its origin in an earlier cycle's handoff.
+The revised explanation places its origin in an earlier attempt's handoff.
 That handoff precedes the H0 adventure in the sequence of history versions,
 although it belongs to the ancient past in calendar time. Early Old Impa
-has lived that history; she need not anticipate this cycle's final victory.
+has lived that history; she need not anticipate this attempt's final victory.
+
+The earlier handoff only requires a farewell, not a previous permanent
+victory or an exact repeat of Zelda's final awakening. It could accompany
+the beginning of another vigil. This possibility supplies a simpler
+backstory, but its occasion is not established and should not be dramatized
+as fact. Do not duplicate the final cutscene to manufacture its provenance.
 
 The handoff shown in the finale belongs to H3. It supplies the bracelet
 for the revised Impa who greets the returning trio. Do not stack both
@@ -169,63 +232,105 @@ descent, and then the trio's return. The observer need not remember H2.
 An observer outside all revisions could compare H2 with H3, but that is
 the presentation's viewpoint, not a new in-world character.
 
-### Remaining issue A: what changes between resealing cycles?
+### Why the final attempt differs
 
-An exactly repeated causal loop does not gradually improve merely because
-it repeats. If each cycle ends differently, some state, knowledge, choice,
-or intervention must differ. The script distinguishes temporary resealing
-in the proposed earlier cycles from Demise's defeat and containment in
-the final one, but that names the different outcome rather than deriving it.
+These are different interventions, not a deterministic sequence that
+repeats identically until it somehow improves. Earlier attempts achieve
+temporary resealing. The witnessed adventure completes the Triforce wish
+and then defeats Demise, sealing his remaining consciousness in the sword.
+The model takes that successful combination as the end of the recurrence.
 
-A possible connecting assumption is that this is the first cycle to
-complete the Triforce wish, allowing the final intervention to end the
-recurrence. That is a candidate explanation, not an agreed or established
-fact. Do not declare it true without identifying why earlier cycles failed
-to make the wish and why this one succeeds. Do not say the wish necessarily
-erases Demise from every era; Ghirahim still revives him in the ancient past.
+The previous attempts' exact failures are unspecified backstory. Do not
+claim to know whether a particular trial failed or precisely when the
+hero stopped. Nor is it necessary to assert that no earlier wish of any
+kind was ever made. The relevant distinction is that the earlier history
+did not contain this completed resolution.
 
-Do not call the earlier cycle a second copy of every quest in the game.
-If it already included the same planting and successful cure, H0's missing
-tree and Lanayru's bones would need an additional reset explanation.
+Do not give Impa memories of multiple failed histories, or claim that
+repetition automatically makes Link stronger. Neither is needed here.
+Do not say the wish erases Demise from every era: Ghirahim still revives
+him in the ancient past before Link's final battle.
 
-### Remaining issue B: the sword and the passage from one cycle to the next
+Earlier attempts need not include the planting or Lanayru's successful
+cure. Replaying those exact successes and then showing H0 without their
+results would introduce an unnecessary reset that this draft does not use.
 
-The proposed pattern includes the sword losing power and being restored.
-Power loss alone does not explain its location, return to a pedestal in
-the sky, its relation to Hylia's original Goddess Sword, or Fi's condition.
-The exact transfer/reset between cycles has not been supplied. Do not
-invent a hidden blade or a leak to conceal this missing part of the model.
+### The sword: a revised history, not a physically reset blade
 
-Repeated sword restoration must not accidentally create an extra physical
-sword every cycle. Distinguish an older and younger stage of one blade
-from a new blade, and distinguish a physical aging cycle from a revision
-that replaces the previous history. The presentation uses a schematic
-earlier-cycle diagram, not an unsupported detailed sword biography.
+Hylia's Goddess Sword remains the blade's origin. Link strengthens it
+during the witnessed adventure. Replacing later history does not require
+the Master Sword to reverse its forging, return to the statue, or restore
+Fi to an earlier mental state.
 
-### Remaining issue C: personal histories in the corrected present
+Temporary resealing in an earlier attempt does not entail the final
+pedestal scene. An earlier hero could keep carrying the blade; that
+possibility avoids requiring an earlier Master Sword to be hidden in
+the temple. Its full route is not established. Do not draw a detailed
+earlier sword path as though it were supported by the game.
 
-Protecting the returning trio does not, by itself, explain the entire
-lives of Link, Zelda, and Groose growing up in H3 without the original
-Imprisoned adventure. Simply replaying their births and ordinary lives
-could leave additional native counterparts present at the reunion.
+The final deposition is the one shown: Link leaves his sword with Impa,
+and it ages into the blade seen at the reunion. An older Master Sword
+and a younger Goddess Sword can coexist as stages of one object. Replaced
+histories do not by themselves deposit additional physical blades into H3.
 
-The model assumes continuity of identity and replacement of the earlier
-personal histories rather than accumulating extra people. The precise
-joining of those histories remains unspecified. Do not solve it on-screen
-by inventing deaths, mergers, or a second trio walking into the temple.
-Show the one returning trio and keep this limitation in the closing notes.
+Remove the power-loss/reforging cycle entirely. The earlier recurrence
+concerns resealing Demise, not repeatedly resetting the same sword.
 
-### The crystal: an explicit replacement assumption
+### The trio: departures and arrivals belong to the same protected journey
+
+The corrected personal histories connect to the protected departures.
+The returning Link, Zelda, and Groose continue those same identities;
+they do not arrive beside three adults who independently stayed home.
+This is the matching condition imposed by rule 2, not a new disappearance
+or merger occurring when the trio steps out of the gate.
+
+Their crossing events and memories may retain causes from H2, even where
+the corresponding H3 circumstances differ. The script does not invent
+replacement motives or replay their entire childhoods to establish them.
+This rule defines the proposed reconciliation; it is not shown being
+explained by a character in the game.
+
+Temporary coexistence remains allowed. Young and old Impa can meet, and
+the two stages of Zelda can coexist before correction. The model does
+not delete people simply because another age of them is present. Rule 5
+applies only when a revision cuts an earlier stage off from the later
+stage's crossing.
+
+### The crystal: derived from rule 5, still an interpretation
 
 Her absence in the ending and Impa's focus on the sword are compatible
 with erasure, but do not prove it. The game does not show the erasure.
-The theory also needs a distinction between eliminating this vigil and
-merely allowing sleeping Zelda to awaken early. The draft adopts erasure
-as its hypothesis rather than claiming it follows inevitably from the scene.
+Rule 5 is what separates erasure from early awakening: an early-woken
+sleeper would be a second continuing Zelda with no crossing to connect
+to. The disappearance therefore follows from the rules, but rule 5 is a
+proposal written for this case, and that should stay visible.
 
 Do not restore the earlier suggestion that her crystal is a bubble immune
 to all rewrites. That suggestion has been superseded by the user's erasure
 interpretation.
+
+### What the corrected present contains
+
+The correction takes effect from Demise's defeat in the distant past, so
+the entire present-day adventure belongs to the revised history. The
+script fixes only part of H3's present:
+
+- **Kept:** every protected crossing (Impa's arrival in 07, the desert
+  escape in 10, Link's gate trips in 11/12 and 14/15, the departure in
+  18, the return in 25), the wish result at its original time (W1), and
+  everything earlier in calendar time than the correction, including
+  the planted tree. Ghirahim must exist in the present until his crossing
+  in 18.
+- **Removed:** the Imprisoned and its present-day attacks, the crystal
+  vigil, and Zelda's awakening from the crystal.
+- **Left open:** the ordinary events between those crossings, such as
+  Zelda's fall, Ghirahim's pursuit, and the trials, and the motives behind
+  the preserved crossings. Under rule 2 those crossings may keep causes
+  from H2.
+
+The presentation does not reconstruct H3's version of the adventure and
+must not imply that it does. Scenes 24, W1, 25, and 26 show only what the
+rules fix. List the open part among the limits in scene 27.
 
 ### The gates and Timeshift Stones: limits of the model
 
@@ -248,6 +353,10 @@ as a historical revision, without claiming that every temporary stone
 activation permanently rewrites the world. A complete theory still needs
 to explain that boundary. Do not date the gorge's earlier state to the
 same hour or necessarily the same era as Hylia's temple.
+For the cure sequence, the model treats Link's interaction across the
+Timeshift boundary as a temporal intervention whose experienced sequence
+is retained. This application of traveler continuity is also an assumption;
+it does not make every resident who ever sees a Timeshift Stone immune.
 
 ## Presentation script
 
@@ -256,39 +365,53 @@ instructions for the next agent, not additional dialogue for the characters.
 Retain a visible theory label for inferred events. Do not put invented
 dialogue in quotation marks as though it were game dialogue.
 
-Use stable IDs **P0, 01–24, W1, 25–27** in playback order: 29 scenes.
-P0 is the prologue and W1 the corrected-history wish interlude. These
-IDs preserve the existing draft's journey references without renumbering.
+Use stable IDs **00a, 00b, 01–09, P0, 10–24, W1, 25–27** in playback
+order: 31 scenes. 00a and 00b are the opening already built in the
+current presentation. P0 is an inset explaining the bracelet, played
+right after Link meets Old Impa. W1 is the corrected-history wish
+interlude. These IDs preserve the existing draft's journey references
+without renumbering.
 
-#### P0 — The cycle before this adventure
-*Prologue — proposed earlier versions of history*
-
-**Caption:**
-This theory begins before the adventure we see. In earlier cycles,
-Demise escaped and was resealed; the blade weakened and needed restoring.
-Old Impa's bracelet is a trace of that already-lived past. This time,
-Link's victory will end the recurrence.
-
-**Staging:** Use a schematic sequence: confinement, escape, restoration,
-resealing. Label it `Proposed earlier cycles — not shown in the game`.
-Show a bracelet as an inherited trace without fabricating the earlier
-handoff's setting. Do not show an infinite number of simultaneous swords
-or declare the precise number of cycles. The reset and the reason this
-cycle succeeds remain questions addressed by the closing assessment.
+Any scene whose caption or staging makes a theory claim carries the
+visible theory marker. At minimum: 01, 03, 06, 07, 09, P0, 14–16, 21–26,
+and W1.
 
 ### Act One — the past receives its visitors
+
+#### 00a — Hylia seals Demise
+*Distant past — Hylia's realm*
+
+**Caption:**
+The goddess strikes down the demon king with the Goddess Sword. Demise
+vanishes, and the dark essence he leaves behind is sealed beneath the earth.
+
+**Staging:** Keep the existing slide: Hylia's strike, the slash and
+sparks, the essence sinking below the ground line, the seal. No Imprisoned
+yet. This is the game's backstory, so it needs no theory marker.
+
+#### 00b — The land rises
+*Distant past — the land rises*
+
+**Caption:**
+Hylia plays the Goddess's Harp, and the land rises skyward with her
+people, the Goddess Sword inside her statue, and the Triforce. Below,
+the sealed essence festers into the Imprisoned.
+
+**Staging:** Keep the existing slide, including the brief glimpse of
+Zelda playing the harp on Skyloft beside Link and Groose. Shorten the
+current caption; the glimpse can stay without being narrated.
 
 #### 01 — The goddess's plan
 *Distant past — Hylia's realm*
 
 **Caption:**
-Demise has been sealed, and the people have been sent skyward. Hylia
-prepares to return as a mortal. Fi will guide her chosen hero. In this
-reconstruction, Impa waits at the temple for Hylia's future self.
+Hylia prepares to return as a mortal. Fi will guide her chosen hero.
+In this reconstruction, Impa waits at the temple for Hylia's future
+self, instead of leaving for the future straight away.
 
-**Staging:** Establish Skyloft, the young Goddess Sword, and the sealed
-threat. Hylia addresses Impa and Fi. Label the waiting instruction as
-part of the theory. Do not present a precise order for unshown preparations.
+**Staging:** Skyloft, the Goddess Sword, and the seal were established
+in 00a–00b. Hylia addresses Impa and Fi. Label the waiting instruction
+as part of the theory. Do not present a precise order for unshown preparations.
 
 #### 02 — The escape arrives first
 *Distant past — Temple of Time, Lanayru Desert*
@@ -341,16 +464,14 @@ The sword goes with him. No aged Master Sword is hidden in this scene.
 
 **Caption:**
 In the history Link first experiences, Zelda sleeps and Impa keeps
-watch. The Imprisoned remains beneath the Sealed Grounds. Old Impa's
-bracelet belongs to an earlier cycle's farewell, already part of the
-past this adventure inherits.
+watch. The Imprisoned remains beneath the Sealed Grounds. By the end
+of her watch, Old Impa wears a bracelet. Remember it.
 
 **Staging:** Show the crystal, aging Impa, the sealed beast, and the
 Goddess Sword. Do not show sword leakage, a hidden tree, or a hidden
-Master Sword. Retain Old Impa's bracelet and mark its earlier-cycle
-provenance as the theory's explanation. Do not give the young Impa in
-scene 03 an unexplained new bracelet. The precise earlier handoff and
-the sword's reset are omitted rather than falsely reconstructed here.
+Master Sword. Retain Old Impa's bracelet, but do not explain it yet;
+P0 explains it. Do not give the young Impa in scene 03 an unexplained
+new bracelet. A sword reset is not part of this version of the theory.
 
 ### Act Two — the future creates the journey
 
@@ -386,10 +507,27 @@ Link draws the Goddess Sword and follows Zelda to the surface. At the
 Sealed Temple, an old woman waits. Beyond the door, the crystal is
 already there: Zelda's journey into the past belongs to this history.
 
-**Staging:** Show Old Impa and her bracelet. The temple has no grown
-Life Tree and no second sword concealed in it. Keep the crystal as
-early evidence of a causal loop. An optional short annotation can identify
-the bracelet as `From the earlier cycle, in this theory`.
+**Staging:** Show Old Impa and her bracelet; give the bracelet a brief
+highlight that P0 picks up. The temple has no grown Life Tree and no
+second sword concealed in it. Keep the crystal as early evidence of a
+causal loop.
+
+#### P0 — Where the bracelet came from
+*Inset — proposed earlier versions of history*
+
+**Caption:**
+Old Impa already wears the bracelet that Zelda will give her at the
+end of this adventure. In this theory, it comes from an earlier attempt that resealed
+Demise but never finished him. This adventure goes further.
+
+**Staging:** Open on the bracelet from scene 09, then a schematic
+sequence: confinement, escape, resealing, farewell. Label it
+`Proposed earlier attempts — not shown in the game`. Close back on
+scene 09. Do not fabricate the earlier handoff's setting. Do not show
+an infinite number of simultaneous swords or declare the precise number
+of attempts. Do not show a weakening blade, reverse forging, a repeated
+full quest, or a previous final victory. The previous attempt's detailed
+failure is left unspecified.
 
 #### 10 — The escape, seen from the future
 *Present — Temple of Time, Lanayru Desert*
@@ -447,9 +585,11 @@ Link carries the seedling through the Gate of Time and plants it in
 the temple's soil. He returns to his own era. In the revised history,
 the seedling has had thousands of years to grow.
 
-**Staging:** Plant inside the temple, not outside it as the old HTML
-states. Show the sleeping Zelda and Impa during this visit. Mark this
-as an additional journey, later than the first blessing visit.
+**Staging:** Plant inside the temple, not outside it as the current HTML
+states. Walkthroughs confirm the spot: Groose points to a patch of soil
+inside the Sealed Temple, and Link plants the seedling in the same spot
+in the past. Show the sleeping Zelda and Impa during this visit. Mark
+this as an additional journey, later than the first blessing visit.
 
 #### 15 — The world remembers a tree
 *Present — Sealed Temple, H1*
@@ -504,6 +644,9 @@ Link follows, and Groose joins the pursuit.
 **Staging:** The departing Zelda is the one just released from the
 crystal. The trio's experienced history must remain legible through
 the following correction. Do not imply all travelers are immune to harm.
+Mark the completed crossings as surviving events. These same departures
+connect to the trio's return in scene 25; no extra native departures are
+created in H3.
 
 #### 19 — Act One, a little later
 *Distant past — shortly after the earlier temple visits*
@@ -542,6 +685,8 @@ In this theory, this intervention prevents the later return of the Imprisoned.
 not that all hatred or the curse itself has been eliminated. There is
 no later leak from the sword. Defeat, containment, and eventual decay
 are not a claim of instantaneous annihilation of every remnant.
+Contrast this completed resolution with P0's temporary resealing, without
+claiming that an identical sequence suddenly generated a different result.
 
 #### 22 — The vigil that disappears
 *Distant past — Temple of Hylia; proposed correction H2 to H3*
@@ -555,7 +700,12 @@ carrying the experiences of the world they left.
 **Staging:** Mark this beat clearly as `The theory's proposed correction`.
 Use a diagrammatic dissolve or before/after comparison, not a fabricated
 game cutscene. No attack, death animation, soul transfer, or fusion of
-the two Zeldas. Their different treatment is a stated assumption.
+the two Zeldas. Their different treatment comes from rule 5: show a short
+on-screen note that the sleeper no longer leads to her later departure,
+and her later self is already here.
+Keep the rescued Zelda's journey and crossing markers intact. The fading
+vigil is the superseded continuation, not evidence of a universal rule
+that duplicate ages or people with completed tasks must disappear.
 
 #### 23 — A different duty remains
 *Distant past — Temple of Hylia, H3*
@@ -579,10 +729,12 @@ present-day Imprisoned attacks do not occur. She remembers the
 ancient conflict and the friends whose return she is waiting to see.
 
 **Staging:** Follow Impa's lived time while the trio is in transit.
-The sword remains visible. The Goddess Sword in Skyloft can coexist
+The sword remains visible. The Life Tree keeps growing inside the
+temple; it was planted before the correction and belongs to H3 too. The Goddess Sword in Skyloft can coexist
 with the older Master Sword as another stage of the same object's life.
-Do not imply the young sword's entire revised journey has been proven
-by this montage; personal-history matching remains an open issue.
+Use the protected-crossing markers to connect the revised personal
+histories to the departures in scene 18. Do not animate a second trio
+growing up and staying home, or a sword transforming back into its origin.
 
 #### W1 — The wish outlives its history
 *Present — Sealed Grounds, H3; original time of the wish*
@@ -619,6 +771,8 @@ not fighting those present-day attacks.
 **Staging:** The gate closes/disappears after arrival. Show memory
 differences symbolically; do not invent a conversation in which Impa
 denies remembering the Imprisoned. Her memories are the theory's inference.
+The arrivals complete the protected journeys begun in scene 18. Show one
+trio, with no replacement residents, identity merger, or new erasure.
 
 #### 26 — The promise fulfilled
 *Present — Sealed Temple, H3*
@@ -637,56 +791,110 @@ Do not attribute their survival merely to the trio being in the past.
 *Closing assessment*
 
 **Caption:**
-An earlier cycle accounts for the bracelet; a surviving wish accounts
-for the statue. But the theory still needs to explain how the cycles
-reset, why this one ends differently, and how the returning travelers
-fit the corrected world's personal histories.
+An earlier farewell accounts for the bracelet. Protected journeys
+preserve the travelers, a surviving wish preserves the statue's descent,
+and one traveler keeps one continuing line. These are the theory's
+proposed rules, not laws the game explicitly confirms.
 
-**Staging:** Use a readable final card with two parallel groups:
+**Staging:** Use a readable final card with three groups:
 
-- **Proposed explanation:** the bracelet comes from an earlier cycle;
-  the travelers remember; the crystal-bound vigil is replaced; Impa
-  guards the sword; the wish's result survives at its original time.
-- **Still unresolved:** the earlier handoff and sword reset; what changes
-  between cycles; how revised personal histories join the returning trio.
-- **Explicit assumptions:** traveler continuity, crystal erasure rather
-  than early awakening, and protection of the wish's result and timing.
+- **Five rules:** history can be replaced; completed time journeys
+  survive; the wish survives at its original time; other consequences
+  develop within the revised history; one traveler keeps one continuing line.
+- **What differs:** earlier attempts only reseal Demise; this adventure
+  completes the wish, defeat, and containment. No physical sword reset
+  or exact repetition of the entire adventure is required.
+- **Limits:** the earlier farewell and failure are hypothetical; the
+  traveler, wish, and continuing-line rules are assumptions, and the
+  last one was written for the crystal; crystal erasure is still an
+  interpretation of an absence; the corrected present between preserved
+  crossings is left unreconstructed.
 
 Do not end with “all contradictions solved” or “the game confirms this.”
 
+## Narration (spoken script)
+
+Spoken over the automatic presentation by the browser's own voice. These
+lines are written to be heard; the captions above stay as the on-screen
+text. The presentation splits scene 08 into 08a (the fall) and 08b (the
+awakening). Keep these lines in sync with the `NARRATION` table in
+`script-v2.html`.
+
+- **00a:** Long before the sky had people in it, the goddess Hylia struck down the demon king Demise. His body vanished, but the darkness he left behind was sealed deep beneath the earth.
+- **00b:** Hylia played her harp, and the land rose into the sky, carrying her people, her sword, and the Triforce. Below, the sealed darkness slowly took shape as a beast: the Imprisoned.
+- **01:** Hylia knew the seal would not hold forever. She would be reborn as a mortal, and Fi would guide a chosen hero. In this theory, Impa was told to wait at the temple for the goddess's future self.
+- **02:** Our first visitors from the future arrive here. Zelda and an older Impa burst out of the desert's Gate of Time, destroy it behind them, and head for the Temple of Hylia.
+- **03:** At the temple, the arriving Impa meets someone familiar: herself, younger, still waiting. They are one woman at two points in her life. The younger one steps through the gate into the future. The older one stays with Zelda.
+- **04:** Then Link arrives through the temple's gate, carrying a sword already strengthened by the Sacred Flames. Zelda tells him Hylia's plan, and blesses the blade.
+- **05:** To keep the seal on Demise from breaking, Zelda shuts herself inside a crystal. Link must find the Triforce in his own time, so he goes back through the gate. Impa begins her long watch.
+- **06:** Thousands of years pass. Zelda sleeps, the Imprisoned waits below, and Impa grows old. By the end of her watch, she wears a bracelet on her wrist. Keep an eye on it.
+- **07:** Now we are in the present. The younger Impa steps out of the temple's gate. Her older self is already here, having lived through every century in between. The young one sets off to find Zelda.
+- **08a:** On Skyloft, Ghirahim summons a tornado that tears Zelda from the sky and drops her far below, onto the surface.
+- **08b:** Down there, young Impa finds her and keeps her safe. At the sacred springs, Zelda begins to remember who she really is, and her pink dress turns to the white of the goddess.
+- **09:** Link draws the Goddess Sword and dives after her. At the Sealed Temple, an old woman is waiting, and behind her door the crystal is already there. Zelda's trip into the past already belongs to this history.
+- **P0:** So where does Old Impa's bracelet come from, if Zelda only gives it to her at the very end? This theory's answer: from an earlier attempt that sealed Demise away again, but never finished him. That part is pure speculation.
+- **10:** Ghirahim catches up with Zelda and Impa in the desert. Link holds him off while the two of them escape through the Gate of Time and destroy it. It is the arrival we saw earlier, seen from the other side.
+- **11:** Old Impa sends Link to the Sacred Flames. With his sword reforged, he wakes the temple's own Gate of Time and steps into the past, straight into the meeting with Zelda we have already seen.
+- **12:** Link comes back with a task. Zelda has asked him to find the Triforce and end Demise for good. To get there, he still has trials to face, and a song to learn.
+- **13:** In Lanayru Gorge, Link finds the bones of the Thunder Dragon. A Timeshift Stone shows the gorge as it once was: the dragon alive, but dying. Link takes a seedling that could cure him.
+- **14:** He carries the seedling back through the gate and plants it inside the ancient temple. Then he returns. And here, history changes for the first time: the seedling has had thousands of years to grow.
+- **15:** Back in the present, a full Tree of Life stands where Link remembers empty soil. It was never hidden. In the revised history, it has simply always been there, and that is what everyone else remembers.
+- **16:** Link brings its fruit to the dying dragon, and Lanayru recovers. History changes again: the bones are gone, because in this version the dragon never died.
+- **17:** Link finds the Triforce and makes his wish. The Goddess Statue crashes down on the Imprisoned and destroys it. With the threat gone, Zelda finally wakes from her crystal.
+- **18:** But Ghirahim is not finished. He seizes the newly awakened Zelda and drags her through the gate, into the past, where Demise can still be revived. Link and Groose follow.
+- **19:** For Link, a whole adventure has gone by. For the past, his earlier visits happened only recently. And now this era holds two Zeldas: one asleep in the crystal, one just dragged out of the gate.
+- **20:** Ghirahim's ritual takes Zelda's soul and feeds it to the Imprisoned, and Demise rises again. Link charges in to face him, while Groose carries Zelda to safety.
+- **21:** Link defeats Demise. What is left of the demon king is drawn into the Master Sword and sealed there, and Zelda's soul comes back to her. In this theory, this is what stops the Imprisoned from ever returning.
+- **22:** And this is the theory's boldest step. With Demise gone, the long sleep is no longer needed, so the history that required it is replaced. The sleeping Zelda disappears with it. The rescued Zelda stays, with everything she remembers.
+- **23:** Link leaves the Master Sword in its pedestal, and Fi falls asleep inside it. Impa stays behind to guard it. Before her friends go home, Zelda gives her the bracelet.
+- **24:** Impa grows old a second time, but in a different history: one without the Imprisoned's attacks. She guards the sword, and waits for the friends she knows will come back.
+- **W1:** When this corrected history reaches the moment of Link's wish, the statue still comes down, only now onto empty ground. The wish's result survives, even though what caused it no longer happened.
+- **25:** Link, Zelda and Groose come home. They remember the Imprisoned and everything they went through. Old Impa, in this theory, remembers a different vigil: guarding a sword, not fighting a beast.
+- **26:** Impa recognizes Zelda, and shows her the bracelet. Her duty is done, and she fades away, leaving it behind. Unlike the sleeping Zelda, her life was never erased. Her watch simply ended.
+- **27:** So that is the theory. History can be rewritten, but journeys through time survive, a fulfilled wish keeps its result, and each traveler keeps one line of life. None of it is confirmed by the game. It is one way to make the pieces fit.
+
 ## Journey pairs
 
-| Departure / intervention | Arrival / consequence |
-|---|---|
-| Younger Impa leaves in 03 | Younger Impa arrives in 07 |
-| Zelda and Impa escape in 10 | They arrive in 02, then meet younger Impa in 03 |
-| Link enters the gate in 11 | Link arrives in 04 |
-| Link leaves after the crystal in 05 | Link returns in 12 |
-| Link plants the seedling in 14 | Link finds the grown tree in 15 |
-| Link gives the fruit in 16 | The gorge's history changes from H1 to H2 |
-| Link fulfills the wish in 17 (H2) | Its physical outcome persists in W1 (H3), without another wish |
-| Ghirahim, Zelda, Link, and Groose cross in 18 | Their arrivals are shown in 19–20 |
-| The trio leaves after 23 | They arrive in 25, after Impa's centuries in 24 and the wish outcome in W1 |
+| Departure / intervention | Arrival / consequence | In H3 |
+|---|---|---|
+| Younger Impa leaves in 03 | Younger Impa arrives in 07 | Kept: the departure precedes the correction, and the arrival is protected (rule 2) |
+| Zelda and Impa escape in 10 | They arrive in 02, then meet younger Impa in 03 | Kept; Zelda's later sleeping stage is discontinued at the correction (rule 5) |
+| Link enters the gate in 11 | Link arrives in 04 | Kept (rule 2) |
+| Link leaves after the crystal in 05 | Link returns in 12 | Kept (rule 2) |
+| Link plants the seedling in 14 | Link finds the grown tree in 15 | Kept: planted before the correction, so the tree stands in H3 (rule 4) |
+| Link gives the fruit in 16 | The gorge's history changes from H1 to H2 | Kept: Demise's defeat does not touch the cure, so Lanayru survives in H3 (rule 4) |
+| Link fulfills the wish in 17 (H2) | Its physical outcome persists in W1 (H3), without another wish | Result kept at its original time (rule 3) |
+| Ghirahim, Zelda, Link, and Groose cross in 18 | Their arrivals are shown in 19–20 | Kept; the departure may retain its H2 cause (rule 2) |
+| The trio leaves after 23 | They arrive in 25, after Impa's centuries in 24 and the wish outcome in W1 | Kept (rule 2) |
 
 ## Instructions for the presentation agent
 
 ### Narrative replacement
 
-- Use these 29 scenes as the new narrative source. Preserve their stable
-  string IDs (P0, 01–24, W1, 25–27) before mapping to zero-based
-  code indices. Old numeric scene references cannot be reused unchanged.
+- Use these 31 scenes as the new narrative source. Preserve their stable
+  string IDs (00a, 00b, 01–09, P0, 10–24, W1, 25–27) before mapping to
+  zero-based code indices. Old numeric scene references cannot be reused
+  unchanged.
 - Replace the old subtitle about “a sword that ages twice” with the
   premise about one revisable history and travelers' memories.
 - Retain the three acts. Act Three revisits Act One's era; it is not a
   second independent ancient timeline or a replay of identical events.
 - Remove the Demise leak, hidden sword, hidden tree, Impa's unveiling,
   rewrite-proof crystal bubble, and mandatory dormant-gate explanation.
-- Keep theory markers at scenes P0, 03, 07, 15–16, 21–22, 24–25, and W1. Keep
-  the unresolved-points card visible in the presentation, not just in code.
+- Keep theory markers on every scene with a theory claim, at minimum
+  01, 03, 06, 07, 09, P0, 14–16, 21–26, and W1. Keep the
+  assumptions-and-limits card visible in the presentation, not just in code.
+- Play P0 as an inset between 09 and 10, not as the opening. Its
+  "earlier attempts" claim is introduced where the bracelet raises the
+  question.
 - Never use an unconditional calendar-order animation to combine H0,
   H1, H2, and H3 as though they were one unchanging history.
-- The earlier cycles are an inferred prologue, not previously unseen canon
+- The earlier attempts are an inferred prologue, not previously unseen canon
   footage. Do not depict each as an exact replay of all game quests.
+- Remove any weakening/reforging reset loop for the sword. Earlier attempts
+  need not deposit it in the temple or reproduce the final farewell.
+- Represent the trio's completed departures and arrivals as the same
+  protected journeys. Do not invent a second native trio or a new wish-maker.
 - W1 is a corrected-history comparison with scene 17. For a resident of
   H3, the statue descends once, at the original wish time, onto empty grounds.
 
@@ -700,7 +908,7 @@ Do not end with “all contradictions solved” or “the game confirms this.”
   outfit for the fall before awakening. Existing hair-wrap and sprite
   corrections remain applicable.
 - Keep the original bracelet on Old Impa in the early scenes and show
-  the later handoff honestly. Distinguish the earlier-cycle provenance
+  the later handoff honestly. Distinguish the earlier-attempt provenance
   from H3's handoff; do not accumulate two bracelets in one history.
 - Plant and grow the Life Tree inside the temple. Use real scene
   absence/presence, not the old `tveil` effect.
@@ -716,6 +924,37 @@ The HTML is self-contained and includes embedded sprite atlases. Reuse
 the existing assets and controls; narrative revision does not require
 regenerating artwork.
 
+The current presentation has 23 slides. Map them as follows (slide numbers
+are current playback positions):
+
+| Current slide | v2 scene | Changes |
+|---|---|---|
+| 1 Hylia seals Demise | 00a | Reuse as is |
+| 2 The sword waits in the sky | 00b | Shorten the caption |
+| 3 The goddess's plan | 01 | Impa waits instead of being sent ahead |
+| 4 Impa crosses time | — | Remove: young Impa leaves through the temple gate in 03, not the desert gate. Reuse its walk-in-and-fade for 03 |
+| 5 Zelda and Impa arrive | 02 | Drop the reference to Impa's earlier crossing; end with the route to the temple |
+| 6 The blessing and the crystal | 04, 05 | Split into the blessing and the crystal; Link leaves through the gate in 05 |
+| 7 Planted in the past | 14 | Move to Act Two order; plant inside the temple; drop "hidden like the blade" |
+| 8 The dragon's cure | — | Remove: no seedling vanishing into the future. Reuse the Lanayru sprite in 16 |
+| 9 Two Zeldas, one ritual | 19, 20 | Split the arrival from the ritual |
+| 10 The final duel | 21 | "hatred" becomes "residual consciousness" |
+| 11 Planted and hidden | 23 | Remove the veil and the dormant gate; keep the bracelet handoff |
+| 12 The long watch | 06, 24 | 06: crystal, aging Impa, Imprisoned. 24: pedestal sword, tree, no crystal or Imprisoned. Neither has the hatred leak or the veil |
+| 13 Torn from the sky | 08 | First half |
+| 14 The rescue | 08 | Second half; remove the Tree of Life (H0 has none); relabel the location |
+| 15 A hero falls from the sky | 09 | Remove the tree, the hidden pedestal, and the veil |
+| 16 The escape, seen from here | 10 | Update the scene references |
+| 17 The dormant gate wakes | 11 | Drop "dormant"; reprise 04–05 briefly |
+| 18 The Timeshift Stone | 13 | Mostly reusable |
+| 19 The Tree of Life | 15 | Remove Impa lifting the veil; the tree stands inside the temple; add the before/after swap |
+| 20 The cure, seen from here | 16 | Present the cure as a history change; drop the Thunderhead claim |
+| 21 The wish and the waking | 17 | Reuse; set the time marker for W1 |
+| 22 Dragged into the past | 18 | Reuse |
+| 23 The loop closes | 25, 26 | Remove the hidden blade; the pedestal sword is visible |
+
+New scenes with no current slide: 03, 07, 12, P0, 22, W1, 27.
+
 Scene data lives in `S` (`e`, `l`, `t`, `c`, and `k`). Playback order is
 in `ORDER`. Update the parallel `actions` array, `cues`, held props,
 `render()` scene conditions, outfit switches, and any numeric lookup
@@ -725,7 +964,7 @@ scene list and will not retain their meaning after replacement.
 Use separate metadata for act and history revision. The existing `e`
 field distinguishes past/present only and cannot encode P or H0–H3 by itself.
 Keep the Timeshift field distinct from the Gate of Time transition.
-The prologue's P label denotes unspecified earlier versions; its schematic
+The inset's P label denotes unspecified earlier versions; its schematic
 events need not be assigned a falsely precise past/present timestamp.
 
 Allow more reading time for the correction and closing assessment than
@@ -742,13 +981,25 @@ selection, keyboard access, and reduced-motion behavior.
 - H0 bones and H2 recovery are successive histories, not simultaneous
   assertions about an immutable past.
 - Scene 22 is visibly conjectural and does not erase the rescued Zelda.
-- Early Old Impa retains her bracelet; P0 proposes its earlier-cycle origin
-  and the closing card retains the missing transition details.
+  It names rule 5 as the reason the sleeper fades instead of waking.
+- No present-day H3 scene adds events beyond the protected crossings,
+  the wish result, and Impa's vigil; H3's present stays unreconstructed.
+- The Life Tree appears inside the temple in 14, 15, and 24, and is
+  absent from every H0 scene (06, 08, 09).
+- P0 plays between 09 and 10, opening and closing on the bracelet.
+- Early Old Impa retains her bracelet; P0 proposes its earlier-attempt origin
+  through a farewell, while the closing card labels that backstory hypothetical.
 - Scenes 17 and W1 use the same time marker. H3 has one statue descent,
   no Imprisoned beneath it, and no newly invented second wish.
 - The Triforce and statue persist through the proposed wish rule, not
   because every consequence of the original adventure is immune.
-- Scene 25 contains one returning trio and no extra native duplicates.
+- Scene 25 completes scene 18's protected journeys. It contains one
+  returning trio and no extra native duplicates, disappearances, or mergers.
+- P0 contrasts partial resealing with the successful intervention; it does
+  not show an identical loop improving automatically or give Impa memories
+  of failed histories that this draft never authorized.
+- No scene resets the Master Sword to the Goddess Sword, relocates it to
+  Hylia's statue, resets Fi, or accumulates a new blade after each attempt.
 - No captions or effects still claim that the tree or sword was hidden,
   that hatred leaked out, or that every contradiction has been settled.
 
@@ -767,12 +1018,16 @@ selection, keyboard access, and reduced-motion behavior.
 
 ## Status
 
-This is a presentation-ready narrative draft of the agreed interpretation,
-with explicit open questions. It is not a proof that the game's time-travel
-rules are completely consistent. The early bracelet and the scope of
-protected consequences now have proposed explanations: an earlier-cycle
-handoff and an enduring Triforce wish. Their mechanisms are assumptions.
-The most important remaining challenges are the transition between cycles,
-what makes the final cycle different, and the continuity of the protagonists
-in the corrected history. The crystal's erasure remains a chosen interpretation
-of an absence, not an event confirmed by the ending.
+This is a presentation-ready narrative of the agreed five-rule model,
+not a proof of a uniquely consistent interpretation of the game. Earlier
+attempts are partial failures rather than exact repetitions. The sword
+needs no physical reset. Protected crossings connect the returning trio
+to the revised personal histories, and the fulfilled wish preserves its
+physical result at its original time.
+
+The unshown earlier farewell and failure remain hypothetical backstory.
+Traveler continuity, wish protection, and the continuing-line rule are
+stipulated rules. The crystal's erasure follows from them, but it remains an
+interpretation of an absence, not an event confirmed by the ending. The
+corrected present between the preserved crossings is deliberately left open. The script should explain these assumptions clearly without
+presenting them as new canonical scenes or a demonstrated universal theory.
