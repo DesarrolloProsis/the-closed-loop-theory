@@ -739,11 +739,14 @@ const synth=window.speechSynthesis,narr={on:false,queue:[],idx:0,done:true,id:0,
 const narBtn=document.getElementById('bnar'),narVoice=document.getElementById('nar-voice'),narRate=document.getElementById('nar-rate'),narStatus=document.getElementById('nar-status');
 const store={get:k=>{try{return localStorage.getItem(k)}catch{return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch{}}};
 if(!synth)document.getElementById('narration').hidden=true;
-const sentences=text=>(text.match(/[^.!?]+[.!?]+[’”"]?/g)||[text]).map(x=>x.trim()).filter(Boolean);
+// También se corta en los dos puntos: las voces del navegador apenas se detienen ahí y la frase siguiente se atropella.
+const sentences=text=>(text.match(/[^.!?:]+[.!?:]+[’”"]?/g)||[text]).map(x=>x.trim()).filter(Boolean);
+// Silencio tras cada fragmento: algo más largo tras los dos puntos, para que se oiga la pausa.
+const pauseAfter=text=>/:$/.test(text)?450:220;
 function narrUI(){narBtn.setAttribute('aria-pressed',String(narr.on));document.getElementById('nar-label').textContent=narr.on?'Narration on':'Narration off';const speaking=narr.on&&!narr.done&&playing;narBtn.classList.toggle('speaking',speaking);const status=speaking&&time>=dur()?'Finishing the narration…':'';if(narStatus.textContent!==status)narStatus.textContent=status}
 function stopNarration(){narr.id++;clearTimeout(narr.timer);synth?.cancel()}
 function speakFrom(k){stopNarration();narr.idx=k;narr.done=false;const id=narr.id;
- const next=()=>{if(id!==narr.id)return;clearTimeout(narr.timer);narr.idx++;say()};
+ const next=()=>{if(id!==narr.id)return;clearTimeout(narr.timer);const pause=pauseAfter(narr.queue[narr.idx]||'');narr.idx++;narr.timer=setTimeout(say,pause)};
  const say=()=>{if(id!==narr.id)return;if(narr.idx>=narr.queue.length){narr.done=true;narrUI();return}const text=narr.queue[narr.idx],u=new SpeechSynthesisUtterance(text);if(narr.voice){u.voice=narr.voice;u.lang=narr.voice.lang}else u.lang='en-US';u.rate=narr.rate;u.onend=next;u.onerror=next;
   // Red de seguridad: si el navegador no avisa del final, se continúa tras el tiempo estimado de la frase.
   narr.timer=setTimeout(next,(text.split(/\s+/).length/2.3/narr.rate+3)*1000);synth.speak(u)};
