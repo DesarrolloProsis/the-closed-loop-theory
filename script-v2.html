@@ -36,7 +36,21 @@
 @media(prefers-reduced-motion:reduce){.tk-fresh,.tk-stale{animation:none}}
 /* Narración. */
 .narration{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;margin-top:12px;font-size:11px;color:var(--muted)}.narration[hidden]{display:none}.narr-toggle{height:30px;border:1px solid var(--line);border-radius:7px;background:transparent;color:var(--ink);display:inline-flex;align-items:center;gap:7px;padding:0 11px;font:11px system-ui,sans-serif}.narr-toggle:hover{background:var(--wash)}.narr-toggle svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.narr-toggle[aria-pressed=true]{background:var(--green);color:var(--card);border-color:var(--green)}.narr-toggle .nar-wave{opacity:.35}.narr-toggle[aria-pressed=true] .nar-wave{opacity:1}.narr-toggle.speaking .nar-wave{animation:narWave 1s ease-in-out infinite}@keyframes narWave{50%{opacity:.3}}.narration select{font:11px system-ui,sans-serif;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:3px 6px;margin-left:4px;max-width:240px}.nar-status{font-style:italic}@media(max-width:580px){.tracks{padding:12px}.tracks-legend{margin-left:0}}
+/* Vista de grabación (?record): solo el escenario y la línea de tiempo, a pantalla completa y en tema oscuro; a los lados, el decorado desenfocado. */
+.rec{--paper:#101613;--card:#18221d;--ink:#e4e9db;--muted:#a2afa0;--line:#33433a;--green:#98bd9c;--wash:#2c3d32;--gold:#c8ac72}
+.rec body{height:100vh;overflow:hidden}.rec .page{max-width:none;height:100vh;padding:0;display:flex;flex-direction:column}
+.rec .masthead,.rec .scene-header,.rec .story,.rec .transport,.rec .footer,.rec .tracks-head,.rec .tracks-note{display:none}
+.rec .presentation{flex:1;min-height:0;display:flex;border:0;border-radius:0;box-shadow:none;background:none}
+.rec .scene-layout{flex:1;min-width:0;display:flex;justify-content:center;position:relative;overflow:hidden}.rec .scene-layout:before{content:'';position:absolute;inset:-40px;background:var(--rec-bd) center/cover;filter:blur(24px) brightness(.45)}
+.rec .stage-wrap{height:100%;max-width:100%;aspect-ratio:340/210}.rec #sc{width:100%;height:100%;min-height:0}.rec .stage-era{top:18px;right:20px;font-size:14px;padding:7px 16px}
+@media(min-width:1200px){.rec .card{zoom:1.25}}@media(min-width:1700px){.rec .card{zoom:1.5}}
+.rec .tracks{flex:none;margin:0;padding:6px 16px 2px;border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none}.rec .tracks-scroll{overflow:hidden}.rec #tk{min-width:0;max-height:30vh;margin:auto}.rec .tk-name{font-size:12px}.rec .tk-axis{font-size:10px}.rec .tk-tick{font-size:9px}
+.rec-live,.rec-live *{cursor:none!important}
+.rec-start{position:fixed;inset:0;z-index:10;display:grid;place-items:center;background:#0b100dcc;color:var(--ink);font-size:13px}.rec-start[hidden]{display:none}.rec-start>div{max-width:520px;padding:28px 32px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 60px #0008}
+.rec-start .rec-title{margin:0 0 6px;font:650 10px system-ui,sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}.rec-start p{margin:0 0 16px;line-height:1.6;color:var(--muted)}.rec-btn{display:block;width:100%;margin-bottom:9px;padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:var(--wash);color:var(--ink);font:13px system-ui,sans-serif;text-align:left}.rec-btn:hover{border-color:var(--gold)}.rec-btn small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+.rec-start .rec-voice{display:flex;flex-wrap:wrap;gap:6px 14px;margin:4px 0 16px;color:var(--muted)}.rec-start select{font:11px system-ui,sans-serif;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:3px 6px;margin-left:4px;max-width:240px}.rec-start .rec-keys{margin:6px 0 0;font-size:11px}
 </style>
+<script>if(/[?&]record\b/.test(location.search))document.documentElement.classList.add('rec')</script>
 </head>
 <body>
 <main class="page">
@@ -73,14 +87,21 @@
 <nav id="dt" class="timeline" aria-label="Choose a scene"></nav></div></section>
 <section class="tracks" aria-label="Who exists when: the timeline so far">
 <div class="tracks-head"><span class="tracks-title">Who exists when</span><span id="tk-hist" class="badge"></span>
-<span class="tracks-legend ui" aria-hidden="true"><span><svg viewBox="0 0 22 10"><path d="M2 5H20" stroke="var(--green)" stroke-width="4" stroke-linecap="round"/></svg>exists in this history</span><span><svg viewBox="0 0 22 10"><path d="M2 5H20" stroke="var(--green)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 4"/></svg>asleep or sealed</span><span><svg viewBox="0 0 22 10"><path d="M2 5H20" stroke="var(--muted)" stroke-width="2.5" stroke-dasharray="3 3" opacity=".6"/></svg>replaced history</span><span><svg viewBox="0 0 22 10"><path d="M20 8C20 1 2 1 2 8" fill="none" stroke="var(--green)" stroke-width="1.4"/><path d="M0 6L2 9L4 6Z" fill="var(--green)"/></svg>gate crossing</span><span><svg viewBox="0 0 22 10"><path d="M8 2l6 6M14 2l-6 6" stroke="var(--ink)" stroke-width="1.6"/></svg>leaves history</span><span><svg viewBox="0 0 22 10"><path d="M11 1L15 5L11 9L7 5Z" fill="#c8a24a"/></svg>bracelet</span></span></div>
+<span class="tracks-legend ui" aria-hidden="true"><span><svg viewBox="0 0 22 10"><path d="M2 5H20" stroke="var(--green)" stroke-width="4" stroke-linecap="round"/></svg>exists in this history</span><span><svg viewBox="0 0 22 10"><path d="M2 5H20" stroke="var(--green)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 4"/></svg>asleep or sealed</span><span><svg viewBox="0 0 22 10"><path d="M2 5H20" stroke="var(--muted)" stroke-width="2.5" stroke-dasharray="3 3" opacity=".6"/></svg>replaced history</span><span><svg viewBox="0 0 22 10"><path d="M20 8C20 1 2 1 2 8" fill="none" stroke="var(--green)" stroke-width="1"/><path d="M0 6L2 9L4 6Z" fill="var(--green)"/></svg>gate crossing</span><span><svg viewBox="0 0 22 10"><path d="M8 2l6 6M14 2l-6 6" stroke="var(--ink)" stroke-width="1.6"/></svg>leaves history</span><span><svg viewBox="0 0 22 10"><path d="M11 1L15 5L11 9L7 5Z" fill="#c8a24a"/></svg>bracelet</span></span></div>
 <div class="tracks-scroll"><svg id="tk" viewBox="0 0 1000 250" role="img" aria-labelledby="tk-title"><title id="tk-title">Character timeline across the distant past and the present</title></svg></div>
 <p id="tk-note" class="tracks-note" aria-live="polite"></p>
 </section>
 <footer class="footer"><span>One history that can be revised: the travelers keep their memories; the world does not.</span><span>← → scenes &nbsp; · &nbsp; Space play / pause &nbsp; · &nbsp; R replay &nbsp; · &nbsp; N narration</span></footer>
 </main>
+<div id="rec-start" class="rec-start ui" hidden><div><p class="rec-title">Recording view</p><p>Start your screen recorder, then choose how to play. The page goes full screen, this panel disappears, and the cursor is hidden.</p>
+<button id="rec-narrated" class="rec-btn">Play all with narration<small>The browser voice reads each slide; the slides wait for it.</small></button>
+<div id="rec-voice" class="rec-voice"></div>
+<button id="rec-silent" class="rec-btn">Play all silently<small>For your own voice-over: each slide stays up about as long as its narration takes to read.</small></button>
+<p class="rec-keys">Space pause / resume · ← → scenes · R replay scene · N narration · F full screen</p></div></div>
 <script>
 'use strict';
+// Vista de grabación: la abre script-v2.html?record (o script-v2-record.html).
+const REC=document.documentElement.classList.contains('rec');
 const NS='http://www.w3.org/2000/svg',L=document.getElementById('ly'),E={},actors={},FX=document.getElementById('effects');
 function mk(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e}
 function grp(id,c){const g=mk('g',c?{class:c}:{},L);g.style.opacity=0;g.setAttribute('data-id',id);E[id]=g;return g}
@@ -279,35 +300,143 @@ function paintBackdrop(seed,draw){
  // Muro de templo: hiladas de sillares con juntas alternas.
  const wall=(base,joint)=>{px(0,0,BG_W,BG_GROUND,base);for(let y=6;y<BG_GROUND;y+=6){px(0,y,BG_W,1,joint);for(let x=((y/6)%2)*6;x<BG_W;x+=12)px(x,y-5,1,5,joint)}};
  const tiles=(a,b,edge)=>{px(0,BG_GROUND+1,BG_W,BG_H-BG_GROUND-1,a);px(0,BG_GROUND,BG_W,1,edge);for(let y=BG_GROUND+1;y<BG_H;y+=4)for(let x=-8;x<BG_W;x+=8)px(x+((y-BG_GROUND)%8?4:0),y,8,4,((x+8+y)/4)%2?a:b)};
- draw({px,sky,disc,ridge,cloud,column,tree,ground,stars,wall,tiles,R});
+ // Rasterize architectural silhouettes on the same grid as the original scenery.
+ const poly=(points,c)=>{const ys=points.map(p=>p[1]);for(let y=Math.floor(Math.min(...ys));y<=Math.ceil(Math.max(...ys));y++){const xs=[];for(let i=0,j=points.length-1;i<points.length;j=i++){const a=points[j],b=points[i];if((a[1]<=y&&b[1]>y)||(b[1]<=y&&a[1]>y))xs.push(a[0]+(y-a[1])*(b[0]-a[0])/(b[1]-a[1]))}xs.sort((a,b)=>a-b);for(let i=0;i+1<xs.length;i+=2)px(xs[i],y,xs[i+1]-xs[i],1,c)}};
+ const oval=(x,y,rx,ry,c)=>{for(let dy=-ry;dy<=ry;dy++){const w=Math.round(rx*Math.sqrt(Math.max(0,1-dy*dy/(ry*ry))));px(x-w,y+dy,w*2+1,1,c)}};
+ const line=(x1,y1,x2,y2,c)=>{const n=Math.max(Math.abs(x2-x1),Math.abs(y2-y1),1);for(let i=0;i<=n;i++)px(x1+(x2-x1)*i/n,y1+(y2-y1)*i/n,1,1,c)};
+ draw({px,sky,disc,ridge,cloud,column,tree,ground,stars,wall,tiles,poly,oval,line,R});
  return canvas.toDataURL();
 }
+// Source for the self-contained backdrops embedded in script-v2.html.
+// Coordinates use its 170 × 105 pixel canvas; the actors stand at y=85.
+function templeHall(b,old){
+ const stone=old?'#737f72':'#b7b79a',light=old?'#a3ac90':'#ded6b3',shade=old?'#4e6258':'#818f7c',gold=old?'#a69e67':'#c7b573';
+ b.wall(stone,old?'#697769':'#a8aa90');
+ // Deep central sanctuary, flanked by heavy square piers and recessed panels.
+ b.poly([[38,8],[132,8],[121,77],[49,77]],shade);
+ b.px(58,18,54,61,old?'#596d5d':'#8b9d80');
+ b.px(64,30,42,45,old?'#344d45':'#607d6b');
+ b.poly([[64,30],[70,21],[100,21],[106,30]],light);
+ b.px(69,31,32,44,old?'#536b58':'#9ea988');
+ b.line(85,32,85,73,shade);
+ // Winged crest carved into the sanctuary doors.
+ b.poly([[85,35],[80,43],[90,43]],gold);
+ for(const sign of [-1,1])for(let n=0;n<3;n++)b.line(85+sign*3,46+n,85+sign*(13-n*3),43+n*3,gold);
+ for(const [x,w,top] of [[3,15,0],[29,10,10],[131,10,10],[152,15,0]]){
+  b.px(x,top,w,85-top,stone);b.px(x,top,3,85-top,light);b.px(x+w-3,top,3,85-top,shade);
+  b.px(x-2,top+8,w+4,4,light);b.px(x-2,79,w+4,6,light);
+  for(let y=top+19;y<77;y+=17){b.px(x+4,y,w-7,11,shade);b.px(x+4,y,w-7,1,gold)}
+ }
+ b.px(0,3,170,5,shade);b.px(0,8,170,2,gold);
+ // The characteristic roof light falls across the green-grey hall.
+ b.poly([[96,10],[109,10],[135,78],[97,78]],old?'#8d9b77':'#c1c8a1');
+ for(let y=17;y<75;y+=3)b.px(99+(y-17)*.18,y,2,1,light);
+ b.tiles(old?'#8b927b':'#bbb99a',old?'#818a74':'#afaf91',light);
+ for(const x of [29,57,85,113,141])b.line(85,85,x,104,shade);
+ b.px(49,77,72,2,light);b.px(44,80,82,2,stone);b.px(39,83,92,2,light);
+ if(old){
+  for(const x of [7,31,137,160]){const len=12+Math.floor(b.R()*18);b.line(x,10,x-2,10+len,'#466a44');for(let y=13;y<10+len;y+=4)b.px(x-3,y,4,2,'#6c8652')}
+  for(let n=0;n<22;n++)b.px(b.R()*170,87+b.R()*16,3,1,'#6d8054');
+  b.line(20,31,24,43,shade);b.line(24,43,21,51,shade);
+ }
+}
+function sealedGrounds(b,past=false){
+ b.sky(['#8fb7ae','#adc9b3','#c8d8b9','#dce3c5']);
+ b.ridge(38,10,.055,2,'#7b9b88');b.ridge(46,6,.12,4,'#608773');
+ for(let x=0;x<175;x+=10)b.disc(x,38+(x%13),10,'#5e8264');
+ // Temple silhouette above the pit: paired towers and broken domed entrance.
+ b.px(60,27,50,26,'#a1a88c');b.poly([[58,27],[67,20],[102,20],[112,27]],'#718571');
+ for(const x of [58,105]){b.px(x,20,7,32,'#aeb398');b.poly([[x-1,20],[x+3,10],[x+8,20]],'#82907c')}
+ b.oval(85,32,14,12,'#b9b99b');b.px(72,32,27,20,'#999f80');b.px(79,36,12,16,'#445f4e');
+ b.px(83,38,4,1,'#c6b079');b.px(81,40,8,1,'#c6b079');
+ b.px(0,53,170,32,'#7e9863');
+ // Broad elliptical terraces read as the spiral depression from a low viewpoint.
+ for(const [rx,ry,y] of [[94,26,68],[75,20,69],[56,14,71],[35,8,73]]){
+  b.oval(85,y,rx,ry,'#496d58');b.oval(85,y-3,rx,ry-2,past?'#92a76c':'#80985f');
+  b.oval(85,y-4,rx-3,Math.max(1,ry-4),'#668256');
+ }
+ b.oval(85,73,18,4,'#b0b48b');b.oval(85,73,6,2,'#7a866c');
+ // Offset connecting ramps break up the rings into one descending route.
+ b.poly([[8,64],[20,62],[48,69],[44,73]],'#8ea16b');b.poly([[124,64],[149,60],[157,64],[128,71]],'#8ea16b');
+ b.ground('#a1ae78','#839365','#77875b','#69794f',70);
+ for(const x of [8,156]){b.px(x,70,5,15,'#a8ae8d');b.px(x-1,69,7,2,'#c0c1a0')}
+}
+function timeTemple(b,past){
+ b.sky(past?['#73b9ce','#a6d1d1','#d8e4c9']:['#cabba0','#e0cba6','#eedcb7']);
+ b.ridge(59,6,.04,1,past?'#91a591':'#c6aa82');
+ // Lanayru's monumental blue-green stonework, gold trim and pointed buttresses.
+ const body=past?'#748f88':'#969b84',edge=past?'#c6c9a1':'#beba95',dark=past?'#3f686d':'#667a75';
+ b.px(18,20,134,65,body);b.px(18,19,134,4,edge);b.px(18,24,134,2,'#b6a265');
+ for(const x of [20,50,118,148]){b.poly([[x-6,85],[x-4,24],[x,10],[x+5,24],[x+7,85]],edge);b.px(x,27,3,53,dark);b.px(x-4,39,9,3,'#b6a265')}
+ b.poly([[59,78],[59,38],[67,27],[103,27],[111,38],[111,78]],dark);
+ b.poly([[65,78],[65,40],[72,33],[98,33],[105,40],[105,78]],past?'#81a5a0':'#80948b');
+ b.oval(85,49,13,13,edge);b.oval(85,49,11,11,dark);b.oval(85,49,7,7,'#b6a265');b.oval(85,49,5,5,past?'#81a5a0':'#80948b');
+ for(const x of [69,100])b.px(x,63,2,14,edge);
+ for(const x of [34,133])for(let y=31;y<72;y+=12){b.oval(x,y,5,5,dark);b.oval(x,y,3,3,'#b1af81');b.px(x-1,y-1,3,3,body)}
+ b.tiles(past?'#b4b792':'#c5b897',past?'#a2ac8d':'#b4a98c',edge);
+ for(let y=78;y<85;y+=2)b.px(53-(y-78)*2,y,64+(y-78)*4,1,edge);
+ if(!past){b.poly([[21,19],[35,19],[30,34],[24,30]],'#dfcca7');b.line(123,46,119,55,dark);b.line(119,55,122,63,dark);for(let k=0;k<22;k++)b.px(b.R()*170,94+b.R()*10,5,1,'#d5c59f')}
+}
+function lanayruGorge(b,alive=false){
+ b.sky(['#afc9cc','#cdd8ca','#e5dfbd']);
+ b.poly([[0,25],[22,26],[29,40],[47,41],[52,28],[83,27],[88,40],[110,40],[116,25],[146,24],[153,35],[170,35],[170,85],[0,85]],'#d4b080');
+ b.px(0,49,170,36,'#be976c');
+ for(const [x,w,top,depth] of [[0,30,37,88],[37,31,47,89],[88,29,34,93],[139,31,40,89]]){
+  b.poly([[x,top+4],[x+6,top],[x+w-4,top+1],[x+w,top+8],[x+w-4,depth],[x+4,depth]],'#b18d63');
+  b.poly([[x+5,top],[x+w-4,top+1],[x+w-8,depth],[x+8,depth]],'#c9a475');
+  for(let y=top+10;y<depth;y+=9)b.px(x+5,y,w-10,1,'#b79468');
+ }
+ // A dark split between shelf and mesa, crossed by ancient mining rails.
+ b.poly([[63,54],[86,54],[102,85],[49,85]],'#8e765a');
+ b.line(14,66,136,66,'#6c756c');b.line(14,69,136,69,'#8b8d73');for(let x=18;x<136;x+=7)b.px(x,65,2,6,'#a99f7b');
+ b.ground(alive?'#96b578':'#e0c38f',alive?'#8ba477':'#cdb080',alive?'#789166':'#b99d71','#a78d68',70);
+ // Circular industrial platform and sparse cacti, kept behind the acting lane.
+ b.oval(29,81,19,4,'#6d766b');b.oval(29,80,16,3,'#b4b394');b.oval(29,80,12,2,'#7e8776');b.px(25,79,8,2,'#b5a475');
+ for(const x of [7,155,164]){b.px(x,69,2,15,alive?'#548b65':'#7f926e');b.px(x-3,74,3,2,'#829b72');b.px(x-3,71,1,4,'#829b72')}
+}
 const BACKDROPS={
- // Reino de Hylia y la superficie antigua: cielo dorado, colinas frondosas, columnas blancas lejanas.
- landPast:{top:'#7db7dc',bottom:'#7fb35c',paint:b=>{b.sky(['#7db7dc','#98c8e2','#b6d8e4','#d6e6dc','#efe6c4']);b.disc(128,22,9,'#fbe7b0');b.disc(128,22,7,'#fff4cf');b.cloud(30,18,4,'#f7fbff','#dfeaf2');b.cloud(82,12,3,'#f4f8fb','#dfeaf2');b.cloud(152,34,3,'#f7fbff','#dfeaf2');b.ridge(66,8,.06,1,'#a9c0b4');for(const x of [18,24,30,138,146])b.column(x,54+(x%3)*2,3,'#ece4d1','#cfc2a6','#e3d7bb');b.ridge(75,5,.11,3,'#86ad84');b.ground('#a5d071','#7fb35c','#6a9c4b','#6f9f50');for(let k=0;k<26;k++)b.px(b.R()*BG_W,BG_GROUND+2+b.R()*14,1,1,'#f6e7a1')}},
- // Reino de batalla de Demise: tormenta violácea con relámpagos.
- storm:{top:'#1b1626',bottom:'#3a3140',paint:b=>{b.sky(['#1b1626','#251d33','#33273f','#45324d','#5a3f57']);for(const [x0,len] of [[38,40],[124,30]]){let x=x0,dir=1;for(let y=0;y<len;y++){b.px(x,y,1,1,'#efe9ff');if(y%3===2){x+=dir*2;dir=-dir}if(y%3===2)b.px(x-dir,y,2,1,'#efe9ff')}}b.ridge(70,9,.07,2,'#2a2232');b.ridge(78,4,.13,5,'#352a3b');b.ground('#5b4d5e','#3a3140','#2a2330','#2f2836');for(let k=0;k<10;k++){const x=b.R()*BG_W;b.px(x,BG_GROUND+3+b.R()*12,6+b.R()*8,1,'#6a5a6c')}}},
- // Bosque de Farone y Tierras Selladas en el presente: neblina fría y arboleda.
- woodsPresent:{top:'#8db0c0',bottom:'#5f7c48',paint:b=>{b.sky(['#8db0c0','#a3c0cb','#bccfd2','#d2ddd8','#dfe5df']);b.cloud(40,16,3,'#e9f0f1','#cddadd');b.cloud(132,24,4,'#e9f0f1','#cddadd');for(let x=0;x<BG_W+6;x+=7)b.disc(x,61+Math.round(b.R()*4),6,'#7f9b8c');b.px(0,63,BG_W,BG_GROUND-63,'#7f9b8c');for(let x=3;x<BG_W+6;x+=9)b.tree(x,6+Math.round(b.R()*4),5,'#4a3b2c','#5f7e6a','#4f6c5a');b.ground('#7f9a5f','#5f7c48','#4c6539','#536f40');for(let y=79;y<BG_GROUND;y+=2)for(let x=(y*5)%7;x<BG_W;x+=7)b.px(x,y,3,1,'#c9d6d0')}},
- // Templo de Hylia en el pasado: piedra crema, friso dorado, columnas intactas y ventanal luminoso.
- templePast:{top:'#eadfc6',bottom:'#d4c49e',paint:b=>{b.wall('#eadfc6','#d8c9a8');b.px(0,8,BG_W,3,'#d6b158');b.px(0,11,BG_W,1,'#b8913f');b.px(70,20,30,48,'#a8d4ea');b.px(74,16,22,4,'#a8d4ea');b.px(78,13,14,3,'#a8d4ea');b.cloud(84,34,3,'#f4fbff');b.px(70,66,30,2,'#d6b158');for(let y=20;y<BG_GROUND;y++)for(let x=100+Math.round((y-20)*.5);x<112+Math.round((y-20)*.9);x+=2)b.px(x+(y%2),y,1,1,'#f6efdc');for(const x of [4,44,120,158])b.column(x,14,8,'#f3ead6','#cfbf98','#d6b158');b.tiles('#d9caa6','#cdbb93','#efe3c5')}},
- // Templo Sellado en el presente: el mismo templo frío, roto y cubierto de musgo.
- templePresent:{top:'#868b84',bottom:'#77796f',paint:b=>{b.wall('#868b84','#747972');for(let x=0;x<BG_W;x+=11)b.px(x,8,7,3,'#7d7466');b.px(70,22,30,46,'#3d4a52');b.px(74,18,22,4,'#3d4a52');for(let x=72;x<98;x+=5){const len=6+Math.round(b.R()*20);b.px(x,18,1,len,'#4f6b3c');b.px(x+1,18+len,1,2,'#6f8d55')}for(const x of [4,44,120,158])b.column(x,14,8,'#a2a59d','#7c7f77','#8f928a',true);for(let k=0;k<14;k++){const x=b.R()*BG_W,y=b.R()*BG_GROUND;b.disc(x,y,1+Math.round(b.R()*2),k%2?'#5e7a48':'#6f8d55')}b.tiles('#7d7f77','#72746c','#90928a');for(let k=0;k<9;k++){const x=b.R()*BG_W;b.px(x,BG_GROUND+2+b.R()*14,5+b.R()*7,1,'#5c5e57');b.px(x+b.R()*6,BG_GROUND-1,2,1,'#6f8d55')}}},
- // Desierto de Lanayru en el pasado: aún verde, bajo un cielo azul limpio.
- desertPast:{top:'#5fb0e3',bottom:'#7ab257',paint:b=>{b.sky(['#5fb0e3','#79c0e8','#97cfee','#b8def2','#d8ecf3']);b.disc(30,20,6,'#fffbe6');b.cloud(110,16,4,'#ffffff','#e3f0f8');b.ridge(64,7,.045,2,'#c5a27a');b.ridge(74,4,.09,4,'#79b35b');for(const x of [20,58,140,162])b.tree(x,9,5,'#6b4a2b','#5aa552','#3f8a45');b.ground('#9bcc6a','#7ab257','#64974a','#6aa04e')}},
- // Desierto y garganta de Lanayru en el presente: dunas bajo calima y ruinas oxidadas.
- desertPresent:{top:'#e9cf9e',bottom:'#e0bb80',paint:b=>{b.sky(['#e9cf9e','#efd9ad','#f3e2bd','#f6e9cc','#f8eed7']);b.disc(140,18,6,'#fffaf0');b.ridge(64,6,.05,1,'#d9b27a');b.ridge(73,4,.08,3,'#cc9f63');for(const x of [16,30,150])b.column(x,58,5,'#9a7a58','#7a5d40','#87694b',true);b.ground('#efd09a','#e0bb80','#c99e63','#d3ad74');for(let y=BG_GROUND+4;y<BG_H-4;y+=5)for(let x=(y*3)%11;x<BG_W;x+=13)b.px(x,y,5,1,'#cfa86c')}},
- // Skyloft: cielo abierto, mar de nubes y la superficie en sombra debajo.
- skyPresent:{top:'#4ea6e3',bottom:'#5f7c48',paint:b=>{b.sky(['#4ea6e3','#64b3e8','#7fc1ec','#9ccfef','#bde0f3'],0,60);b.px(0,60,BG_W,BG_GROUND-60,'#6d8f78');for(let x=0;x<BG_W+8;x+=8)b.cloud(x,58+Math.round(b.R()*3),4,'#f5f9fc','#d9e7f1');for(let x=4;x<BG_W;x+=10)b.tree(x,4,4,'#3f3226','#58796a','#4a6a5c');b.cloud(40,18,4,'#ffffff','#e1eef7');b.cloud(150,10,3,'#ffffff','#e1eef7');b.ground('#7f9a5f','#5f7c48','#4c6539','#536f40')}},
- // El paso de los siglos: noche estrellada con luna.
- centuries:{top:'#0f1430',bottom:'#2c3a44',paint:b=>{b.sky(['#0f1430','#16204a','#1f2c5c','#2b3a6c','#3c4b7a']);b.stars(130,70,['#ffffff','#cdd8ff','#9fb0e8']);b.disc(130,24,8,'#f3f0dc');b.disc(127,22,2,'#d9d4b8');b.disc(133,27,1,'#d9d4b8');b.ridge(70,6,.05,2,'#1a2440');b.ground('#3d4f5c','#2c3a44','#24303a','#26333c')}},
- // Neutro para la introducción, el inserto y las tarjetas de cierre.
+ landPast:{top:'#96c3cf',bottom:'#859e64',paint:b=>{b.sky(['#96c3cf','#bdd9d7','#e6e8cd']);b.cloud(28,19,5,'#f5f3df','#d5e0d8');b.cloud(131,13,4,'#f5f3df','#d5e0d8');b.ridge(59,13,.043,2,'#93ae99');b.ridge(74,10,.08,4,'#6e956f');b.px(57,43,56,27,'#b7bba0');b.poly([[52,43],[65,32],[103,32],[118,43]],'#839b8c');for(const x of [56,106]){b.px(x,33,8,40,'#c7c7a7');b.poly([[x-1,33],[x+4,23],[x+9,33]],'#8aa196')}b.px(77,47,15,25,'#677f70');b.ground('#adc17d','#859e64','#738b54','#6b8151',70)}},
+ storm:{top:'#333e51',bottom:'#798d9a',paint:b=>{b.sky(['#333e51','#4d5868','#697784','#a0a6ab']);for(let x=0;x<180;x+=19)b.cloud(x,15+(x%17),12,'#414b5c','#576270');for(const x of [29,139]){b.line(x,18,x-5,32,'#e8eef0');b.line(x-5,32,x+2,31,'#e8eef0');b.line(x+2,31,x-7,51,'#e8eef0')}b.px(0,70,170,35,'#798d9a');b.px(0,71,170,2,'#b7c1c2');for(let k=0;k<90;k++)b.px(b.R()*170,75+b.R()*30,2+b.R()*9,1,k%3?'#8fa1aa':'#b3c0c5');for(const x of [29,139])for(let y=78;y<104;y+=4)b.px(x-(y-78)*.12,y,2+(y-78)*.2,1,'#c0ccd0')}},
+ woodsPresent:{top:'#8fb7ae',bottom:'#839365',paint:b=>sealedGrounds(b)},
+ groundsPast:{top:'#8fb7ae',bottom:'#839365',paint:b=>sealedGrounds(b,true)},
+ templePast:{top:'#b7b79a',bottom:'#bbb99a',paint:b=>templeHall(b,false)},
+ templePresent:{top:'#737f72',bottom:'#8b927b',paint:b=>templeHall(b,true)},
+ desertPast:{top:'#73b9ce',bottom:'#b4b792',paint:b=>timeTemple(b,true)},
+ desertPresent:{top:'#cabba0',bottom:'#c5b897',paint:b=>timeTemple(b,false)},
+ gorgePresent:{top:'#afc9cc',bottom:'#cdb080',paint:b=>lanayruGorge(b)},
+ gorgePast:{top:'#afc9cc',bottom:'#8ba477',paint:b=>lanayruGorge(b,true)},
+ spring:{top:'#527969',bottom:'#b9b68b',paint:b=>{
+  b.sky(['#527969','#729881','#a3b398']);b.ridge(35,8,.1,2,'#577459');b.px(0,36,170,37,'#7a8d68');
+  for(let x=0;x<170;x+=14){b.px(x,34,3,35,'#687e5d');b.disc(x,30,11,'#527b55')}
+  b.px(0,68,170,37,'#70a59a');for(const x of [28,64,142]){b.px(x,35,3,38,'#bad5b5');b.px(x+1,36,1,36,'#e0e7c4');b.oval(x+1,73,7,2,'#b8d3b0')}
+  b.px(82,64,44,12,'#a1a184');b.px(78,62,52,3,'#c6c49b');b.px(88,57,32,5,'#d7d0a5');
+  b.px(101,43,7,14,'#c8c6a3');b.disc(104,40,3,'#ded7b1');b.poly([[102,47],[94,41],[95,49],[103,52]],'#b6b895');b.poly([[106,47],[114,41],[113,49],[106,52]],'#b6b895');
+  for(let n=0;n<55;n++)b.px(b.R()*170,77+b.R()*28,4,1,'#a0c4a4');
+  b.poly([[19,84],[151,84],[164,105],[6,105]],'#b9b68b');b.px(19,84,132,2,'#ded4a7');
+  for(let x=24;x<154;x+=21)b.line(x,86,x-6,104,'#989e7c');for(const x of [4,164])b.disc(x,64,10,'#416d50');
+ }},
+ skyPresent:{top:'#74bddf',bottom:'#edf1dc',paint:b=>{
+  b.sky(['#74bddf','#a6d5e5','#d1e6e4','#edf1dc'],0,105);
+  for(const [x,y,r] of [[12,34,5],[111,13,5],[153,47,7],[48,77,8]])b.cloud(x,y,r,'#f8f5e5','#d8e5df');
+  // Distant inhabited islands, red roofs, a windmill and a falling stream.
+  for(const [x,y,w] of [[17,56,36],[97,47,47],[145,26,21]]){
+   b.poly([[x,y],[x+w,y],[x+w-7,y+9],[x+w*.55,y+20],[x+6,y+9]],'#928c72');b.poly([[x+w*.5,y+2],[x+w-2,y+2],[x+w*.55,y+20]],'#6f7d71');b.px(x,y,w,3,'#8cac6e');
+   if(w>25){for(const dx of [5,18]){b.px(x+dx,y-8,10,8,'#e3d1ac');b.poly([[x+dx-2,y-8],[x+dx+5,y-15],[x+dx+12,y-8]],'#b17c65');b.px(x+dx+4,y-4,2,4,'#74847b')}}
+  }
+  b.px(119,48,3,27,'#b3dedc');b.px(120,50,1,26,'#e3efdf');b.px(133,33,5,14,'#ded6b6');b.line(129,30,142,40,'#f0e6c6');b.line(142,30,129,40,'#f0e6c6');
+  for(let x=-5;x<180;x+=18)b.cloud(x,95+(x%5),8,'#f7f4e5','#dde7dd');
+ }},
+ centuries:{top:'#172841',bottom:'#3c534b',paint:b=>{b.sky(['#172841','#273c53','#455a66']);b.stars(75,62,['#e9ecda','#aec8c8']);b.disc(133,22,7,'#dedfc1');b.ridge(67,8,.06,2,'#314e48');b.px(57,51,58,34,'#52665b');b.poly([[53,51],[64,41],[108,41],[119,51]],'#3c544e');b.px(80,60,12,25,'#283d38');b.ground('#60745b','#3c534b','#334941','#30453e',60)}},
  plain:{top:'#2c2924',bottom:'#34302a',paint:b=>{b.px(0,0,BG_W,BG_GROUND,'#2c2924');for(let y=4;y<BG_GROUND;y+=8)for(let x=4;x<BG_W;x+=8)b.px(x,y,1,1,'#3a362f');b.px(0,BG_GROUND,BG_W,1,'#4a443b');b.px(0,BG_GROUND+1,BG_W,BG_H-BG_GROUND-1,'#34302a')}}
 };
-const BACKDROP_OF={'00':'plain','00a':'landPast','00b':'landPast','01':'landPast','02':'desertPast','03':'templePast','04':'templePast','05':'templePast','06':'centuries','07':'templePresent','08a':'skyPresent','08b':'woodsPresent','09':'woodsPresent','P0':'plain','10':'desertPresent','11':'templePresent','12':'templePresent','13':'desertPresent','14':'templePast','15':'templePresent','16':'desertPresent','17':'woodsPresent','18':'woodsPresent','19':'templePast','20':'landPast','21':'storm','22':'templePast','23':'templePast','24':'centuries','W1':'woodsPresent','25':'templePresent','26':'templePresent','27':'plain','28':'plain'};
+const BACKDROP_OF={'00':'plain','00a':'landPast','00b':'landPast','01':'landPast','02':'desertPast','03':'templePast','04':'templePast','05':'templePast','06':'centuries','07':'templePresent','08a':'skyPresent','08b':'spring','09':'woodsPresent','P0':'plain','10':'desertPresent','11':'templePresent','12':'templePresent','13':'gorgePresent','14':'templePast','15':'templePresent','16':'gorgePresent','17':'woodsPresent','18':'woodsPresent','19':'templePast','20':'groundsPast','21':'storm','22':'templePast','23':'templePast','24':'centuries','W1':'woodsPresent','25':'templePresent','26':'templePresent','27':'plain','28':'plain'};
 {const layer=document.getElementById('bg');let seed=11;for(const [name,b] of Object.entries(BACKDROPS)){b.el=mk('image',{href:paintBackdrop(seed++,b.paint),width:340,height:210,preserveAspectRatio:'none','image-rendering':'pixelated',class:'backdrop'},layer);b.el.style.display='none'}}
+// Restore the gorge's living ground only inside the animated Timeshift field.
+const gorgeClip=mk('clipPath',{id:'gorge-timeshift-clip',clipPathUnits:'userSpaceOnUse'},document.getElementById('bg'));
+const gorgeClipCircle=mk('circle',{cx:0,cy:0,r:0},gorgeClip);
+const gorgeLiving=BACKDROPS.gorgePast.el.cloneNode(true);gorgeLiving.setAttribute('clip-path','url(#gorge-timeshift-clip)');document.getElementById('bg').appendChild(gorgeLiving);
 // Muestra el decorado de la escena; el marco del escenario toma su cielo arriba y su suelo abajo por si sobra espacio.
-function showBackdrop(id){const name=BACKDROP_OF[id]||'plain';for(const [key,b] of Object.entries(BACKDROPS))b.el.style.display=key===name?'':'none';const b=BACKDROPS[name];document.querySelector('.stage-wrap').style.background=`linear-gradient(${b.top} 50%,${b.bottom} 50%)`}
+function showBackdrop(id){const name=BACKDROP_OF[id]||'plain';for(const [key,b] of Object.entries(BACKDROPS))b.el.style.display=key===name?'':'none';const b=BACKDROPS[name];document.querySelector('.stage-wrap').style.background=`linear-gradient(${b.top} 50%,${b.bottom} 50%)`;if(REC)document.documentElement.style.setProperty('--rec-bd',`url("${b.el.getAttribute('href')}")`)}
 const tagEls=[0,1,2,3].map(()=>{const el=mk('text',{class:'tag','text-anchor':'middle'},FX);el.style.opacity=0;return el});
 const S=[
 {id:'00',a:0,e:4,h:'',d:14,l:'Introduction',t:'One history that can be revised',
@@ -639,6 +768,7 @@ function render(t){
  // Campo del Timeshift Stone: se abre al golpear la piedra y, tras la cura, se cierra.
  if(sc==='13')put('bubble',165,125,ease((t-2)/.3),85*ease((t-2)/.9));
  if(sc==='16')put('bubble',165,125,ease((t-2)/.3)*(1-ease((t-6.9)/.3)),85*ease((t-2)/.9)*(1-ease((t-6.4)/.8)));
+ {const active=sc==='13'||sc==='16',field=states.bubble;gorgeLiving.style.display=active?'':'none';if(active){gorgeClipCircle.setAttribute('cx',field[0]);gorgeClipCircle.setAttribute('cy',field[1]);gorgeClipCircle.setAttribute('r',field[3]);gorgeLiving.style.opacity=field[2]}}
  E.tstone.style.filter=sc==='13'&&t>1.9||sc==='16'&&t>1.9&&t<6.9?'brightness(1.5) drop-shadow(0 0 2px #9fe3ef)':'';
  // El dragón: moribundo (desaturado) hasta que come el fruto; curado, se eleva y deja el desfiladero.
  const sick=sc==='13'?1:sc==='16'?1-ease((t-4.5)/1):0;E.lan.style.filter=sick>0?`saturate(${1-.75*sick}) brightness(${1-.25*sick})`:'';
@@ -716,6 +846,8 @@ const dt=document.getElementById('dt');S.forEach((s,n)=>{if(n===0||S[n-1].a!==s.
 // ===== Quién existe y cuándo: carriles por personaje sobre el calendario =====
 // Eje: pasado remoto a la izquierda, hueco de milenios y presente a la derecha. Cada punto es un momento del calendario.
 const TX={start:130,a:145,b:182,c:219,q:258,d:300,e:338,f:376,g:414,h:452,i:494,g0:522,g1:590,t0:605,t1:630,t2:655,t3:680,t4:705,t5:730,t6:755,t7:780,t8:805,t9:830,t10:855,t11:885,t12:915,t13:950,end:990};
+// En la vista de grabación la línea ocupa todo el ancho de la pantalla: el eje se estira a partir del inicio de los carriles.
+if(REC)for(const k in TX)TX[k]=130+(TX[k]-130)*1.8;
 const LANES=[['ze','Hylia / Zelda','#d77fa1','zelda'],['li','Link','#4f9a52','hero'],['ip','Impa','#5b78b8','impa'],['gr','Groose','#c4553f','groose'],['gh','Ghirahim','#9a8fc0','ghirahim'],['de','Demise / Imprisoned','#a0475b','demise'],['la','Lanayru','#d9b23f','lanayru'],['tr','Life Tree','#2f7a5a','tree']];
 const LANE_Y=Object.fromEntries(LANES.map(([id],n)=>[id,42+n*25])),LANE_COLOR=Object.fromEntries(LANES.map(([id,,c])=>[id,c]));
 // Momentos del calendario y diapositivas que los muestran (la q es la época sin fecha de la garganta).
@@ -792,10 +924,10 @@ const X=TX,FACTS=[
  ['25','gr','seg',X.t13,X.end,0,'live',0,''],
  ['26','ip','x',X.t13,0,0,'',0,'Impa’s watch ends and she fades; only the bracelet remains']
 ];
-const TK=document.getElementById('tk'),tkNote=document.getElementById('tk-note'),tkDefs=mk('defs',{},TK),tkStatic=mk('g',{},TK),tkLayer=mk('g',{},TK);
+const TK=document.getElementById('tk'),tkNote=document.getElementById('tk-note'),tkDefs=mk('defs',{},TK),tkStatic=mk('g',{},TK),tkLayer=mk('g',{},TK);if(REC)TK.setAttribute('viewBox',`0 0 ${X.end+18} 250`);
 const laneY=(lane,row)=>LANE_Y[lane]+(row?6:0),TK_BOTTOM=LANE_Y.tr+20;
 // Flechas por color de carril.
-for(const [id,,color] of LANES){const m=mk('marker',{id:'tk-ar-'+id,viewBox:'0 0 6 6',refX:5,refY:3,markerWidth:4.5,markerHeight:4.5,orient:'auto-start-reverse'},tkDefs);mk('path',{d:'M0 0L6 3L0 6Z',fill:color},m)}
+for(const [id,,color] of LANES){const m=mk('marker',{id:'tk-ar-'+id,viewBox:'0 0 6 6',refX:5,refY:3,markerWidth:6,markerHeight:6,orient:'auto-start-reverse'},tkDefs);mk('path',{d:'M0 0L6 3L0 6Z',fill:color},m)}
 // Parte fija: eras, hueco de milenios, carriles con su icono y marcas del calendario.
 {const head=(x,s)=>{const t=mk('text',{class:'tk-axis','text-anchor':'middle',x,y:14},tkStatic);t.textContent=s};head((X.start+X.g0)/2,'THE DISTANT PAST');head((X.t0+X.end)/2,'THE PRESENT');
  mk('rect',{x:X.g0,y:22,width:X.g1-X.g0+15,height:TK_BOTTOM-22,fill:'var(--wash)',opacity:.55,rx:4},tkStatic);
@@ -806,10 +938,12 @@ for(const [id,,color] of LANES){const m=mk('marker',{id:'tk-ar-'+id,viewBox:'0 0
   else{const t=mk('g',{transform:`translate(14 ${y+3.5}) scale(${kind==='demise'?.2:.3})`},icon);const fig=makeFigure(t,null,name,kind);if(kind==='zelda')setZeldaOutfit(fig,'zelda-white')}
   const label=mk('text',{class:'tk-name',x:27,y:y+3.5},tkStatic);label.textContent=name}}
 const tickEls=TICKS.map(([key,ids,mark])=>{const x=X[key];mk('path',{d:`M${x} 26V${TK_BOTTOM-4}`,stroke:'var(--line)','stroke-width':.6,'stroke-dasharray':'1 3'},tkStatic);const t=mk('text',{class:'tk-tick','text-anchor':'middle',x,y:TK_BOTTOM+9},tkStatic);t.textContent=(mark?mark+' ':'')+ids.map(id=>SC[id]+1).join('·');return{t,ids}});
+// Cruces que una diapositiva retoma aunque se revelaran antes (por diapositiva que los reveló); el resumen los muestra todos.
+const ARC_FOCUS={'07':['03'],'19':['18'],'22':'all','25':['18','23']};
 // Dibuja el estado de la historia tal como se conoce en la diapositiva actual.
 function drawTracks(){
  // A partir de la corrección (H3) los cruces llevan un halo dorado: la regla 2 los conserva.
- const s=S[pos],protectedArcs=/H3/.test(s.h)||s.e===3,fresh=[],stale=[];tkLayer.replaceChildren();
+ const s=S[pos],protectedArcs=/H3/.test(s.h)||s.e===3,focus=s.e===3?'all':ARC_FOCUS[s.id]||[],fresh=[],stale=[];tkLayer.replaceChildren();
  const now=NOW[s.id];if(now==='gap')mk('rect',{x:X.g0,y:22,width:X.g1-X.g0+15,height:TK_BOTTOM-22,fill:'#c8a24a',opacity:.16,rx:4},tkLayer);
  else if(now){mk('path',{d:`M${X[now]} 24V${TK_BOTTOM}`,stroke:'#c8a24a','stroke-width':1.4,'stroke-dasharray':'3 2'},tkLayer);if(s.id==='13'||s.id==='16')mk('path',{d:`M${X.q} 24V${TK_BOTTOM}`,stroke:'#7fd3e0','stroke-width':1.2,'stroke-dasharray':'2 2'},tkLayer)}
  const order={seg:0,lnk:1,reb:1,ts:1,arc:2,in:3,pt:3,x:4,br:4,tri:4,ring:5};
@@ -818,10 +952,10 @@ function drawTracks(){
  for(const f of visible){const [r,lane,kind,x1,x2,row,style,gone,text]=f,isGone=gone&&SC[gone]<=pos,color=LANE_COLOR[lane],y=laneY(lane,row)+(isGone?5:0);let el;
   if(kind==='seg'){const st={live:{w:4},old:{w:4,o:.7},dot:{w:3,d:'1 4'},hylia:{w:4,c:'#c9a64e'},bones:{w:3,d:'4 3',c:'#a59c86'},demise:{w:5}}[style];const c=st.c||color;
    el=mk('path',{d:`M${x1} ${y}H${x2}`,stroke:isGone?'var(--muted)':c,'stroke-width':isGone?2.5:st.w,'stroke-linecap':'round','stroke-dasharray':isGone?'3 3':st.d||'',opacity:isGone?.45:st.o||1},tkLayer);el.style.setProperty('--c',c)}
-  else if(kind==='arc'||kind==='reb'||kind==='ts'||kind==='lnk'){if(isGone)continue;const y2=kind==='arc'?laneY(lane,style):y,lift=kind==='arc'?(x2<x1?-13:13):kind==='ts'?-10:-8,d=`M${x1} ${y}C${x1} ${y+lift} ${x2} ${y2+lift} ${x2} ${y2}`;
-   if(kind==='arc'&&protectedArcs)mk('path',{d,fill:'none',stroke:'#c8a24a','stroke-width':3.4,opacity:.35},tkLayer);
-   // Los cruces de diapositivas anteriores quedan atenuados; los nuevos, a plena intensidad.
-   el=mk('path',{d,fill:'none',stroke:kind==='arc'?color:kind==='ts'?'#7fd3e0':'#c8a24a','stroke-width':kind==='arc'?1.3:1.1,'stroke-dasharray':kind==='arc'?'':'2 2',opacity:SC[r]===pos?1:.5,...(kind==='arc'?{'marker-end':`url(#tk-ar-${lane})`}:{})},tkLayer)}
+  else if(kind==='arc'||kind==='reb'||kind==='ts'||kind==='lnk'){if(isGone)continue;const y2=kind==='arc'?laneY(lane,style):y,lift=kind==='arc'?(x2<x1?-13:13):kind==='ts'?-10:-8,d=`M${x1} ${y}C${x1} ${y+lift} ${x2} ${y2+lift} ${x2} ${y2}`,lit=SC[r]===pos||focus==='all'||focus.includes(r);
+   // Solo los cruces de esta diapositiva se marcan (con su halo, si toca); el resto queda fino y casi transparente para no saturar la línea.
+   if(kind==='arc'&&protectedArcs&&lit)mk('path',{d,fill:'none',stroke:'#c8a24a','stroke-width':2.4,opacity:.35},tkLayer);
+   el=mk('path',{d,fill:'none',stroke:kind==='arc'?color:kind==='ts'?'#7fd3e0':'#c8a24a','stroke-width':lit?.9:.6,'stroke-dasharray':kind==='arc'?'':'2 2',opacity:lit?1:.22,...(kind==='arc'?{'marker-end':`url(#tk-ar-${lane})`}:{})},tkLayer)}
   else if(kind==='in')el=mk('circle',{cx:x1,cy:y,r:3.4,fill:'var(--card)',stroke:color,'stroke-width':1.4},tkLayer);
   else if(kind==='pt')el=mk('circle',{cx:x1,cy:y,r:3.4,fill:color},tkLayer);
   else if(kind==='x'){el=mk('path',{d:`M${x1-3.5} ${y-3.5}l7 7m0-7l-7 7`,stroke:isGone?'var(--muted)':'var(--ink)','stroke-width':1.8,opacity:isGone?.45:1},tkLayer);el.style.setProperty('--c','var(--ink)')}
@@ -883,11 +1017,22 @@ function go(n,continueAll=false){pos=clamp(n,0,S.length-1);i=pos;const s=S[i],D=
 function toggle(){if(playing&&autoplay){playing=false;autoplay=false;stopNarration()}else if(playing)autoplay=true;else{if(time>=dur()&&narr.done){if(pos===S.length-1){go(0,true);return}time=0;prepareNarration(true)}else if(narr.on&&!narr.done)speakFrom(narr.idx);playing=true;autoplay=true;lastFrame=0}narrUI();updatePlay()}
 document.getElementById('bp').onclick=()=>go(pos-1);document.getElementById('bn').onclick=()=>go(pos+1);document.getElementById('br').onclick=()=>{time=0;playing=true;lastFrame=0;render(time);prepareNarration(true);updatePlay()};document.getElementById('ba').onclick=toggle;
 seek.addEventListener('input',()=>{time=Number(seek.value);playing=false;autoplay=false;stopNarration();render(time);narrUI();updatePlay()});
-document.addEventListener('keydown',e=>{if(e.target.closest('input,button,textarea,select')||e.altKey||e.ctrlKey||e.metaKey)return;if(e.code==='Space'){e.preventDefault();toggle()}else if(e.key==='ArrowRight'){e.preventDefault();go(pos+1)}else if(e.key==='ArrowLeft'){e.preventDefault();go(pos-1)}else if(e.key.toLowerCase()==='r')document.getElementById('br').click();else if(e.key.toLowerCase()==='n'&&synth)narBtn.click()});
+document.addEventListener('keydown',e=>{if(e.target.closest('input,button,textarea,select')||e.altKey||e.ctrlKey||e.metaKey)return;if(e.code==='Space'){e.preventDefault();toggle()}else if(e.key==='ArrowRight'){e.preventDefault();go(pos+1)}else if(e.key==='ArrowLeft'){e.preventDefault();go(pos-1)}else if(e.key.toLowerCase()==='r')document.getElementById('br').click();else if(e.key.toLowerCase()==='n'&&synth)narBtn.click();else if(REC&&e.key.toLowerCase()==='f')fullScreen(!document.fullscreenElement)});
 document.addEventListener('visibilitychange',()=>{lastFrame=0});reducedMotion.addEventListener('change',()=>{if(reducedMotion.matches){playing=false;autoplay=false;time=dur();render(time);updatePlay()}});
 // Al acabar la animación, la diapositiva espera en su último fotograma hasta que termina la narración.
-function tick(now){if(playing&&!document.hidden){if(lastFrame)time=Math.min(dur(),time+Math.min((now-lastFrame)/1000,.1));render(time);if(time>=dur()){narrUI();if(narr.done){if(autoplay&&pos<S.length-1)go(pos+1,true);else{playing=false;autoplay=false;narrUI();updatePlay()}}}}lastFrame=now;requestAnimationFrame(tick)}
+// En la grabación muda espera además lo que se tardaría en leer su texto, para la voz en off de quien graba.
+let overrun=0,recSilent=false;
+const readTime=id=>sentences(NARRATION[id]||'').reduce((t,x)=>t+x.split(/\s+/).length/2.5+.3,1);
+function tick(now){if(playing&&!document.hidden){const step=lastFrame?Math.min((now-lastFrame)/1000,.1):0;overrun=time>=dur()?overrun+step:0;time=Math.min(dur(),time+step);render(time);if(time>=dur()){narrUI();if(narr.done&&(!recSilent||overrun>=readTime(S[pos].id)-dur())){if(autoplay&&pos<S.length-1)go(pos+1,true);else{playing=false;autoplay=false;narrUI();updatePlay()}}}}lastFrame=now;requestAnimationFrame(tick)}
 go(0);requestAnimationFrame(tick);
+// Vista de grabación: queda en pausa en el primer fotograma hasta que se elige cómo reproducir.
+function fullScreen(on){const p=on?document.documentElement.requestFullscreen?.():document.fullscreenElement?document.exitFullscreen():null;p?.catch(()=>{})}
+if(REC){const panel=document.getElementById('rec-start'),voice=document.getElementById('rec-voice');
+ playing=false;time=0;render(0);updatePlay();panel.hidden=false;
+ if(synth)voice.append(narVoice.parentElement,narRate.parentElement);else{document.getElementById('rec-narrated').hidden=true;voice.hidden=true}
+ // Se espera a que la pantalla completa se asiente para que la grabación empiece limpia.
+ const start=narrated=>{panel.hidden=true;document.documentElement.classList.add('rec-live');recSilent=!narrated;narr.on=narrated;fullScreen(true);setTimeout(()=>go(0,true),900)};
+ document.getElementById('rec-narrated').onclick=()=>start(true);document.getElementById('rec-silent').onclick=()=>start(false)}
 </script>
 </body>
 </html>
