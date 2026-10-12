@@ -365,16 +365,37 @@ instructions for the next agent, not additional dialogue for the characters.
 Retain a visible theory label for inferred events. Do not put invented
 dialogue in quotation marks as though it were game dialogue.
 
-Use stable IDs **00a, 00b, 01–09, P0, 10–24, W1, 25–27** in playback
-order: 31 scenes. 00a and 00b are the opening already built in the
-current presentation. P0 is an inset explaining the bracelet, played
+Use stable IDs **00, 00a, 00b, 01–09, P0, 10–24, W1, 25–28** in playback
+order: 33 scenes. 00 is a brief introduction card. 00a and 00b are the
+opening already built in the current presentation. P0 is an inset explaining the bracelet, played
 right after Link meets Old Impa. W1 is the corrected-history wish
-interlude. These IDs preserve the existing draft's journey references
+interlude. 28 is a closing FAQ card. These IDs preserve the existing draft's journey references
 without renumbering.
 
 Any scene whose caption or staging makes a theory claim carries the
 visible theory marker. At minimum: 01, 03, 06, 07, 09, P0, 14–16, 21–26,
 and W1.
+
+#### 00 — One history that can be revised
+*Introduction*
+
+**Caption:**
+A proposed reading of Skyward Sword's time travel. The travelers keep
+their journeys, while the world they return to may change. A few stated
+rules try to explain what the game leaves open.
+
+**Staging:** A short card before the story starts:
+
+- **Lead:** What if time preserves the travelers, but rewrites the world
+  they return to?
+- **What this is:** one history that can be revised, rather than a fixed
+  loop or a set of branching timelines.
+- **What it tries to do:** explain the details the game leaves open (Old
+  Impa's early bracelet, the tree that suddenly exists, the dragon that was
+  already dead, the sleeping Zelda who is never seen again) with a few
+  stated rules and without breaking established lore.
+- **How to follow it:** slides follow the order of the adventure, not the
+  calendar; the character panel tracks who exists when.
 
 ### Act One — the past receives its visitors
 
@@ -807,11 +828,48 @@ proposed rules, not laws the game explicitly confirms.
   or exact repetition of the entire adventure is required.
 - **Limits:** the earlier farewell and failure are hypothetical; the
   traveler, wish, and continuing-line rules are assumptions, and the
-  last one was written for the crystal; crystal erasure is still an
-  interpretation of an absence; the corrected present between preserved
-  crossings is left unreconstructed.
+  last one was written for the crystal; crystal erasure interprets an
+  assumed absence, since the crystal-bound Zelda might still be there
+  and the game simply never shows or mentions her again; the corrected
+  present between preserved crossings is left unreconstructed.
 
 Do not end with “all contradictions solved” or “the game confirms this.”
+
+#### 28 — Questions that might come up
+*Closing FAQ*
+
+**Caption:**
+A few questions the core of the theory doesn't cover in detail, with the
+short answer it would give to each.
+
+**Staging:** A readable card in two columns, after the closing assessment.
+Keep each answer short and consistent with the five rules; where the
+theory has no answer, say the question is open.
+
+- **Was Old Impa erased like the sleeping Zelda?** No. She lived through
+  the revised centuries; she fades because her watch is over, not because
+  her life was replaced.
+- **Why doesn't the sleeping Zelda just wake up early?** Two Zeldas would
+  then carry on in the same history, one with no journey to connect to.
+  Rule 5 keeps one continuing line per traveler.
+- **If the Imprisoned never attacks in the corrected history, why do the
+  three still travel to the past?** Completed crossings survive revision
+  (rule 2) and may keep their original causes. The corrected present
+  between them is deliberately left open.
+- **Does anyone make the wish again?** No. The statue descends once, at the
+  original moment, as the surviving result of Link's wish (rule 3).
+- **Why don't Timeshift Stones rewrite history every time?** They show a
+  local earlier state. Only Link's cure is treated as a lasting change;
+  exactly where that line falls is an open question.
+- **How many earlier attempts were there, and what happened to their
+  sword?** Unknown. The theory needs only one earlier attempt and no sword
+  reset; an earlier hero could simply have kept the blade.
+- **Is this a closed time loop?** Not strictly. It is one history that can
+  be revised and contains causal loops, with no parallel branches left
+  behind.
+- **Does this change Demise's curse or the later games?** No. The curse,
+  the Master Sword and the Triforce carry on as the game ends; the theory
+  only rearranges events inside Skyward Sword.
 
 ## Narration (spoken script)
 
@@ -821,6 +879,7 @@ text. The presentation splits scene 08 into 08a (the fall) and 08b (the
 awakening). Keep these lines in sync with the `NARRATION` table in
 `script-v2.html`.
 
+- **00:** This is a theory about time travel in Skyward Sword. What if time protects the people who travel through it, but rewrites the world they return to? With a few simple rules, it tries to explain the details the game leaves open, like Old Impa's bracelet, the tree that suddenly exists, and the sleeping Zelda who is never seen again, without breaking established lore.
 - **00a:** Long before the sky had people in it, the goddess Hylia struck down the demon king Demise. His body vanished, but the darkness he left behind was sealed deep beneath the earth.
 - **00b:** Hylia played her harp, and the land rose into the sky, carrying her people, her sword, and the Triforce. Below, the sealed darkness slowly took shape as a beast: the Imprisoned.
 - **01:** Hylia knew the seal would not hold forever. She would be reborn as a mortal, and Fi would guide a chosen hero. In this theory, Impa was told to wait at the temple for the goddess's future self.
@@ -852,7 +911,8 @@ awakening). Keep these lines in sync with the `NARRATION` table in
 - **W1:** When this corrected history reaches the moment of Link's wish, the statue still comes down, only now onto empty ground. The wish's result survives, even though what caused it no longer happened.
 - **25:** Link, Zelda and Groose come home. They remember the Imprisoned and everything they went through. Old Impa, in this theory, remembers a different vigil: guarding a sword, not fighting a beast.
 - **26:** Impa recognizes Zelda, and shows her the bracelet. Her duty is done, and she fades away, leaving it behind. Unlike the sleeping Zelda, her life was never erased. Her watch simply ended.
-- **27:** So that is the theory. History can be rewritten, but journeys through time survive, a fulfilled wish keeps its result, and each traveler keeps one line of life. None of it is confirmed by the game. It is one way to make the pieces fit.
+- **27:** So that is the theory. History can be rewritten, but journeys through time survive, a fulfilled wish keeps its result, and each traveler keeps one line of life. None of it is confirmed by the game. It's simply one possible way to make the pieces fit without breaking established lore or getting too deep into speculation.
+- **28:** Before we finish, here are a few questions that might come up, with the short answers this theory would give.
 
 ## Journey pairs
 
@@ -872,8 +932,8 @@ awakening). Keep these lines in sync with the `NARRATION` table in
 
 ### Narrative replacement
 
-- Use these 31 scenes as the new narrative source. Preserve their stable
-  string IDs (00a, 00b, 01–09, P0, 10–24, W1, 25–27) before mapping to
+- Use these 33 scenes as the new narrative source. Preserve their stable
+  string IDs (00, 00a, 00b, 01–09, P0, 10–24, W1, 25–28) before mapping to
   zero-based code indices. Old numeric scene references cannot be reused
   unchanged.
 - Replace the old subtitle about “a sword that ages twice” with the
@@ -1029,6 +1089,7 @@ physical result at its original time.
 The unshown earlier farewell and failure remain hypothetical backstory.
 Traveler continuity, wish protection, and the continuing-line rule are
 stipulated rules. The crystal's erasure follows from them, but it remains an
-interpretation of an absence, not an event confirmed by the ending. The
+interpretation of an assumed absence, not an event confirmed by the ending:
+the crystal-bound Zelda might still be there, unseen and unmentioned. The
 corrected present between the preserved crossings is deliberately left open. The script should explain these assumptions clearly without
 presenting them as new canonical scenes or a demonstrated universal theory.
