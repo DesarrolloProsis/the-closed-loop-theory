@@ -17,6 +17,9 @@
 .card{position:absolute;inset:16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:22px 24px;background:var(--card);border:1px solid var(--line);border-radius:12px;font:12px/1.6 system-ui,sans-serif;color:var(--ink);overflow:auto}.card[hidden]{display:none}.card h3{margin:0 0 8px;font:10px system-ui,sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold)}.card ol,.card ul{margin:0;padding-left:17px}.card li{margin-bottom:5px}.card p{margin:0}
 .timeline{flex-wrap:wrap;gap:2px}.scene-dot{width:20px;height:20px;font-size:9.5px}.era-divider{margin:0 4px}.scene-dot.inset{font-style:italic;outline:1px dashed var(--gold);outline-offset:-3px}
 @media(max-width:760px){.card{grid-template-columns:1fr;gap:10px;padding:14px;font-size:10px;inset:8px}}
+/* Insignia de época arriba a la derecha del escenario, con un color por época: pasado dorado, presente verde, inserto violeta. */
+.stage-era{position:absolute;top:14px;right:16px;z-index:2;font:650 11px system-ui,sans-serif;letter-spacing:1.8px;padding:6px 13px;border-radius:999px;border:1.5px solid currentColor;background:var(--card);color:var(--green);box-shadow:0 4px 14px #0002;pointer-events:none}.stage-era[data-era="0"]{color:var(--gold)}.stage-era[data-era="2"]{color:#9a7fc6}.stage-era[data-era="3"],.stage-era[data-era="4"]{color:var(--muted)}
+@media(max-width:580px){.stage-era{top:8px;right:8px;font-size:9px;padding:4px 9px;letter-spacing:1.2px}}
 /* Tarjeta de preguntas frecuentes: dos columnas de pregunta y respuesta breve. */
 .faq{grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;gap:10px 22px;font-size:11px;line-height:1.5}.faq .faq-title{grid-column:1/-1;margin:0}.faq-item b{display:block;font-weight:600;color:var(--ink)}.faq-item p{margin:2px 0 0;color:var(--muted)}
 @media(max-width:760px){.faq{grid-template-columns:1fr;font-size:10px}}
@@ -37,17 +40,16 @@
 <header class="masthead"><div><div class="eyebrow">A proposed reading of the game's time travel</div><h1 class="title">The <em>self-correcting</em> timeline.</h1></div><p class="intro"><strong>What if time preserves the travelers, but rewrites the world they return to?</strong><br>One revisable history in three acts, told in the order the adventure changes it, not in calendar order.</p></header>
 <section class="presentation" aria-label="Animated presentation">
 <div class="scene-header ui"><span id="eb" class="era">Distant past</span><span id="pl" class="location"></span><span id="hist" class="badge" title="Which version of the one revisable history this scene belongs to" hidden></span><span id="theory" class="badge theory" title="This scene shows the theory's proposal, not an event confirmed by the game" hidden>Theory</span><span id="ct" class="scene-count"></span></div>
-<div class="scene-layout"><div class="stage-wrap"><span class="stage-corner ui" aria-hidden="true">ONE REVISABLE HISTORY</span>
-<svg id="sc" viewBox="0 0 340 210" role="img" aria-labelledby="svg-title svg-desc"><title id="svg-title">Animated scene</title><desc id="svg-desc"></desc>
+<div class="scene-layout"><div class="stage-wrap"><svg id="sc" viewBox="0 0 340 210" role="img" aria-labelledby="svg-title svg-desc"><title id="svg-title">Animated scene</title><desc id="svg-desc"></desc>
 <defs><radialGradient id="portal"><stop stop-color="#c4b9e1" stop-opacity=".65"/><stop offset="1" stop-color="#a18dbf" stop-opacity=".06"/></radialGradient><linearGradient id="crystal" x2="1" y2="1"><stop stop-color="#e6d59b" stop-opacity=".25"/><stop offset="1" stop-color="#c3a255" stop-opacity=".6"/></linearGradient></defs>
-<g aria-hidden="true"><circle cx="250" cy="71" r="27" fill="var(--night)" opacity=".6"/><path d="M0 156Q35 127 73 155Q104 136 145 158Q192 132 222 155Q277 124 340 151V210H0Z" fill="var(--night)"/><path d="M0 170H340" stroke="var(--stone)" stroke-width=".7"/><path d="M0 171H340V210H0Z" fill="var(--stone)" opacity=".14"/><path d="M15 183h14m88 11h11m67-14h8m97 14h15" stroke="var(--stone)" stroke-width=".7"/></g><g id="ly"></g><g id="effects" pointer-events="none"></g></svg><span class="stage-bottom ui" id="stage-bottom">THE DISTANT PAST</span>
+<g aria-hidden="true"><circle cx="250" cy="71" r="27" fill="var(--night)" opacity=".6"/><path d="M0 156Q35 127 73 155Q104 136 145 158Q192 132 222 155Q277 124 340 151V210H0Z" fill="var(--night)"/><path d="M0 170H340" stroke="var(--stone)" stroke-width=".7"/><path d="M0 171H340V210H0Z" fill="var(--stone)" opacity=".14"/><path d="M15 183h14m88 11h11m67-14h8m97 14h15" stroke="var(--stone)" stroke-width=".7"/></g><g id="ly"></g><g id="effects" pointer-events="none"></g></svg><span class="stage-era ui" id="stage-era" data-era="0">THE DISTANT PAST</span>
 <div id="card" class="card" hidden><div><h3>Five rules</h3><ol><li>History can be replaced.</li><li>Completed time journeys survive.</li><li>A fulfilled wish survives at its original time.</li><li>Other consequences follow the revised history.</li><li>One traveler keeps one continuing line.</li></ol></div><div><h3>What differs</h3><p>Earlier attempts only reseal Demise. This adventure completes the wish, the defeat, and the containment in the sword. No physical sword reset and no exact repeat of the whole adventure are required.</p></div><div><h3>Limits</h3><ul><li>The earlier farewell and failure are hypothetical.</li><li>The traveler, wish, and continuing-line rules are assumptions; the last was written for the crystal.</li><li>The crystal's erasure interprets an assumed absence: the crystal-bound Zelda might still be there; the game simply never shows or mentions her again.</li><li>The corrected present between the preserved crossings is left open.</li></ul></div></div>
 <div id="opening" class="card opening" hidden><p class="opening-lead">What if time preserves the travelers, but rewrites the world they return to?</p>
 <p><b>What this is.</b> A proposed reading of Skyward Sword's time travel: one history that can be revised, rather than a fixed loop or a set of branching timelines.</p>
 <p><b>What it tries to do.</b> Explain the details the game leaves open, such as Old Impa's early bracelet, the tree that suddenly exists, the dragon that was already dead, and the sleeping Zelda who is never seen again, with a few stated rules and without breaking established lore.</p>
 <p><b>How to follow it.</b> Slides follow the order of the adventure, not the calendar. The panel below tracks who exists when, and how history is rewritten along the way.</p></div>
 <div id="faq" class="card faq" hidden><h3 class="faq-title">Questions that might come up</h3>
-<div class="faq-item"><b>Was Old Impa erased like the sleeping Zelda?</b><p>No. She lived through the revised centuries; she fades because her watch is over, not because her life was replaced.</p></div>
+<div class="faq-item"><b>What changes for the people of Skyloft, like Zelda's father?</b><p>Little they would notice. They live through the revised history (rule 4): Zelda, Link and Groose still leave for the surface, and the statue still drops from the island at the moment of the wish. How Zelda's fall plays out there is left open.</p></div>
 <div class="faq-item"><b>Why doesn't the sleeping Zelda just wake up early?</b><p>Two Zeldas would then carry on in the same history, one with no journey to connect to. Rule 5 keeps one continuing line per traveler.</p></div>
 <div class="faq-item"><b>If the Imprisoned never attacks in the corrected history, why do the three still travel to the past?</b><p>Completed crossings survive revision (rule 2) and may keep their original causes. The corrected present between them is deliberately left open.</p></div>
 <div class="faq-item"><b>Does anyone make the wish again?</b><p>No. The statue descends once, at the original moment, as the surviving result of Link's wish (rule 3).</p></div>
@@ -133,7 +135,7 @@ function spriteViewport(parent,kind,y=-56){
  return viewport;
 }
 // Escala por personaje con los pies (y=20) como pivote: Zelda a la altura de Link, Groose bastante más grande, Demise un gigante.
-const FIGURE_SCALE={zelda:1.18,groose:1.2,demise:1.4};
+const FIGURE_SCALE={zelda:1.18,groose:1.2,demise:1.4,impa:1.1};
 // La miniatura de Groose en el islote y el cristal de Zelda siguen las mismas proporciones.
 skyPeople.children[1].setAttribute('transform',`translate(29 ${-20*.18*FIGURE_SCALE.groose}) scale(${.18*FIGURE_SCALE.groose})`);
 {const s=1.28*FIGURE_SCALE.zelda;crystalShell.setAttribute('transform',`translate(0 ${13+24*1.28-24*s}) scale(${s})`)}
@@ -286,7 +288,7 @@ const S=[
  w:'One woman at two points in her life: one stays, the other steps through the gate.',
  k:{gate:[45,170,1,1],i2:[150,150,1,1,45,150,0,1,3.1,2],ip:[400,150,1,1,215,150,1,1,.05,2.6],ze:[380,150,1,1,268,150,1,1,.1,2.6]},
  q:{ip:[[0,'idle'],[3,'bless'],[3.9,'idle']],i2:[[0,'idle'],[3.2,'bless'],[4.1,'idle']]},lk:{ip:-1,ze:-1},
- tg:[['i2','BEFORE HER JOURNEY',1,6.9],['ip','AFTER HER JOURNEY',2.7,8.5]]},
+ tg:[['i2','BEFORE HER JOURNEY',1,6.9,-54],['ip','AFTER HER JOURNEY',2.7,8.5,-63]]},
 {id:'04',a:1,e:0,h:'H0',l:'Temple of Hylia',t:'Link arrives',
  c:'Link arrives through the other end of the temple gate, carrying the sword strengthened by the Sacred Flames. Zelda reveals Hylia’s plan and gives the blade her blessing.',
  w:'A blessing passes from Zelda to the blade.',
@@ -306,7 +308,7 @@ const S=[
  c:'The younger Impa emerges in the present. Her older self already lives in this era, having taken the long way through the centuries. The new arrival sets out to find and protect Zelda.',
  w:'A young guardian arrives where her older self already waits.',
  k:{gate:[95,170,1,1],crys:[305,140,1,1],oi:[255,150,1,1],ip:[95,150,0,1,150,150,1,1,.2,1.5,-30,150,1,1,2.8,2.4]},
- lk:{ip:1},tg:[['ip','JUST ARRIVED FROM THE PAST',1.6,4.8],['oi','THE SAME IMPA, CENTURIES OLDER',2.4,8.5,-32]]},
+ lk:{ip:1},tg:[['ip','JUST ARRIVED FROM THE PAST',1.6,4.8,-54],['oi','THE SAME IMPA, CENTURIES OLDER',2.4,8.5,-32]]},
 {id:'08a',a:2,e:1,h:'H0',l:'Skyloft',t:'Zelda falls',
  c:'In the present, Ghirahim’s tornado tears Zelda, still in her pink dress, from Skyloft and drops her on the surface far below. Young Impa did not cause the fall.',
  w:'A tornado tears Zelda from Skyloft, and Ghirahim vanishes.',
@@ -373,7 +375,7 @@ const S=[
  w:'Zelda is pulled through first. Her friends give chase.',
  k:{gate:[45,170,1,1],ze:[185,150,1,1,72,150,0,1,.4,2.4],gh:[150,150,1,1,45,150,0,1,.4,2.4],li:[245,150,1,1,45,150,0,1,1.6],gr:[300,150,1,1,45,150,0,1,1.8],cross:[45,171,0,30,45,171,.9,30,3.2,.6]},
  q:{gh:[[0,'idle']],ze:[[0,'cast']],li:[[0,'guard'],[2.5,'runA']],gr:[[0,'idle'],[2.8,'runA']]},lk:{li:-1,gr:-1,gh:-1,ze:1},
- tg:[['cross','PROTECTED CROSSINGS',5.6,8.5,12]]},
+ tg:[['cross','PROTECTED CROSSINGS',5.6,8.5,-70]]},
 {id:'19',a:3,e:0,h:'H2',l:'Temple of Hylia',t:'Act One, a little later',cap:['gh','z2'],
  c:'For Link, a long adventure has passed. Here, the earlier visits are still recent. The kidnapped Zelda arrives in an era where her younger self is already asleep in the crystal.',
  w:'Two Zeldas in one era: one asleep, one dragged out of the gate.',
@@ -451,7 +453,7 @@ const NARRATION={
  '09':'Link draws the Goddess Sword and dives after her. At the Sealed Temple, an old woman is waiting, and behind her door the crystal is already there. Zelda’s trip into the past already belongs to this history.',
  'P0':'So where does Old Impa’s bracelet come from, if Zelda only gives it to her at the very end? This theory suggests she received it during an earlier attempt, one that sealed Demise away again but never finished him.',
  '10':'Ghirahim catches up with Zelda and Impa in the desert. Link holds him off while the two of them escape through the Gate of Time and destroy it. It is the arrival we saw earlier, seen from the other side.',
- '11':'Old Impa sends Link to the Sacred Flames. With his sword reforged, he wakes the temple’s own Gate of Time and steps into the past, straight into the meeting with Zelda we have already seen.',
+ '11':'Old Impa sends Link to the Sacred Flames. With the Master Sword reforged, he wakes the temple’s own Gate of Time and steps into the past, straight into the meeting with Zelda we have already seen.',
  '12':'Link comes back with a task. Zelda has asked him to find the Triforce and end Demise for good. To get there, he still has trials to face, and a song to learn.',
  '13':'In Lanayru Gorge, Link finds the bones of the Thunder Dragon. A Timeshift Stone shows the gorge as it once was: the dragon alive, but dying. Link takes a seedling that could cure him.',
  '14':'He carries the seedling back through the gate and plants it inside the ancient temple. Then he returns. And here, history changes for the first time: the seedling has had thousands of years to grow.',
@@ -464,7 +466,7 @@ const NARRATION={
  '21':'Link defeats Demise. What is left of the demon king is drawn into the Master Sword and sealed there, and Zelda’s soul comes back to her. In this theory, this is what stops the Imprisoned from ever returning.',
  '22':'And this is the theory’s boldest step. With Demise gone, the long sleep is no longer needed, so the history that required it is replaced. The sleeping Zelda disappears with it. The rescued Zelda stays, with everything she remembers.',
  '23':'Link leaves the Master Sword in its pedestal, and Fi falls asleep inside it. Impa stays behind to guard it. Before her friends go home, Zelda gives her the bracelet.',
- '24':'Impa grows old a second time, but in a different history: one without the Imprisoned’s attacks. She guards the sword, and waits for the friends she knows will come back.',
+ '24':'Impa grows old a second time, but in a different history: one without the Imprisoned’s attacks, where the Master Sword was always there. She guards it, and waits for the friends she knows will come back.',
  'W1':'When this corrected history reaches the moment of Link’s wish, the statue still comes down, only now onto empty ground. The wish’s result survives, even though what caused it no longer happened.',
  '25':'Link, Zelda and Groose come home. They remember the Imprisoned and everything they went through. Old Impa, in this theory, remembers a different vigil: guarding a sword, not fighting a beast.',
  '26':'Impa recognizes Zelda, and shows her the bracelet. Her duty is done, and she fades away, leaving it behind. Unlike the sleeping Zelda, her life was never erased. Her watch simply ended.',
@@ -824,7 +826,7 @@ function go(n,continueAll=false){pos=clamp(n,0,S.length-1);i=pos;const s=S[i],D=
  seek.max=D;document.getElementById('dur').textContent=D;prepareNarration(playing);
  document.getElementById('eb').textContent=ERA[s.e];document.getElementById('pl').textContent=s.l;document.getElementById('ct').textContent=String(pos+1).padStart(2,'0')+' / '+S.length;
  const hist=document.getElementById('hist');hist.textContent=HIST[s.h]||'';hist.hidden=!s.h;document.getElementById('theory').hidden=!s.th;card.hidden=s.id!=='27';faq.hidden=s.id!=='28';opening.hidden=s.id!=='00';
- document.getElementById('chapter').textContent=s.e===2?'Act Two · An inset':s.e>=3?s.l:ACT[s.a];document.getElementById('tt').textContent=s.t;document.getElementById('cp').textContent=caption;document.getElementById('action').textContent=s.w;document.getElementById('svg-title').textContent=`Scene ${pos+1}: ${s.t}`;document.getElementById('svg-desc').textContent=caption+' '+s.w;document.getElementById('stage-bottom').textContent=ERA_BOTTOM[s.e];document.querySelectorAll('.scene-dot').forEach((d,j)=>d.setAttribute('aria-current',String(j===pos)));document.getElementById('bp').disabled=pos===0;document.getElementById('bn').disabled=pos===S.length-1;drawTracks();render(time);updatePlay()}
+ document.getElementById('chapter').textContent=s.e===2?'Act Two · An inset':s.e>=3?s.l:ACT[s.a];document.getElementById('tt').textContent=s.t;document.getElementById('cp').textContent=caption;document.getElementById('action').textContent=s.w;document.getElementById('svg-title').textContent=`Scene ${pos+1}: ${s.t}`;document.getElementById('svg-desc').textContent=caption+' '+s.w;document.getElementById('stage-era').textContent=ERA_BOTTOM[s.e];document.getElementById('stage-era').dataset.era=s.e;document.querySelectorAll('.scene-dot').forEach((d,j)=>d.setAttribute('aria-current',String(j===pos)));document.getElementById('bp').disabled=pos===0;document.getElementById('bn').disabled=pos===S.length-1;drawTracks();render(time);updatePlay()}
 // La pausa calla la narración; al reanudar sigue desde la frase en la que iba.
 // Si una diapositiva ya se está reproduciendo sola, el primer clic pasa a reproducir todo en lugar de pausar.
 function toggle(){if(playing&&autoplay){playing=false;autoplay=false;stopNarration()}else if(playing)autoplay=true;else{if(time>=dur()&&narr.done){if(pos===S.length-1){go(0,true);return}time=0;prepareNarration(true)}else if(narr.on&&!narr.done)speakFrom(narr.idx);playing=true;autoplay=true;lastFrame=0}narrUI();updatePlay()}

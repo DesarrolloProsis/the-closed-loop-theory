@@ -846,9 +846,11 @@ short answer it would give to each.
 Keep each answer short and consistent with the five rules; where the
 theory has no answer, say the question is open.
 
-- **Was Old Impa erased like the sleeping Zelda?** No. She lived through
-  the revised centuries; she fades because her watch is over, not because
-  her life was replaced.
+- **What changes for the people of Skyloft, like Zelda's father?** Little
+  they would notice. They live through the revised history (rule 4): Zelda,
+  Link and Groose still leave for the surface, and the statue still drops
+  from the island at the moment of the wish. How Zelda's fall plays out
+  there is left open.
 - **Why doesn't the sleeping Zelda just wake up early?** Two Zeldas would
   then carry on in the same history, one with no journey to connect to.
   Rule 5 keeps one continuing line per traveler.
@@ -894,7 +896,7 @@ awakening). Keep these lines in sync with the `NARRATION` table in
 - **09:** Link draws the Goddess Sword and dives after her. At the Sealed Temple, an old woman is waiting, and behind her door the crystal is already there. Zelda's trip into the past already belongs to this history.
 - **P0:** So where does Old Impa's bracelet come from, if Zelda only gives it to her at the very end? This theory suggests she received it during an earlier attempt, one that sealed Demise away again but never finished him.
 - **10:** Ghirahim catches up with Zelda and Impa in the desert. Link holds him off while the two of them escape through the Gate of Time and destroy it. It is the arrival we saw earlier, seen from the other side.
-- **11:** Old Impa sends Link to the Sacred Flames. With his sword reforged, he wakes the temple's own Gate of Time and steps into the past, straight into the meeting with Zelda we have already seen.
+- **11:** Old Impa sends Link to the Sacred Flames. With the Master Sword reforged, he wakes the temple's own Gate of Time and steps into the past, straight into the meeting with Zelda we have already seen.
 - **12:** Link comes back with a task. Zelda has asked him to find the Triforce and end Demise for good. To get there, he still has trials to face, and a song to learn.
 - **13:** In Lanayru Gorge, Link finds the bones of the Thunder Dragon. A Timeshift Stone shows the gorge as it once was: the dragon alive, but dying. Link takes a seedling that could cure him.
 - **14:** He carries the seedling back through the gate and plants it inside the ancient temple. Then he returns. And here, history changes for the first time: the seedling has had thousands of years to grow.
@@ -907,7 +909,7 @@ awakening). Keep these lines in sync with the `NARRATION` table in
 - **21:** Link defeats Demise. What is left of the demon king is drawn into the Master Sword and sealed there, and Zelda's soul comes back to her. In this theory, this is what stops the Imprisoned from ever returning.
 - **22:** And this is the theory's boldest step. With Demise gone, the long sleep is no longer needed, so the history that required it is replaced. The sleeping Zelda disappears with it. The rescued Zelda stays, with everything she remembers.
 - **23:** Link leaves the Master Sword in its pedestal, and Fi falls asleep inside it. Impa stays behind to guard it. Before her friends go home, Zelda gives her the bracelet.
-- **24:** Impa grows old a second time, but in a different history: one without the Imprisoned's attacks. She guards the sword, and waits for the friends she knows will come back.
+- **24:** Impa grows old a second time, but in a different history: one without the Imprisoned's attacks, where the Master Sword was always there. She guards it, and waits for the friends she knows will come back.
 - **W1:** When this corrected history reaches the moment of Link's wish, the statue still comes down, only now onto empty ground. The wish's result survives, even though what caused it no longer happened.
 - **25:** Link, Zelda and Groose come home. They remember the Imprisoned and everything they went through. Old Impa, in this theory, remembers a different vigil: guarding a sword, not fighting a beast.
 - **26:** Impa recognizes Zelda, and shows her the bracelet. Her duty is done, and she fades away, leaving it behind. Unlike the sleeping Zelda, her life was never erased. Her watch simply ended.
