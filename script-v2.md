@@ -494,9 +494,9 @@ Ghirahim's tornado tears Zelda from Skyloft. On the surface, her journey
 brings her under young Impa's protection. At the sacred springs,
 Zelda begins to learn her true nature as the reincarnation of Hylia.
 
-**Staging:** Keep the pink clothing and green hair wraps throughout. She
-appears in white from scene 10 on; do not show or narrate how her clothing
-changes, since the game does not establish it. Do not depict young
+**Staging:** Start with pink clothing and green hair wraps. The switch to
+the white outfit during the awakening is a visual cue for her transition
+only; no caption or narration explains how it happened. Do not depict young
 Impa causing the fall or assert that she personally catches Zelda from
 the sky. This is a compressed journey, not a single encounter.
 

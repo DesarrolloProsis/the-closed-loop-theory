@@ -502,9 +502,9 @@ function setText(el,text){if(el.dataset.text!==text){el.textContent=text;el.data
 function drawTags(t){const list=S[i].tg||[];tagEls.forEach((el,n)=>{const tag=list[n];if(!tag){el.style.opacity=0;return}const [id,text,a,b,dy=-44,dx=0]=tag,st=states[id]||[0,0,0,1];setText(el,slideRef(text));const w=el.getComputedTextLength();el.setAttribute('x',clamp(st[0]+dx,w/2+3,337-w/2));el.setAttribute('y',st[1]+dy);el.style.opacity=pulse(t,a,b)*clamp(st[2]*2)})}
 function render(t){
  const s=S[i],sc=s.id,k=s.k,captor=s.cap?.[0],captive=s.cap?.[1];
- // Zelda viste de rosa al renacer, en el tornado y en el despertar; de blanco desde la huida por la puerta del desierto.
- // El cambio de ropa no se muestra ni se explica: la teoría no supone cómo ocurrió.
- const zeldaOutfit=sc==='00b'||sc==='08a'||sc==='08b'?'zelda':'zelda-white';
+ // Zelda viste de rosa al renacer, en el tornado y al empezar el despertar; el cambio a blanco durante el ritual solo representa
+ // visualmente su transición: ningún texto explica cómo ocurrió. Después, siempre de blanco.
+ const zeldaOutfit=sc==='00b'||sc==='08a'||sc==='08b'&&t<6.5?'zelda':'zelda-white';
  for(const id of ['ze','z2'])setZeldaOutfit(actors[id],zeldaOutfit);
  states={};for(const id in E){const v=k[id],state=v?stateAt(v,t,captive===id):[0,0,0,1];if(v)gateFade(v,state,t);states[id]=state;setState(E[id],...state)}
  for(const id in actors){const a=actors[id],move=travelAt(id,t);if(move&&move.moving&&!move.dragged){const kind=s.gait?.[id]??(s.run&&captor!==id?'run':'walk'),gait=GAITS[kind];showFrame(a,gait.cycle[Math.floor(move.dist/gait.stride)%gait.cycle.length],kind)}else poseFigure(a,poseAt(id,t));a.rig.setAttribute('transform',`scale(${facingAt(id,t,move)} 1) rotate(${leanAt(move)} 0 20)`)}
