@@ -17,6 +17,9 @@
 .card{position:absolute;inset:16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:22px 24px;background:var(--card);border:1px solid var(--line);border-radius:12px;font:12px/1.6 system-ui,sans-serif;color:var(--ink);overflow:auto}.card[hidden]{display:none}.card h3{margin:0 0 8px;font:10px system-ui,sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold)}.card ol,.card ul{margin:0;padding-left:17px}.card li{margin-bottom:5px}.card p{margin:0}
 .timeline{flex-wrap:wrap;gap:2px}.scene-dot{width:20px;height:20px;font-size:9.5px}.era-divider{margin:0 4px}.scene-dot.inset{font-style:italic;outline:1px dashed var(--gold);outline-offset:-3px}
 @media(max-width:760px){.card{grid-template-columns:1fr;gap:10px;padding:14px;font-size:10px;inset:8px}}
+/* Fondos pixel art: el escenario ya no cambia con el modo claro u oscuro, así que los rótulos usan colores fijos con contorno oscuro. */
+.stage-wrap:before{display:none}#sc .backdrop{image-rendering:pixelated;image-rendering:crisp-edges}
+#sc text{paint-order:stroke;stroke:#15121a;stroke-width:.85px;stroke-linejoin:round}#sc .prop-label{fill:#efe8d6;font-size:5.4px}#sc .tag{fill:#f3f8e6;font-size:5.9px}#sc .banner{fill:#ffd98a}#sc .note{fill:#fff6e6;font-size:5.6px}
 /* Insignia de época arriba a la derecha del escenario, con un color por época: pasado dorado, presente verde, inserto violeta. */
 .stage-era{position:absolute;top:14px;right:16px;z-index:2;font:650 11px system-ui,sans-serif;letter-spacing:1.8px;padding:6px 13px;border-radius:999px;border:1.5px solid currentColor;background:var(--card);color:var(--green);box-shadow:0 4px 14px #0002;pointer-events:none}.stage-era[data-era="0"]{color:var(--gold)}.stage-era[data-era="2"]{color:#9a7fc6}.stage-era[data-era="3"],.stage-era[data-era="4"]{color:var(--muted)}
 @media(max-width:580px){.stage-era{top:8px;right:8px;font-size:9px;padding:4px 9px;letter-spacing:1.2px}}
@@ -42,7 +45,7 @@
 <div class="scene-header ui"><span id="eb" class="era">Distant past</span><span id="pl" class="location"></span><span id="hist" class="badge" title="Which version of the one revisable history this scene belongs to" hidden></span><span id="theory" class="badge theory" title="This scene shows the theory's proposal, not an event confirmed by the game" hidden>Theory</span><span id="ct" class="scene-count"></span></div>
 <div class="scene-layout"><div class="stage-wrap"><svg id="sc" viewBox="0 0 340 210" role="img" aria-labelledby="svg-title svg-desc"><title id="svg-title">Animated scene</title><desc id="svg-desc"></desc>
 <defs><radialGradient id="portal"><stop stop-color="#c4b9e1" stop-opacity=".65"/><stop offset="1" stop-color="#a18dbf" stop-opacity=".06"/></radialGradient><linearGradient id="crystal" x2="1" y2="1"><stop stop-color="#e6d59b" stop-opacity=".25"/><stop offset="1" stop-color="#c3a255" stop-opacity=".6"/></linearGradient></defs>
-<g aria-hidden="true"><circle cx="250" cy="71" r="27" fill="var(--night)" opacity=".6"/><path d="M0 156Q35 127 73 155Q104 136 145 158Q192 132 222 155Q277 124 340 151V210H0Z" fill="var(--night)"/><path d="M0 170H340" stroke="var(--stone)" stroke-width=".7"/><path d="M0 171H340V210H0Z" fill="var(--stone)" opacity=".14"/><path d="M15 183h14m88 11h11m67-14h8m97 14h15" stroke="var(--stone)" stroke-width=".7"/></g><g id="ly"></g><g id="effects" pointer-events="none"></g></svg><span class="stage-era ui" id="stage-era" data-era="0">THE DISTANT PAST</span>
+<g id="bg" aria-hidden="true"></g><g id="ly"></g><g id="effects" pointer-events="none"></g></svg><span class="stage-era ui" id="stage-era" data-era="0">THE DISTANT PAST</span>
 <div id="card" class="card" hidden><div><h3>Five rules</h3><ol><li>History can be replaced.</li><li>Completed time journeys survive.</li><li>A fulfilled wish survives at its original time.</li><li>Other consequences follow the revised history.</li><li>One traveler keeps one continuing line.</li></ol></div><div><h3>What differs</h3><p>Earlier attempts only reseal Demise. This adventure completes the wish, the defeat, and the containment in the sword. No physical sword reset and no exact repeat of the whole adventure are required.</p></div><div><h3>Limits</h3><ul><li>The earlier farewell and failure are hypothetical.</li><li>The traveler, wish, and continuing-line rules are assumptions; the last was written for the crystal.</li><li>The crystal's erasure interprets an assumed absence: the crystal-bound Zelda might still be there; the game simply never shows or mentions her again.</li><li>The corrected present between the preserved crossings is left open.</li></ul></div></div>
 <div id="opening" class="card opening" hidden><p class="opening-lead">What if time preserves the travelers, but rewrites the world they return to?</p>
 <p><b>What this is.</b> A proposed reading of Skyward Sword's time travel: one history that can be revised, rather than a fixed loop or a set of branching timelines.</p>
@@ -87,12 +90,12 @@ let g=grp('gate');mk('title',{},g).textContent='Gate of Time';
 const gateRune=mk('g',{},g);spriteViewport(gateRune,'gate',-76).setAttribute('data-asset','gate');label(g,10,'GATE OF TIME');
 g=grp('stat');mk('title',{},g).textContent='Goddess Statue';
 const island=mk('g',{'shape-rendering':'crispEdges'},g);
-mk('path',{d:'M-38 1H38V5H32V9H26V13H22V19H16V16H10V20H5V27H-2V21H-7V17H-15V13H-24V9H-32V5H-38Z',fill:'var(--stone)'},island);
+mk('path',{d:'M-38 1H38V5H32V9H26V13H22V19H16V16H10V20H5V27H-2V21H-7V17H-15V13H-24V9H-32V5H-38Z',fill:'#9b917f'},island);
 mk('path',{d:'M-38 0H-25V-2H-12V-3H12V-2H25V0H38V3H-38Z',fill:'#839b6b'},island);
 mk('path',{d:'M-24 7h9v2h-9ZM-9 14h7v2h-7ZM15 7h10v2H15ZM2 19h4v2H2Z',fill:'var(--muted)',opacity:.3},island);
 spriteViewport(g,'statue',-76).setAttribute('data-asset','statue');
 const skyPeople=mk('g',{},island);for(const [x,kind] of [[-30,'hero'],[29,'groose']]){const person=mk('g',{transform:'translate('+x+' -3.6) scale(.18)'},skyPeople);spriteViewport(person,kind);}
-g=grp('ped');mk('path',{d:'M-17 0H17L12-8H-12ZM-11-8H11V-13H-11Z',fill:'var(--stone)',stroke:'var(--muted)','stroke-width':.5},g);mk('path',{d:'M-4-12H4',stroke:'var(--ink)'},g);
+g=grp('ped');mk('path',{d:'M-17 0H17L12-8H-12ZM-11-8H11V-13H-11Z',fill:'#b9b1a0',stroke:'#4f4a42','stroke-width':.5},g);mk('path',{d:'M-4-12H4',stroke:'#2b2824'},g);
 g=grp('veil');mk('rect',{x:-22,y:-44,width:44,height:65,rx:18,fill:'var(--stage)','fill-opacity':.9,stroke:'var(--muted)','stroke-width':.6,'stroke-dasharray':'2 3'},g);mk('path',{d:'M-10-9Q0-19 10-9Q0 1-10-9ZM0-13V-5',fill:'none',stroke:'var(--muted)','stroke-width':.7},g);label(g,-48,'HIDDEN BLADE');
 g=grp('crys');mk('title',{},g).textContent='Zelda asleep in her crystal';const crystalShell=mk('g',{transform:'translate(0 13) scale(1.28)'},g);spriteViewport(crystalShell,'crystal-white',-52).setAttribute('data-asset','crystal-white');
 function sword(id){
@@ -224,7 +227,7 @@ g=grp('soil');mk('title',{},g).textContent='Empty soil';mk('path',{d:'M-15 0Q-8-
 // Resaltado dorado (el brazalete de Impa).
 g=grp('hl');mk('circle',{r:7,fill:'none',stroke:'#c8a24a','stroke-width':.9,'stroke-dasharray':'2 1.5','vector-effect':'non-scaling-stroke'},g);
 // Contorno diagramático del cristal sustituido (escena 22).
-g=grp('ghost');mk('title',{},g).textContent='Superseded vigil';mk('rect',{x:-21,y:-52,width:42,height:74,rx:7,fill:'none',stroke:'var(--muted)','stroke-width':.7,'stroke-dasharray':'2 2'},g);label(g,-56,'SUPERSEDED VIGIL');
+g=grp('ghost');mk('title',{},g).textContent='Superseded vigil';mk('rect',{x:-21,y:-52,width:42,height:74,rx:7,fill:'none',stroke:'#4d4034','stroke-width':.9,'stroke-dasharray':'2 2'},g);label(g,-56,'SUPERSEDED VIGIL');
 // Marca de cruce protegido: elipse dorada a los pies de los viajeros.
 g=grp('cross');mk('title',{},g).textContent='Protected crossing';mk('ellipse',{rx:1,ry:.16,fill:'none',stroke:'#c8a24a','stroke-width':.9,'stroke-dasharray':'3 2','vector-effect':'non-scaling-stroke'},g);
 // Portal de la Puerta del Tiempo: centro púrpura con una escalera infinita de engranajes cada vez más pequeños.
@@ -253,10 +256,58 @@ const banner=mk('text',{class:'banner','text-anchor':'middle',x:170,y:24},FX),be
 const timeMark=mk('text',{class:'banner',x:12,y:38},FX);timeMark.textContent='◆ THE MOMENT OF THE WISH';
 const ruleNote=mk('text',{class:'note','text-anchor':'middle'},FX);[['RULE 5 · THE SLEEPING STAGE NO LONGER LEADS TO HER LATER DEPARTURE,',192],['AND HER LATER SELF IS ALREADY HERE, SO SHE IS NOT WOKEN EARLY.',199]].forEach(([s,y])=>{const span=mk('tspan',{x:170,y},ruleNote);span.textContent=s});
 // Marcador del pasado: orden de las visitas de Link, no un horario.
-const pastMarker=mk('g',{},FX);mk('path',{d:'M90 32H250',stroke:'var(--muted)','stroke-width':.6},pastMarker);
-[[90,'FIRST VISIT'],[170,'SEEDLING VISIT'],[250,'FINAL VISIT']].forEach(([x,s])=>{mk('path',{d:`M${x} 29V35`,stroke:'var(--muted)','stroke-width':.6},pastMarker);const tx=mk('text',{class:'prop-label','text-anchor':'middle',x,y:42},pastMarker);tx.textContent=s});
+const pastMarker=mk('g',{},FX);mk('path',{d:'M90 32H250',stroke:'#4d4034','stroke-width':.9},pastMarker);
+[[90,'FIRST VISIT'],[170,'SEEDLING VISIT'],[250,'FINAL VISIT']].forEach(([x,s])=>{mk('path',{d:`M${x} 29V35`,stroke:'#4d4034','stroke-width':.9},pastMarker);const tx=mk('text',{class:'prop-label','text-anchor':'middle',x,y:42},pastMarker);tx.textContent=s});
 {const tx=mk('text',{class:'prop-label','text-anchor':'middle',x:170,y:23},pastMarker);tx.textContent='ORDER OF LINK’S VISITS TO THE PAST · ORDER ONLY, NOT A TIMETABLE'}
 const pastDot=mk('circle',{r:2.2,fill:'#c8a24a',cy:32},pastMarker);
+// ===== Fondos pixel art: pocos decorados reutilizados; cálidos e intactos en el pasado, fríos y gastados en el presente =====
+// Se pintan una vez en un lienzo de 170×105 (cada píxel ocupa 2×2 unidades del escenario) y no dependen del modo claro u oscuro.
+const BG_W=170,BG_H=105,BG_GROUND=85;
+function bgRng(seed){return()=>{seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function paintBackdrop(seed,draw){
+ const canvas=document.createElement('canvas');canvas.width=BG_W;canvas.height=BG_H;const ctx=canvas.getContext('2d'),R=bgRng(seed);
+ const px=(x,y,w,h,c)=>{ctx.fillStyle=c;ctx.fillRect(Math.round(x),Math.round(y),Math.max(1,Math.round(w)),Math.max(1,Math.round(h)))};
+ // Franjas de cielo con tramado de tablero entre una y otra.
+ const sky=(cols,top=0,bottom=BG_GROUND)=>{const h=(bottom-top)/cols.length;cols.forEach((c,k)=>{const y0=Math.round(top+k*h),y1=Math.round(top+(k+1)*h);px(0,y0,BG_W,y1-y0,c);if(k<cols.length-1)for(let y=y1-2;y<y1;y++)for(let x=(y+k)%2;x<BG_W;x+=2)px(x,y,1,1,cols[k+1])})};
+ const disc=(cx,cy,r,c)=>{for(let dy=-r;dy<=r;dy++){const w=Math.floor(Math.sqrt(r*r-dy*dy));px(cx-w,cy+dy,2*w+1,1,c)}};
+ const ridge=(base,amp,freq,phase,c)=>{for(let x=0;x<BG_W;x++){const y=Math.round(base-amp*(.6*Math.sin(x*freq+phase)+.4*Math.sin(x*freq*2.3+phase*1.7)));px(x,y,1,BG_GROUND-y,c)}};
+ const cloud=(x,y,s,c,shade)=>{disc(x,y,s,c);disc(x+s*1.2,y+1,Math.round(s*.8),c);disc(x-s*1.1,y+1,Math.round(s*.7),c);px(x-s*1.8,y+1,s*3.8,Math.max(1,s*.6),c);if(shade)px(x-s*1.6,y+1+Math.max(1,s*.6),s*3.4,1,shade)};
+ const column=(x,top,w,light,shadow,cap,broken)=>{let t=top;if(broken){t=top+Math.round(R()*18);for(let k=0;k<w;k+=2)px(x+k,t-Math.round(R()*3),2,3,light)}px(x,t,w,BG_GROUND-t,light);px(x+w-2,t,2,BG_GROUND-t,shadow);for(let k=2;k<w-2;k+=3)px(x+k,t+3,1,BG_GROUND-t-6,shadow);if(!broken)px(x-1,t,w+2,2,cap);px(x-1,BG_GROUND-3,w+2,3,cap)};
+ const tree=(x,trunk,r,bark,leaf,leafDark)=>{px(x-1,BG_GROUND-trunk,2,trunk,bark);disc(x,BG_GROUND-trunk-r+2,r,leafDark);disc(x-1,BG_GROUND-trunk-r+1,r-1,leaf)};
+ const ground=(hi,base,speck,dark,count=160)=>{px(0,BG_GROUND,BG_W,1,hi);px(0,BG_GROUND+1,BG_W,BG_H-BG_GROUND-1,base);for(let k=0;k<count;k++)px(R()*BG_W,BG_GROUND+2+R()*(BG_H-BG_GROUND-3),1+(R()<.35),1,speck);if(dark)px(0,BG_H-4,BG_W,4,dark)};
+ const stars=(n,maxY,cols)=>{for(let k=0;k<n;k++)px(R()*BG_W,R()*maxY,1,1,cols[k%cols.length])};
+ // Muro de templo: hiladas de sillares con juntas alternas.
+ const wall=(base,joint)=>{px(0,0,BG_W,BG_GROUND,base);for(let y=6;y<BG_GROUND;y+=6){px(0,y,BG_W,1,joint);for(let x=((y/6)%2)*6;x<BG_W;x+=12)px(x,y-5,1,5,joint)}};
+ const tiles=(a,b,edge)=>{px(0,BG_GROUND+1,BG_W,BG_H-BG_GROUND-1,a);px(0,BG_GROUND,BG_W,1,edge);for(let y=BG_GROUND+1;y<BG_H;y+=4)for(let x=-8;x<BG_W;x+=8)px(x+((y-BG_GROUND)%8?4:0),y,8,4,((x+8+y)/4)%2?a:b)};
+ draw({px,sky,disc,ridge,cloud,column,tree,ground,stars,wall,tiles,R});
+ return canvas.toDataURL();
+}
+const BACKDROPS={
+ // Reino de Hylia y la superficie antigua: cielo dorado, colinas frondosas, columnas blancas lejanas.
+ landPast:{top:'#7db7dc',bottom:'#7fb35c',paint:b=>{b.sky(['#7db7dc','#98c8e2','#b6d8e4','#d6e6dc','#efe6c4']);b.disc(128,22,9,'#fbe7b0');b.disc(128,22,7,'#fff4cf');b.cloud(30,18,4,'#f7fbff','#dfeaf2');b.cloud(82,12,3,'#f4f8fb','#dfeaf2');b.cloud(152,34,3,'#f7fbff','#dfeaf2');b.ridge(66,8,.06,1,'#a9c0b4');for(const x of [18,24,30,138,146])b.column(x,54+(x%3)*2,3,'#ece4d1','#cfc2a6','#e3d7bb');b.ridge(75,5,.11,3,'#86ad84');b.ground('#a5d071','#7fb35c','#6a9c4b','#6f9f50');for(let k=0;k<26;k++)b.px(b.R()*BG_W,BG_GROUND+2+b.R()*14,1,1,'#f6e7a1')}},
+ // Reino de batalla de Demise: tormenta violácea con relámpagos.
+ storm:{top:'#1b1626',bottom:'#3a3140',paint:b=>{b.sky(['#1b1626','#251d33','#33273f','#45324d','#5a3f57']);for(const [x0,len] of [[38,40],[124,30]]){let x=x0,dir=1;for(let y=0;y<len;y++){b.px(x,y,1,1,'#efe9ff');if(y%3===2){x+=dir*2;dir=-dir}if(y%3===2)b.px(x-dir,y,2,1,'#efe9ff')}}b.ridge(70,9,.07,2,'#2a2232');b.ridge(78,4,.13,5,'#352a3b');b.ground('#5b4d5e','#3a3140','#2a2330','#2f2836');for(let k=0;k<10;k++){const x=b.R()*BG_W;b.px(x,BG_GROUND+3+b.R()*12,6+b.R()*8,1,'#6a5a6c')}}},
+ // Bosque de Farone y Tierras Selladas en el presente: neblina fría y arboleda.
+ woodsPresent:{top:'#8db0c0',bottom:'#5f7c48',paint:b=>{b.sky(['#8db0c0','#a3c0cb','#bccfd2','#d2ddd8','#dfe5df']);b.cloud(40,16,3,'#e9f0f1','#cddadd');b.cloud(132,24,4,'#e9f0f1','#cddadd');for(let x=0;x<BG_W+6;x+=7)b.disc(x,61+Math.round(b.R()*4),6,'#7f9b8c');b.px(0,63,BG_W,BG_GROUND-63,'#7f9b8c');for(let x=3;x<BG_W+6;x+=9)b.tree(x,6+Math.round(b.R()*4),5,'#4a3b2c','#5f7e6a','#4f6c5a');b.ground('#7f9a5f','#5f7c48','#4c6539','#536f40');for(let y=79;y<BG_GROUND;y+=2)for(let x=(y*5)%7;x<BG_W;x+=7)b.px(x,y,3,1,'#c9d6d0')}},
+ // Templo de Hylia en el pasado: piedra crema, friso dorado, columnas intactas y ventanal luminoso.
+ templePast:{top:'#eadfc6',bottom:'#d4c49e',paint:b=>{b.wall('#eadfc6','#d8c9a8');b.px(0,8,BG_W,3,'#d6b158');b.px(0,11,BG_W,1,'#b8913f');b.px(70,20,30,48,'#a8d4ea');b.px(74,16,22,4,'#a8d4ea');b.px(78,13,14,3,'#a8d4ea');b.cloud(84,34,3,'#f4fbff');b.px(70,66,30,2,'#d6b158');for(let y=20;y<BG_GROUND;y++)for(let x=100+Math.round((y-20)*.5);x<112+Math.round((y-20)*.9);x+=2)b.px(x+(y%2),y,1,1,'#f6efdc');for(const x of [4,44,120,158])b.column(x,14,8,'#f3ead6','#cfbf98','#d6b158');b.tiles('#d9caa6','#cdbb93','#efe3c5')}},
+ // Templo Sellado en el presente: el mismo templo frío, roto y cubierto de musgo.
+ templePresent:{top:'#868b84',bottom:'#77796f',paint:b=>{b.wall('#868b84','#747972');for(let x=0;x<BG_W;x+=11)b.px(x,8,7,3,'#7d7466');b.px(70,22,30,46,'#3d4a52');b.px(74,18,22,4,'#3d4a52');for(let x=72;x<98;x+=5){const len=6+Math.round(b.R()*20);b.px(x,18,1,len,'#4f6b3c');b.px(x+1,18+len,1,2,'#6f8d55')}for(const x of [4,44,120,158])b.column(x,14,8,'#a2a59d','#7c7f77','#8f928a',true);for(let k=0;k<14;k++){const x=b.R()*BG_W,y=b.R()*BG_GROUND;b.disc(x,y,1+Math.round(b.R()*2),k%2?'#5e7a48':'#6f8d55')}b.tiles('#7d7f77','#72746c','#90928a');for(let k=0;k<9;k++){const x=b.R()*BG_W;b.px(x,BG_GROUND+2+b.R()*14,5+b.R()*7,1,'#5c5e57');b.px(x+b.R()*6,BG_GROUND-1,2,1,'#6f8d55')}}},
+ // Desierto de Lanayru en el pasado: aún verde, bajo un cielo azul limpio.
+ desertPast:{top:'#5fb0e3',bottom:'#7ab257',paint:b=>{b.sky(['#5fb0e3','#79c0e8','#97cfee','#b8def2','#d8ecf3']);b.disc(30,20,6,'#fffbe6');b.cloud(110,16,4,'#ffffff','#e3f0f8');b.ridge(64,7,.045,2,'#c5a27a');b.ridge(74,4,.09,4,'#79b35b');for(const x of [20,58,140,162])b.tree(x,9,5,'#6b4a2b','#5aa552','#3f8a45');b.ground('#9bcc6a','#7ab257','#64974a','#6aa04e')}},
+ // Desierto y garganta de Lanayru en el presente: dunas bajo calima y ruinas oxidadas.
+ desertPresent:{top:'#e9cf9e',bottom:'#e0bb80',paint:b=>{b.sky(['#e9cf9e','#efd9ad','#f3e2bd','#f6e9cc','#f8eed7']);b.disc(140,18,6,'#fffaf0');b.ridge(64,6,.05,1,'#d9b27a');b.ridge(73,4,.08,3,'#cc9f63');for(const x of [16,30,150])b.column(x,58,5,'#9a7a58','#7a5d40','#87694b',true);b.ground('#efd09a','#e0bb80','#c99e63','#d3ad74');for(let y=BG_GROUND+4;y<BG_H-4;y+=5)for(let x=(y*3)%11;x<BG_W;x+=13)b.px(x,y,5,1,'#cfa86c')}},
+ // Skyloft: cielo abierto, mar de nubes y la superficie en sombra debajo.
+ skyPresent:{top:'#4ea6e3',bottom:'#5f7c48',paint:b=>{b.sky(['#4ea6e3','#64b3e8','#7fc1ec','#9ccfef','#bde0f3'],0,60);b.px(0,60,BG_W,BG_GROUND-60,'#6d8f78');for(let x=0;x<BG_W+8;x+=8)b.cloud(x,58+Math.round(b.R()*3),4,'#f5f9fc','#d9e7f1');for(let x=4;x<BG_W;x+=10)b.tree(x,4,4,'#3f3226','#58796a','#4a6a5c');b.cloud(40,18,4,'#ffffff','#e1eef7');b.cloud(150,10,3,'#ffffff','#e1eef7');b.ground('#7f9a5f','#5f7c48','#4c6539','#536f40')}},
+ // El paso de los siglos: noche estrellada con luna.
+ centuries:{top:'#0f1430',bottom:'#2c3a44',paint:b=>{b.sky(['#0f1430','#16204a','#1f2c5c','#2b3a6c','#3c4b7a']);b.stars(130,70,['#ffffff','#cdd8ff','#9fb0e8']);b.disc(130,24,8,'#f3f0dc');b.disc(127,22,2,'#d9d4b8');b.disc(133,27,1,'#d9d4b8');b.ridge(70,6,.05,2,'#1a2440');b.ground('#3d4f5c','#2c3a44','#24303a','#26333c')}},
+ // Neutro para la introducción, el inserto y las tarjetas de cierre.
+ plain:{top:'#2c2924',bottom:'#34302a',paint:b=>{b.px(0,0,BG_W,BG_GROUND,'#2c2924');for(let y=4;y<BG_GROUND;y+=8)for(let x=4;x<BG_W;x+=8)b.px(x,y,1,1,'#3a362f');b.px(0,BG_GROUND,BG_W,1,'#4a443b');b.px(0,BG_GROUND+1,BG_W,BG_H-BG_GROUND-1,'#34302a')}}
+};
+const BACKDROP_OF={'00':'plain','00a':'landPast','00b':'landPast','01':'landPast','02':'desertPast','03':'templePast','04':'templePast','05':'templePast','06':'centuries','07':'templePresent','08a':'skyPresent','08b':'woodsPresent','09':'woodsPresent','P0':'plain','10':'desertPresent','11':'templePresent','12':'templePresent','13':'desertPresent','14':'templePast','15':'templePresent','16':'desertPresent','17':'woodsPresent','18':'woodsPresent','19':'templePast','20':'landPast','21':'storm','22':'templePast','23':'templePast','24':'centuries','W1':'woodsPresent','25':'templePresent','26':'templePresent','27':'plain','28':'plain'};
+{const layer=document.getElementById('bg');let seed=11;for(const [name,b] of Object.entries(BACKDROPS)){b.el=mk('image',{href:paintBackdrop(seed++,b.paint),width:340,height:210,preserveAspectRatio:'none','image-rendering':'pixelated',class:'backdrop'},layer);b.el.style.display='none'}}
+// Muestra el decorado de la escena; el marco del escenario toma su cielo arriba y su suelo abajo por si sobra espacio.
+function showBackdrop(id){const name=BACKDROP_OF[id]||'plain';for(const [key,b] of Object.entries(BACKDROPS))b.el.style.display=key===name?'':'none';const b=BACKDROPS[name];document.querySelector('.stage-wrap').style.background=`linear-gradient(${b.top} 50%,${b.bottom} 50%)`}
 const tagEls=[0,1,2,3].map(()=>{const el=mk('text',{class:'tag','text-anchor':'middle'},FX);el.style.opacity=0;return el});
 const S=[
 {id:'00',a:0,e:4,h:'',d:14,l:'Introduction',t:'One history that can be revised',
@@ -825,7 +876,7 @@ function updatePlay(){const all=playing&&autoplay;document.getElementById('al').
 function go(n,continueAll=false){pos=clamp(n,0,S.length-1);i=pos;const s=S[i],D=dur(),caption=slideRef(s.c);time=reducedMotion.matches&&!continueAll?D:0;playing=!reducedMotion.matches||continueAll;autoplay=continueAll;lastFrame=0;
  seek.max=D;document.getElementById('dur').textContent=D;prepareNarration(playing);
  document.getElementById('eb').textContent=ERA[s.e];document.getElementById('pl').textContent=s.l;document.getElementById('ct').textContent=String(pos+1).padStart(2,'0')+' / '+S.length;
- const hist=document.getElementById('hist');hist.textContent=HIST[s.h]||'';hist.hidden=!s.h;document.getElementById('theory').hidden=!s.th;card.hidden=s.id!=='27';faq.hidden=s.id!=='28';opening.hidden=s.id!=='00';
+ const hist=document.getElementById('hist');hist.textContent=HIST[s.h]||'';hist.hidden=!s.h;document.getElementById('theory').hidden=!s.th;card.hidden=s.id!=='27';faq.hidden=s.id!=='28';opening.hidden=s.id!=='00';showBackdrop(s.id);
  document.getElementById('chapter').textContent=s.e===2?'Act Two · An inset':s.e>=3?s.l:ACT[s.a];document.getElementById('tt').textContent=s.t;document.getElementById('cp').textContent=caption;document.getElementById('action').textContent=s.w;document.getElementById('svg-title').textContent=`Scene ${pos+1}: ${s.t}`;document.getElementById('svg-desc').textContent=caption+' '+s.w;document.getElementById('stage-era').textContent=ERA_BOTTOM[s.e];document.getElementById('stage-era').dataset.era=s.e;document.querySelectorAll('.scene-dot').forEach((d,j)=>d.setAttribute('aria-current',String(j===pos)));document.getElementById('bp').disabled=pos===0;document.getElementById('bn').disabled=pos===S.length-1;drawTracks();render(time);updatePlay()}
 // La pausa calla la narración; al reanudar sigue desde la frase en la que iba.
 // Si una diapositiva ya se está reproduciendo sola, el primer clic pasa a reproducir todo en lugar de pausar.
