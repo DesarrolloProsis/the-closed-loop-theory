@@ -492,10 +492,11 @@ older Impa becoming young again. The temple-gate arrival is conjectural.
 **Caption:**
 Ghirahim's tornado tears Zelda from Skyloft. On the surface, her journey
 brings her under young Impa's protection. At the sacred springs,
-Zelda begins to recover the memories of the goddess.
+Zelda begins to learn her true nature as the reincarnation of Hylia.
 
-**Staging:** Start with pink clothing and green hair wraps. Transition
-to the white outfit during the awakening journey. Do not depict young
+**Staging:** Keep the pink clothing and green hair wraps throughout. She
+appears in white from scene 10 on; do not show or narrate how her clothing
+changes, since the game does not establish it. Do not depict young
 Impa causing the fall or assert that she personally catches Zelda from
 the sky. This is a compressed journey, not a single encounter.
 
@@ -830,7 +831,7 @@ awakening). Keep these lines in sync with the `NARRATION` table in
 - **06:** Thousands of years pass. Zelda sleeps, the Imprisoned waits below, and Impa grows old. By the end of her watch, she wears a bracelet on her wrist. Keep an eye on it.
 - **07:** Now we are in the present. The younger Impa steps out of the temple's gate. Her older self is already here, having lived through every century in between. The young one sets off to find Zelda.
 - **08a:** On Skyloft, Ghirahim summons a tornado that tears Zelda from the sky and drops her far below, onto the surface.
-- **08b:** Down there, young Impa finds her and keeps her safe. At the sacred springs, Zelda begins to remember who she really is, and her pink dress turns to the white of the goddess.
+- **08b:** Down there, young Impa finds her and keeps her safe. At the sacred springs, Zelda begins to learn her true nature: she is the reincarnation of the goddess Hylia.
 - **09:** Link draws the Goddess Sword and dives after her. At the Sealed Temple, an old woman is waiting, and behind her door the crystal is already there. Zelda's trip into the past already belongs to this history.
 - **P0:** So where does Old Impa's bracelet come from, if Zelda only gives it to her at the very end? This theory's answer: from an earlier attempt that sealed Demise away again, but never finished him. That part is pure speculation.
 - **10:** Ghirahim catches up with Zelda and Impa in the desert. Link holds him off while the two of them escape through the Gate of Time and destroy it. It is the arrival we saw earlier, seen from the other side.

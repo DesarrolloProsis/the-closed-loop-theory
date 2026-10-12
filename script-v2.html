@@ -268,8 +268,8 @@ const S=[
  k:{stat:[100,66,1,1],ze:[128,66,1,.18],gh:[275,150,1,1]},
  q:{ze:[[0,'idle'],[2.2,'dive'],[4.8,'sleep']],gh:[[0,'idle'],[.8,'overhead'],[2,'cast'],[5.2,'idle']]},lk:{gh:-1}},
 {id:'08b',a:2,e:1,h:'H0',l:'The surface and the sacred springs',t:'The awakening begins',gait:{ip:'run'},
- c:'On the surface, Zelda’s journey brings her under young Impa’s protection. At the sacred springs, she begins to recover the memories of the goddess, and her pink dress gives way to white.',
- w:'Impa scatters the monsters; the ritual turns Zelda’s dress white.',
+ c:'On the surface, Zelda’s journey brings her under young Impa’s protection. At the sacred springs, she begins to learn her true nature: she is the reincarnation of the goddess Hylia.',
+ w:'Impa scatters the monsters; at the springs, Zelda begins to remember who she is.',
  k:{ze:[95,150,1,1],mob1:[370,150,1,1,236,150,1,1,.3,2.2],mob2:[395,150,1,1,276,150,1,1,.5,2.2],ip:[-30,150,1,1,148,150,1,1,.5]},
  q:{ze:[[0,'sleep'],[4.4,'kneel'],[5,'idle'],[5.6,'pray']],ip:[[0,'runA'],[2.6,'guard'],[2.9,'cast'],[3.9,'idle']]},lk:{ip:[[0,1],[4.2,-1]]}},
 {id:'09',a:2,e:1,h:'H0',th:1,l:'Sealed Grounds and Sealed Temple',t:'The old woman and the sleeping girl',
@@ -397,7 +397,7 @@ const NARRATION={
  '06':'Thousands of years pass. Zelda sleeps, the Imprisoned waits below, and Impa grows old. By the end of her watch, she wears a bracelet on her wrist. Keep an eye on it.',
  '07':'Now we are in the present. The younger Impa steps out of the temple’s gate. Her older self is already here, having lived through every century in between. The young one sets off to find Zelda.',
  '08a':'On Skyloft, Ghirahim summons a tornado that tears Zelda from the sky and drops her far below, onto the surface.',
- '08b':'Down there, young Impa finds her and keeps her safe. At the sacred springs, Zelda begins to remember who she really is, and her pink dress turns to the white of the goddess.',
+ '08b':'Down there, young Impa finds her and keeps her safe. At the sacred springs, Zelda begins to learn her true nature: she is the reincarnation of the goddess Hylia.',
  '09':'Link draws the Goddess Sword and dives after her. At the Sealed Temple, an old woman is waiting, and behind her door the crystal is already there. Zelda’s trip into the past already belongs to this history.',
  'P0':'So where does Old Impa’s bracelet come from, if Zelda only gives it to her at the very end? This theory’s answer: from an earlier attempt that sealed Demise away again, but never finished him. That part is pure speculation.',
  '10':'Ghirahim catches up with Zelda and Impa in the desert. Link holds him off while the two of them escape through the Gate of Time and destroy it. It is the arrival we saw earlier, seen from the other side.',
@@ -502,8 +502,9 @@ function setText(el,text){if(el.dataset.text!==text){el.textContent=text;el.data
 function drawTags(t){const list=S[i].tg||[];tagEls.forEach((el,n)=>{const tag=list[n];if(!tag){el.style.opacity=0;return}const [id,text,a,b,dy=-44,dx=0]=tag,st=states[id]||[0,0,0,1];setText(el,slideRef(text));const w=el.getComputedTextLength();el.setAttribute('x',clamp(st[0]+dx,w/2+3,337-w/2));el.setAttribute('y',st[1]+dy);el.style.opacity=pulse(t,a,b)*clamp(st[2]*2)})}
 function render(t){
  const s=S[i],sc=s.id,k=s.k,captor=s.cap?.[0],captive=s.cap?.[1];
- // Zelda viste de rosa al renacer, en el tornado y en el despertar hasta que el ritual la viste de blanco; después, siempre de blanco.
- const zeldaOutfit=sc==='00b'||sc==='08a'||sc==='08b'&&t<6.5?'zelda':'zelda-white';
+ // Zelda viste de rosa al renacer, en el tornado y en el despertar; de blanco desde la huida por la puerta del desierto.
+ // El cambio de ropa no se muestra ni se explica: la teoría no supone cómo ocurrió.
+ const zeldaOutfit=sc==='00b'||sc==='08a'||sc==='08b'?'zelda':'zelda-white';
  for(const id of ['ze','z2'])setZeldaOutfit(actors[id],zeldaOutfit);
  states={};for(const id in E){const v=k[id],state=v?stateAt(v,t,captive===id):[0,0,0,1];if(v)gateFade(v,state,t);states[id]=state;setState(E[id],...state)}
  for(const id in actors){const a=actors[id],move=travelAt(id,t);if(move&&move.moving&&!move.dragged){const kind=s.gait?.[id]??(s.run&&captor!==id?'run':'walk'),gait=GAITS[kind];showFrame(a,gait.cycle[Math.floor(move.dist/gait.stride)%gait.cycle.length],kind)}else poseFigure(a,poseAt(id,t));a.rig.setAttribute('transform',`scale(${facingAt(id,t,move)} 1) rotate(${leanAt(move)} 0 20)`)}
