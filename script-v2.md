@@ -320,7 +320,11 @@ script fixes only part of H3's present:
   18, the return in 25), the wish result at its original time (W1), and
   everything earlier in calendar time than the correction, including
   the planted tree. Ghirahim must exist in the present until his crossing
-  in 18.
+  in 18. Rule 5 does not remove him: his arriving stage falls with Demise,
+  and his native stage still leads to that crossing, as young Impa's does.
+  He also needs no inherited motive. With Demise defeated in the distant
+  past, Ghirahim's own era holds nothing to revive, so the past is his
+  only option, exactly as in scene 18's H2 caption.
 - **Removed:** the Imprisoned and its present-day attacks, the crystal
   vigil, and Zelda's awakening from the crystal.
 - **Left open:** the ordinary events between those crossings, such as
@@ -830,8 +834,10 @@ proposed rules, not laws the game explicitly confirms.
   traveler, wish, and continuing-line rules are assumptions, and the
   last one was written for the crystal; crystal erasure interprets an
   assumed absence, since the crystal-bound Zelda might still be there
-  and the game simply never shows or mentions her again; the corrected
-  present between preserved crossings is left unreconstructed.
+  and the game simply never shows or mentions her again; Zelda's
+  departure in 18 keeps a cause the corrected history no longer
+  contains, her awakening from the crystal; the corrected present
+  between preserved crossings is left unreconstructed.
 
 Do not end with “all contradictions solved” or “the game confirms this.”
 
@@ -858,6 +864,18 @@ theory has no answer, say the question is open.
   three still travel to the past?** Completed crossings survive revision
   (rule 2) and may keep their original causes. The corrected present
   between them is deliberately left open.
+- **Does Ghirahim still exist in the corrected history? Who causes the
+  tornado?** Yes, he still exists. His trip to the past in 18 is a
+  protected crossing (rule 2), and the game already shows him outliving
+  the Imprisoned. With Demise gone from his own era, he still needs Zelda
+  to revive him in the past, so the simplest reading is that he still
+  summons the tornado.
+- **Why doesn't Old Impa warn anyone about what's coming?** In the
+  corrected history she remembers the ending: Ghirahim taking Zelda
+  through the gate, and Link finishing Demise in the past. That
+  kidnapping is what puts Link there at the right moment, so she keeps
+  quiet rather than risk the victory. This is the theory's reading of
+  her choice, not something the game shows.
 - **Does anyone make the wish again?** No. The statue descends once, at the
   original moment, as the surviving result of Link's wish (rule 3).
 - **Why don't Timeshift Stones rewrite history every time?** They show a
@@ -1092,6 +1110,9 @@ The unshown earlier farewell and failure remain hypothetical backstory.
 Traveler continuity, wish protection, and the continuing-line rule are
 stipulated rules. The crystal's erasure follows from them, but it remains an
 interpretation of an assumed absence, not an event confirmed by the ending:
-the crystal-bound Zelda might still be there, unseen and unmentioned. The
+the crystal-bound Zelda might still be there, unseen and unmentioned.
+Rule 2's allowance for inherited causes carries the most weight at
+Zelda's departure in 18: it is caused by her awakening from the crystal,
+an event that H3 no longer contains. The
 corrected present between the preserved crossings is deliberately left open. The script should explain these assumptions clearly without
 presenting them as new canonical scenes or a demonstrated universal theory.

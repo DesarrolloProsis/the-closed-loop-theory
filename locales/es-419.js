@@ -202,7 +202,7 @@ const ES_SCENES={
  '28':[
  'Preguntas que podrían surgir',
  'Algunas preguntas que la teoría no desarrolla en detalle, con la respuesta breve que daría a cada una.',
- 'Ocho preguntas, respuestas breves y los puntos que quedan abiertos.',
+ 'Diez preguntas, respuestas breves y los puntos que quedan abiertos.',
  'Antes de terminar, estas son algunas preguntas que podrían surgir, junto con las respuestas breves que daría esta teoría.'
  ]
 };
@@ -289,6 +289,7 @@ const ES_TEXT={
  'The earlier farewell and failure are hypothetical.':'La despedida y el fracaso anteriores son hipotéticos.',
  'The traveler, wish, and continuing-line rules are assumptions; the last was written for the crystal.':'Las reglas de los viajeros, el deseo y la línea de vida son supuestos; la última fue formulada para explicar el cristal.',
  "The crystal's erasure interprets an assumed absence: the crystal-bound Zelda might still be there; the game simply never shows or mentions her again.":'La desaparición del cristal interpreta una ausencia supuesta: la Zelda del cristal podría seguir ahí; el juego simplemente no vuelve a mostrarla ni mencionarla.',
+ "Zelda's departure in 18 keeps a cause the corrected history no longer contains: her awakening from the crystal.":'La partida de Zelda en la diapositiva 18 conserva una causa que ya no existe en la historia corregida: su despertar del cristal.',
  'The corrected present between the preserved crossings is left open.':'El presente corregido entre los cruces conservados queda abierto.',
  'What this is.':'De qué se trata.',
  "A proposed reading of Skyward Sword's time travel: one history that can be revised, rather than a fixed loop or a set of branching timelines.":'Una interpretación de los viajes en el tiempo de Skyward Sword: una historia que puede cambiar, en lugar de un ciclo fijo o varias líneas temporales que se ramifican.',
@@ -303,6 +304,10 @@ const ES_TEXT={
  'Two Zeldas would then carry on in the same history, one with no journey to connect to. Rule 5 keeps one continuing line per traveler.':'Entonces seguirían existiendo dos Zeldas en la misma historia, una sin un viaje con el cual conectarse. La regla 5 mantiene una sola línea de vida por viajero.',
  'If the Imprisoned never attacks in the corrected history, why do the three still travel to the past?':'Si el Cautivo nunca ataca en la historia corregida, ¿por qué los tres viajan al pasado?',
  'Completed crossings survive revision (rule 2) and may keep their original causes. The corrected present between them is deliberately left open.':'Los cruces ya realizados sobreviven a los cambios (regla 2) y pueden conservar sus causas originales. El presente corregido entre ellos queda abierto de manera intencional.',
+ 'Does Ghirahim still exist in the corrected history? Who causes the tornado?':'¿Ghirahim sigue existiendo en la historia corregida? ¿Quién provoca el tornado?',
+ 'Yes, he still exists. His trip to the past in 18 is a protected crossing (rule 2), and the game already shows him outliving the Imprisoned. With Demise gone from his own era, he still needs Zelda to revive him in the past, so the simplest reading is that he still summons the tornado.':'Sí, sigue existiendo. Su viaje al pasado en la diapositiva 18 es un cruce protegido (regla 2), y el juego ya muestra que sobrevive a la destrucción del Cautivo. Como Demise ya no existe en su época, todavía necesita a Zelda para revivirlo en el pasado, así que lo más sencillo es suponer que él sigue invocando el tornado.',
+ "Why doesn't Old Impa warn anyone about what's coming?":'¿Por qué la anciana Impa no advierte a nadie de lo que viene?',
+ "In the corrected history she remembers the ending: Ghirahim taking Zelda through the gate, and Link finishing Demise in the past. That kidnapping is what puts Link there at the right moment, so she keeps quiet rather than risk the victory. This is the theory's reading of her choice, not something the game shows.":'En la historia corregida, ella recuerda el final: Ghirahim llevándose a Zelda por el portal y Link acabando con Demise en el pasado. Ese secuestro es lo que pone a Link ahí en el momento justo, así que guarda silencio para no arriesgar la victoria. Así interpreta la teoría su decisión; el juego no lo muestra.',
  'Does anyone make the wish again?':'¿Alguien vuelve a pedir el deseo?',
  "No. The statue descends once, at the original moment, as the surviving result of Link's wish (rule 3).":'No. La estatua desciende una sola vez, en el momento original, como resultado perdurable del deseo de Link (regla 3).',
  "Why don't Timeshift Stones rewrite history every time?":'¿Por qué las piedras del tiempo no reescriben la historia cada vez?',
