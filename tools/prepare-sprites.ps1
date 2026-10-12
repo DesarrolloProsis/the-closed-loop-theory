@@ -8,6 +8,7 @@ $spriteDirectory = Join-Path $Workspace 'assets\sprites'
 $specs = @(
     @{Sheet='heroes';Cuts=@(0,295,556,887);Names=@('hero','zelda','groose');Heights=@(56,46,58)},
     @{Sheet='guardians';Cuts=@(0,266,548,768);Names=@('hylia','impa','old-impa');Heights=@(60,60,40)},
+    @{Sheet='impa-v2';Cuts=@(0,[int]::MaxValue);Names=@('impa');Heights=@(60);Columns=8},
     @{Sheet='spirits';Cuts=@(0,318,604,887);Names=@('demise','ghirahim','fi');Heights=@(64,58,56)},
     @{Sheet='zelda-v3';Cuts=@(0,[int]::MaxValue);Names=@('zelda');Heights=@(46);Columns=8},
     @{Sheet='old-impa-v2';Cuts=@(0,[int]::MaxValue);Names=@('old-impa');Heights=@(44);Columns=8},
