@@ -926,9 +926,9 @@ stage the earlier battle in detail or present it as a lost scene.
 
 **Caption:**
 That version held only as long as the journey matched it. The first thing
-Link did differently, planting the seedling, revised the past. Curing the
-dragon revised it again, and his final victory replaced the resealing
-itself. Now the ending the past remembers is the one the journey actually
+Link did differently, planting the seedling, rewrote history from that
+moment on. Curing the dragon rewrote it again, and his final victory
+rewrote history a final time. Now the ending the past remembers is the one the journey actually
 reaches, so nothing is left to correct.
 
 **Staging:** Label `The loop that finally holds`. The three changes appear
@@ -1076,7 +1076,7 @@ awakening). Keep these lines in sync with the `NARRATION` table in
 - **26:** Impa recognizes Zelda, and shows her the bracelet. Her duty is done, and she fades away, leaving it behind.
 - **L1:** Now we can answer the question about the bracelet. Old Impa wore it before this adventure changed anything. If her past had already held the ending we just watched, Demise would have been destroyed long ago, and there would have been no Imprisoned under the Sealed Grounds. But it was there, with the dragon's bones and no tree. So the farewell she remembered belonged to a different ending.
 - **L2:** That ending came from this same journey, as history first recorded it. The same Zelda fled into the past, the same Link met her, and the same Impa kept watch. But in that version, nobody planted a seedling or cured a dragon, and in the final battle, Demise was only sealed away again. Zelda said goodbye with her bracelet, and the Imprisoned survived into the present where our adventure begins.
-- **L3:** That version held only as long as the journey matched it. The first thing Link did differently, planting the seedling, changed the past. Curing the dragon changed it again, and his final victory replaced the resealing itself. Now the ending the past remembers is the one the journey actually reaches. Nothing is left to correct, and that is why this attempt is the last.
+- **L3:** That version held only as long as the journey matched it. The first thing Link did differently, planting the seedling, rewrote history from that moment on. Curing the dragon rewrote it again, and his final victory rewrote history a final time. Now the ending the past remembers is the one the journey actually reaches. Nothing is left to correct, and that is why this attempt is the last.
 - **27:** So that is the theory. History can be rewritten, but journeys through time survive, and a fulfilled wish keeps its result. None of it is confirmed by the game. It's simply one possible way to make the pieces fit without breaking established lore or getting too deep into speculation.
 - **28:** Before we finish, here are a few questions that might come up, with the short answers this theory would give.
 - **28b:** And a few more, about the wish, the Timeshift Stones, and how this theory fits with the rest of the series.

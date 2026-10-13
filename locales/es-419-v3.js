@@ -21,9 +21,9 @@ Object.assign(ES_SCENES,{
  ],
  'L3':[
  'Por qué este intento es el último',
- 'Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, modificó el pasado. Curar al dragón lo modificó de nuevo, y su victoria final reemplazó el nuevo sello. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza, así que ya no queda nada que corregir.',
+ 'Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, reescribió la historia desde ese momento. Curar al dragón la reescribió de nuevo, y su victoria final reescribió la historia por última vez. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza, así que ya no queda nada que corregir.',
  'Un árbol, un dragón sanado, una espada que suelta su carga y un ciclo que por fin se sostiene.',
- 'Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, cambió el pasado. Curar al dragón lo cambió de nuevo, y su victoria final reemplazó el nuevo sello. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza. Ya no queda nada que corregir, y por eso este intento es el último.'
+ 'Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, reescribió la historia desde ese momento. Curar al dragón la reescribió de nuevo, y su victoria final reescribió la historia por última vez. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza. Ya no queda nada que corregir, y por eso este intento es el último.'
  ],
  '00':[
  'Una historia que puede cambiar',

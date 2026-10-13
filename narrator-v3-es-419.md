@@ -138,7 +138,7 @@ Ese final venía de esta misma travesía, tal como la historia la registró por 
 
 ## 35. Por qué este intento es el último
 
-Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, cambió el pasado. Curar al dragón lo cambió de nuevo, y su victoria final reemplazó el nuevo sello. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza. Ya no queda nada que corregir, y por eso este intento es el último.
+Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, reescribió la historia desde ese momento. Curar al dragón la reescribió de nuevo, y su victoria final reescribió la historia por última vez. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza. Ya no queda nada que corregir, y por eso este intento es el último.
 
 ## 36. Lo que explica la teoría y lo que supone
 
