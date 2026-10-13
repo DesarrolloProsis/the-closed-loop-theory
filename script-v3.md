@@ -22,10 +22,11 @@ that the corrected world no longer remembers.
 “Self-correcting” is the name of this interpretation, not a confirmed law
 stated by the game. This is not a strictly immutable closed loop. It is a
 single revisable history containing causal loops, with no surviving branches.
-The starting history inherits an earlier intervention that the game does
-not show. Earlier attempts achieve temporary resealing. The adventure we
-follow completes the Triforce wish and Demise's defeat, ending the recurrence.
-These attempts need not repeat the same decisions or every quest in the game.
+The starting history inherits an earlier attempt that the game does not
+show: this same journey as history first recorded it, which ended in a
+resealing. The adventure we follow changes that journey, completes the
+Triforce wish and Demise's defeat, and leaves a history whose ending is the
+one its own travelers reach, so nothing is left to correct.
 
 **Opening caption:**
 
@@ -98,12 +99,13 @@ wish's preserved result arriving at its original time.
 
 ## Agreed interpretation
 
-0. Before the adventure we witness, earlier versions of events have already
-   occurred. An earlier intervention reseals Demise but does not complete
-   the successful combination of wish, defeat, and containment we witness.
-   Old Impa's early bracelet comes from a farewell in that already-lived
-   past. The earlier farewell need not reproduce the game's final scene.
-   The exact cause of the earlier attempt's failure is unknown.
+0. The history the adventure starts in (H0) was shaped by an earlier
+   attempt: this same journey, made by the same Zelda, Link, Impa and
+   Groose, as history first recorded it. That version matched ours up to
+   Link's first visit, but nobody planted the seedling or cured the
+   dragon, and its final battle only resealed Demise. Old Impa's early
+   bracelet comes from that version's farewell. Why it ended in a
+   resealing is unknown. See “The earlier attempt” below.
 1. Hylia entrusts Impa and Fi with her plan. In this reconstruction, Impa
    waits to meet Hylia's future incarnation before beginning her own journey.
 2. Zelda and the returning Impa reach the past. The returning Impa meets
@@ -161,11 +163,12 @@ Use these history labels where needed:
   remnant in the sword, until the wish ends it.
 
 These are successive versions of one history, not coexisting universes.
-Use **P — earlier attempts** for the proposed history preceding H0. P is
-not another branch, nor a known number of complete repetitions of the game.
-H0 already inherits events from an earlier past, including the bracelet.
-H0–H3 track revisions within the adventure being presented; they are not
-four additional full resealing attempts.
+Use **P — earlier attempts** for the version of the journey that H0
+inherits: the same journey as history first recorded it, ending in a
+resealing. P is not another branch, and its people are not other travelers.
+Whether P itself replaced an even earlier version is unknown. H0–H3 track
+revisions within the adventure being presented; they are not four
+additional full resealing attempts.
 
 An earlier version is no longer an independently existing world after
 replacement. References to it identify the origin of surviving memories,
@@ -204,32 +207,54 @@ The same holds for the sleeping Zelda: nothing deletes what stays behind
 in the past. Do not suggest a blanket “anything left in the past vanishes”
 rule.
 
-### The bracelet: an inherited past rather than an anticipated final victory
+### The earlier attempt: the journey as history first recorded it
 
-Old Impa already wears Zelda's bracelet during the earlier adventure.
-The revised explanation places its origin in an earlier attempt's handoff.
-That handoff precedes the H0 adventure in the sequence of history versions,
-although it belongs to the ancient past in calendar time. Early Old Impa
-has lived that history; she need not anticipate this attempt's final victory.
+This is the part of the theory most specific to it, and the presentation
+explains it in full after the story ends (L1–L3), with a teaser at P0.
 
-The earlier handoff only requires a farewell, not a previous permanent
-victory or an exact repeat of Zelda's final awakening. It could accompany
-the beginning of another vigil. This possibility supplies a simpler
-backstory, but its occasion is not established and should not be dramatized
-as fact. Do not duplicate the final cutscene to manufacture its provenance.
+**Why there must be an earlier attempt.** At the start of the adventure
+(H0), Old Impa already wears the bracelet Zelda only gives her at the very
+end. If H0's past already contained the ending the audience watches, Demise
+would have been destroyed in the distant past and the Imprisoned couldn't
+be waiting under the Sealed Grounds. It is there, together with Lanayru's
+bones and no Life Tree. So the farewell Old Impa remembers belongs to a
+different ending: one with the same bracelet, a final battle that only
+resealed Demise, and no planting or cure before it.
 
-The handoff shown in the finale belongs to H3. It supplies the bracelet
-for the revised Impa who greets the returning trio. Do not stack both
-handoffs into one ancient day or give one Impa two bracelets. They are
-corresponding events in different versions of history.
+**Who made it.** The same people. The earlier attempt is this very journey
+as history first recorded it: the same Zelda fled through the desert gate,
+the same Link met her on his first visit, the same Impa kept watch, and
+the same trio went into the past at the end. Everything up to Link's
+first visit (02–05) matches; H0 labels those scenes for that reason. The
+consequences are:
 
-This offers a possible origin for the early bracelet, but does not establish
-the unseen events that produced it. A finished model must explain how
-earlier travelers, their Impa, and that handoff connect. Do not stage an
-elaborate earlier farewell as a confirmed lost scene from the game.
+- It is the same bracelet. No second, identical bracelet is needed.
+- Nobody remembers an earlier attempt, because no separate travelers ever
+  made one. Link changed the journey before he lived its ending, so no
+  traveler carries that version. Only its traces stayed in the past: Old
+  Impa's bracelet and memories, and the Imprisoned.
+- In that version Link didn't leave his sword in the temple, which is why
+  no aged blade waits there when the adventure begins.
 
-Keep the bracelet on early Old Impa. Do not remove it or claim that this
-version has proven it comes from the final victory the audience witnesses.
+**Why this attempt is the last.** That version held only as long as the
+journey matched it. The first thing Link did differently, planting the
+seedling, revised the past (H0 → H1); the cure revised it again (H1 →
+H2); his final victory replaced the resealing (H2 → H3). In H3 the ending
+the past remembers is the one the journey actually reaches, so there is
+nothing left to correct. This is the “self-correcting timeline” in its
+plainest form: history keeps revising until the ending it holds is the
+ending its own travelers reach.
+
+**What stays open.** Why the earlier final battle only resealed Demise,
+and whether that version itself replaced an even earlier one, are unknown.
+Do not invent the earlier battle's details, stage its farewell as a lost
+scene from the game, or give Impa memories of several failed histories.
+
+The handoff shown in the finale belongs to H3 and supplies the bracelet
+for the revised Impa who greets the returning trio. The earlier farewell
+and the H3 farewell are corresponding events in different versions of
+history: do not stack both into one ancient day or give one Impa two
+bracelets. Keep the bracelet on early Old Impa.
 
 ### The Triforce: the result and its time survive
 
@@ -267,26 +292,26 @@ the presentation's viewpoint, not a new in-world character.
 
 ### Why the final attempt differs
 
-These are different interventions, not a deterministic sequence that
-repeats identically until it somehow improves. Earlier attempts achieve
-temporary resealing. The witnessed adventure completes the Triforce wish
-and then defeats Demise, sealing his remaining consciousness in the sword.
-The model takes that successful combination as the end of the recurrence.
+The earlier version and the witnessed one are the same journey with a
+different course, not a deterministic sequence that repeats until it
+somehow improves. The earlier version ended in a resealing. The witnessed
+adventure changes the past before the final battle, completes the Triforce
+wish, and defeats Demise, sealing his remaining consciousness in the sword.
 
-The previous attempts' exact failures are unspecified backstory. Do not
-claim to know whether a particular trial failed or precisely when the
-hero stopped. Nor is it necessary to assert that no earlier wish of any
-kind was ever made. The relevant distinction is that the earlier history
-did not contain this completed resolution.
+Why the earlier version only resealed Demise is unspecified. Do not claim
+to know whether a particular trial failed or precisely when its hero
+stopped, and don't assert that no wish of any kind was made in it. The
+relevant distinction is that the earlier history did not contain this
+completed resolution.
 
 Do not give Impa memories of multiple failed histories, or claim that
 repetition automatically makes Link stronger. Neither is needed here.
 Do not say the wish erases Demise from every era: Ghirahim still revives
 him in the ancient past before Link's final battle.
 
-Earlier attempts need not include the planting or Lanayru's successful
-cure. Replaying those exact successes and then showing H0 without their
-results would introduce an unnecessary reset that this draft does not use.
+The earlier version did not include the planting or Lanayru's cure; that
+is part of how the theory knows it differed (H0 has no tree and the bones
+are still there).
 
 ### The sword: a revised history, not a physically reset blade
 
@@ -295,11 +320,11 @@ during the witnessed adventure. Replacing later history does not require
 the Master Sword to reverse its forging, return to the statue, or restore
 Fi to an earlier mental state.
 
-Temporary resealing in an earlier attempt does not entail the final
-pedestal scene. An earlier hero could keep carrying the blade; that
-possibility avoids requiring an earlier Master Sword to be hidden in
-the temple. Its full route is not established. Do not draw a detailed
-earlier sword path as though it were supported by the game.
+The earlier version's resealing does not entail the final pedestal scene.
+In that version Link kept the blade, which is why no aged Master Sword
+waits in the temple at the start of the adventure. Its full route is not
+established. Do not draw a detailed earlier sword path as though it were
+supported by the game.
 
 The final deposition is the one shown: Link leaves his sword with Impa,
 and it ages into the blade seen at the reunion. An older Master Sword
@@ -402,11 +427,14 @@ instructions for the next agent, not additional dialogue for the characters.
 Retain a visible theory label for inferred events. Do not put invented
 dialogue in quotation marks as though it were game dialogue.
 
-Use stable IDs **00, 00a, 00b, 01–07, 08a, 08b, 09, P0, 10–24, W1, 25–28,
-28b** in playback order: 35 slides. 00 is a brief introduction card. 00a
-and 00b open the story. Scene 08 plays as 08a (the fall) and 08b (the
-awakening). P0 is an inset explaining the bracelet, played right after
-Link meets Old Impa. W1 is the corrected-history wish interlude. 28 and
+Use stable IDs **00, 00a, 00b, 01–07, 08a, 08b, 09, P0, 10–24, W1, 25, 26,
+L1–L3, 27, 28, 28b** in playback order: 38 slides. 00 is a brief
+introduction card. 00a and 00b open the story. Scene 08 plays as 08a (the
+fall) and 08b (the awakening). P0 is a short inset that raises the
+bracelet question right after Link meets Old Impa. W1 is the
+corrected-history wish interlude. L1–L3 answer the bracelet question after
+the story ends: the deduction, the earlier version of the journey, and why
+this attempt is the last. 28 and
 28b are the closing FAQ, split in two so each card fits: five questions
 about the characters, then five about the rules. These IDs preserve the
 journey references without renumbering.
@@ -578,13 +606,14 @@ causal loop.
 
 **Caption:**
 Old Impa already wears the bracelet that Zelda will give her at the
-end of this adventure. In this theory, it comes from an earlier attempt that resealed
-Demise but never finished him. This adventure goes further.
+end of this adventure. In this theory, it comes from an earlier ending of
+this same journey, one that resealed Demise but never finished him. The
+full answer comes after the adventure ends.
 
-**Staging:** Open on the bracelet from scene 09, then a schematic
-sequence: confinement, escape, resealing, farewell. Label it
-`Proposed earlier attempts — not shown in the game`. Close back on
-scene 09. Do not fabricate the earlier handoff's setting. Do not show
+**Staging:** A teaser, not the full explanation (that is L1–L3). Open on
+the bracelet from scene 09, then a schematic sequence: confinement,
+escape, resealing, farewell. Label it `Proposed earlier attempts — not
+shown in the game`. Close back on scene 09. Do not fabricate the earlier handoff's setting. Do not show
 an infinite number of simultaneous swords or declare the precise number
 of attempts. Do not show a weakening blade, reverse forging, a repeated
 full quest, or a previous final victory. The previous attempt's detailed
@@ -851,11 +880,68 @@ remnant. The
 Goddess Statue and Triforce remain as the protected outcome shown in W1.
 Do not attribute their survival merely to the trio being in the past.
 
+### After the story — the earlier attempt
+
+Three diagram slides that answer the question P0 raised. They use their
+own section label (`After the story · The earlier attempt`) and plain
+backdrop, like P0, so they read as explanation rather than as story.
+
+#### L1 — The ending Impa remembered
+*Sealed Temple, as the adventure begins — H0*
+
+**Caption:**
+Old Impa wore the bracelet before this adventure changed anything. If her
+past had held the ending we just watched, Demise would have been destroyed
+long ago, and no Imprisoned would have waited under the Sealed Grounds. It
+was there, along with the dragon's bones and the empty soil. So the
+farewell she remembered belonged to a different ending.
+
+**Staging:** Label `The theory's deduction`. Old Impa with her bracelet
+highlighted; the Imprisoned sealed below, Lanayru's bones, and empty soil
+around her. A line of beats at the foot of the stage carries the argument:
+“Old Impa, before anything changed” → “If her past held the ending we just
+watched,” → “the Imprisoned would already be gone.” (the beast fades) →
+“But it is still there.” (it returns) → “So she remembers a different ending.”
+
+#### L2 — The journey as history first recorded it
+*Proposed earlier versions of history — P*
+
+**Caption:**
+That ending came from this same journey, as history first recorded it. The
+same Zelda fled into the past, the same Link met her, and the same Impa
+kept watch. But in that version nobody planted a seedling or cured a
+dragon, and in the final battle Demise was only sealed again. Zelda said
+goodbye with her bracelet, and the Imprisoned survived into the present
+where this adventure begins.
+
+**Staging:** Label `Proposed earlier ending — not shown in the game`.
+Zelda, Impa and Link as grey silhouettes, as in P0. Beats: the same
+escape; the same first visit; no seedling, no cure; Demise sealed again
+(the dark essence sinks into the seal); a farewell, a bracelet (it passes
+from Zelda to Impa); the Imprisoned survives into the present. Do not
+stage the earlier battle in detail or present it as a lost scene.
+
+#### L3 — Why this attempt is the last
+*From the first history to the corrected one — H0 → H3*
+
+**Caption:**
+That version held only as long as the journey matched it. The first thing
+Link did differently, planting the seedling, revised the past. Curing the
+dragon revised it again, and his final victory replaced the resealing
+itself. Now the ending the past remembers is the one the journey actually
+reaches, so nothing is left to correct.
+
+**Staging:** Label `The loop that finally holds`. The three changes appear
+in order, each tagged: the Life Tree grows (“a seedling planted: the first
+change”), Lanayru heals (“a dragon cured”), and the remnant leaves the
+pedestal sword (“Demise defeated, not resealed”). A gold ring then closes
+around them (“an ending the journey actually reaches”).
+
 #### 27 — What this theory explains—and what it assumes
 *Closing assessment*
 
 **Caption:**
-An earlier farewell accounts for the bracelet. Protected journeys
+An earlier ending of this same journey accounts for the bracelet. Protected journeys
 preserve the travelers, and a surviving wish brings the statue down and
 ends what is left of Demise. These are the theory's proposed rules, not
 laws the game explicitly confirms.
@@ -865,10 +951,13 @@ laws the game explicitly confirms.
 - **Four rules:** history can be replaced; completed time journeys
   survive; the wish survives at its original time; other consequences
   follow the revised history.
-- **What differs:** earlier attempts only reseal Demise; this adventure
-  completes the wish, defeat, and containment. No physical sword reset
-  or exact repetition of the entire adventure is required.
-- **Limits:** the earlier farewell and failure are hypothetical; the
+- **What differs:** the earlier attempt was this same journey as history
+  first recorded it, and it ended in a resealing. This time Link changed
+  the past before the final battle and completed the wish, the defeat, and
+  the containment. No physical sword reset is needed, and nobody relives
+  the earlier version.
+- **Limits:** the earlier ending, and why it ended in a resealing, are
+  hypothetical; the
   traveler and wish rules are assumptions; that the wish reaches Demise's
   remnant in the sword, and that Zelda's seal holds it until then, are the
   theory's readings; the corrected present between the preserved
@@ -931,9 +1020,12 @@ theory fits the rest of the series.
 - **Why don't Timeshift Stones rewrite history every time?** They show a
   local earlier state. Only Link's cure is treated as a lasting change;
   exactly where that line falls is an open question.
-- **How many earlier attempts were there, and what happened to their
-  sword?** Unknown. The theory needs only one earlier attempt and no sword
-  reset; an earlier hero could simply have kept the blade.
+- **Who made the earlier attempt, and why does nobody remember it?** The
+  same three people: it was this journey as history first recorded it.
+  Link changed it before he lived its ending, so no traveler carries it;
+  only its traces stayed in the past, in Old Impa's bracelet and memories,
+  and in the Imprisoned. Whether that version replaced an even earlier one
+  is unknown.
 - **Is this a closed time loop?** Not strictly. It is one history that can
   be revised and contains causal loops, with no parallel branches left
   behind.
@@ -963,7 +1055,7 @@ awakening). Keep these lines in sync with the `NARRATION` table in
 - **08a:** On Skyloft, Ghirahim summons a tornado that tears Zelda from the sky and drops her far below, onto the surface.
 - **08b:** Down there, young Impa finds her and keeps her safe. At the sacred springs, Zelda begins to learn her true nature: she is the reincarnation of the goddess Hylia.
 - **09:** Link draws the Goddess Sword and dives after her. At the Sealed Temple, an old woman is waiting, and behind her door the crystal is already there. Zelda's trip into the past already belongs to this history.
-- **P0:** So where does Old Impa's bracelet come from, if Zelda only gives it to her at the very end? This theory suggests she received it during an earlier attempt, one that sealed Demise away again but never finished him.
+- **P0:** So where does Old Impa's bracelet come from, if Zelda only gives it to her at the very end? This theory says it comes from an earlier ending of this same journey, one that sealed Demise away again but never finished him. Keep it in mind: we will come back to it once the adventure is over.
 - **10:** Ghirahim catches up with Zelda and Impa in the desert. Link holds him off while the two of them escape through the Gate of Time and destroy it. It is the arrival we saw earlier, seen from the other side.
 - **11:** Old Impa sends Link to the Sacred Flames. With the Master Sword reforged, he wakes the temple's own Gate of Time and steps into the past, straight into the meeting with Zelda we have already seen.
 - **12:** Link comes back with a task. Zelda has asked him to find the Triforce and end Demise for good. To get there, he still has trials to face, and a song to learn.
@@ -982,6 +1074,9 @@ awakening). Keep these lines in sync with the `NARRATION` table in
 - **W1:** When this corrected history reaches the moment of Link's wish, the statue still comes down, only now onto empty ground. The wish still does what Link asked: what is left of Demise, sealed in the sword, finally fades. With nothing left to seal, Zelda wakes from her crystal.
 - **25:** Link, Zelda and Groose come home. They remember the Imprisoned and everything they went through. Old Impa, in this theory, remembers a different vigil: guarding a sword and a sleeping girl, not fighting a beast.
 - **26:** Impa recognizes Zelda, and shows her the bracelet. Her duty is done, and she fades away, leaving it behind.
+- **L1:** Now we can answer the question about the bracelet. Old Impa wore it before this adventure changed anything. If her past had already held the ending we just watched, Demise would have been destroyed long ago, and there would have been no Imprisoned under the Sealed Grounds. But it was there, with the dragon's bones and no tree. So the farewell she remembered belonged to a different ending.
+- **L2:** That ending came from this same journey, as history first recorded it. The same Zelda fled into the past, the same Link met her, and the same Impa kept watch. But in that version, nobody planted a seedling or cured a dragon, and in the final battle, Demise was only sealed away again. Zelda said goodbye with her bracelet, and the Imprisoned survived into the present where our adventure begins.
+- **L3:** That version held only as long as the journey matched it. The first thing Link did differently, planting the seedling, changed the past. Curing the dragon changed it again, and his final victory replaced the resealing itself. Now the ending the past remembers is the one the journey actually reaches. Nothing is left to correct, and that is why this attempt is the last.
 - **27:** So that is the theory. History can be rewritten, but journeys through time survive, and a fulfilled wish keeps its result. None of it is confirmed by the game. It's simply one possible way to make the pieces fit without breaking established lore or getting too deep into speculation.
 - **28:** Before we finish, here are a few questions that might come up, with the short answers this theory would give.
 - **28b:** And a few more, about the wish, the Timeshift Stones, and how this theory fits with the rest of the series.
@@ -1016,6 +1111,13 @@ backdrops, the controls, and the recording view) is unchanged.
 - **Scene W1** adds Old Impa, the pedestal sword, and the crystal. After
   the statue lands, a second burst of sparks reaches the sword, the
   remnant rises and fades, the bond fades, and the crystal opens.
+- **Scene 19** no longer shows the Imprisoned: the scene is set in the
+  temple, its text doesn't mention the beast, and scene 20 introduces it.
+- **Scenes L1–L3** use a new era (`e:5`, “The earlier attempt”) styled
+  like the P0 inset, with banners and a line of beats at the foot of the
+  stage (`BEATS` is now keyed by scene). L2 draws Zelda, Impa and Link as
+  grey silhouettes, as P0 does; L3 reuses the tree, Lanayru, the pedestal
+  sword with its remnant, and the gold crossing ring.
 - **Scenes 28 and 28b** share the FAQ card: 28 shows the first five
   questions and 28b the last five (`FAQ_PART`).
 - **Closing card:** four rules and the new limits.
@@ -1044,9 +1146,12 @@ backdrops, the controls, and the recording view) is unchanged.
   present stays unreconstructed.
 - The Life Tree appears inside the temple in 14, 15, and 24, and is
   absent from every H0 scene (06, 08, 09).
-- P0 plays between 09 and 10, opening and closing on the bracelet.
-- Early Old Impa retains her bracelet; P0 proposes its earlier-attempt origin
-  through a farewell, while the closing card labels that backstory hypothetical.
+- P0 plays between 09 and 10, opening and closing on the bracelet, and
+  promises the full answer; L1–L3 give it after scene 26.
+- Early Old Impa retains her bracelet; L1–L3 trace it to the earlier version
+  of this same journey, while the closing card labels that ending hypothetical.
+- The earlier attempt is never shown as made by other travelers, and nobody
+  remembers it except through its traces in the past.
 - Scenes 17 and W1 use the same time marker. H3 has one statue descent,
   no Imprisoned beneath it, and no newly invented second wish.
 - The Triforce and statue persist through the proposed wish rule, not
@@ -1078,14 +1183,16 @@ backdrops, the controls, and the recording view) is unchanged.
 ## Status
 
 This is a presentation-ready narrative of the four-rule model, not a proof
-of a uniquely consistent interpretation of the game. Earlier attempts are
-partial failures rather than exact repetitions. The sword needs no
-physical reset. Protected crossings connect the returning trio to the
+of a uniquely consistent interpretation of the game. The earlier attempt is
+this same journey as history first recorded it, ending in a resealing;
+Link's changes revise it until the history's ending is the one its own
+travelers reach. The sword needs no physical reset. Protected crossings connect the returning trio to the
 revised personal histories, the sleeping Zelda's line runs unbroken from
 the desert escape to her departure in 18, and the fulfilled wish keeps its
 result at its original time, ending whatever remains of Demise then.
 
-The unshown earlier farewell and failure remain hypothetical backstory.
+The earlier version's ending, and why it only resealed Demise, remain
+hypothetical backstory; so does whether it replaced an even earlier one.
 Traveler continuity and wish protection are stipulated rules. That the
 wish reaches the remnant in the sword, and that Zelda's seal holds it until
 then, are the theory's readings; for thousands of years her seal overlaps

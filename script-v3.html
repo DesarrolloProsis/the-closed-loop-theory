@@ -21,7 +21,7 @@
 .stage-wrap:before{display:none}#sc .backdrop{image-rendering:pixelated;image-rendering:crisp-edges}
 #sc text{paint-order:stroke;stroke:#15121a;stroke-width:.85px;stroke-linejoin:round}#sc .prop-label{fill:#efe8d6;font-size:5.4px}#sc .tag{fill:#f3f8e6;font-size:5.9px}#sc .banner{fill:#ffd98a}#sc .note{fill:#fff6e6;font-size:5.6px}
 /* Insignia de época arriba a la derecha del escenario, con un color por época: pasado dorado, presente verde, inserto violeta. */
-.stage-era{position:absolute;top:14px;right:16px;z-index:2;font:650 11px system-ui,sans-serif;letter-spacing:1.8px;padding:6px 13px;border-radius:999px;border:1.5px solid currentColor;background:var(--card);color:var(--green);box-shadow:0 4px 14px #0002;pointer-events:none}.stage-era[data-era="0"]{color:var(--gold)}.stage-era[data-era="2"]{color:#9a7fc6}.stage-era[data-era="3"],.stage-era[data-era="4"]{color:var(--muted)}
+.stage-era{position:absolute;top:14px;right:16px;z-index:2;font:650 11px system-ui,sans-serif;letter-spacing:1.8px;padding:6px 13px;border-radius:999px;border:1.5px solid currentColor;background:var(--card);color:var(--green);box-shadow:0 4px 14px #0002;pointer-events:none}.stage-era[data-era="0"]{color:var(--gold)}.stage-era[data-era="2"],.stage-era[data-era="5"]{color:#9a7fc6}.stage-era[data-era="3"],.stage-era[data-era="4"]{color:var(--muted)}
 @media(max-width:580px){.stage-era{top:8px;right:8px;font-size:9px;padding:4px 9px;letter-spacing:1.2px}}
 /* Tarjeta de preguntas frecuentes: dos columnas de pregunta y respuesta breve. */
 .faq{grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;gap:10px 22px;font-size:11px;line-height:1.5}.faq .faq-title{grid-column:1/-1;margin:0}.faq-item b{display:block;font-weight:600;color:var(--ink)}.faq-item p{margin:2px 0 0;color:var(--muted)}
@@ -61,7 +61,7 @@
 <div class="scene-layout"><div class="stage-wrap"><svg id="sc" viewBox="0 0 340 210" role="img" aria-labelledby="svg-title svg-desc"><title id="svg-title">Animated scene</title><desc id="svg-desc"></desc>
 <defs><radialGradient id="portal"><stop stop-color="#c4b9e1" stop-opacity=".65"/><stop offset="1" stop-color="#a18dbf" stop-opacity=".06"/></radialGradient><linearGradient id="crystal" x2="1" y2="1"><stop stop-color="#e6d59b" stop-opacity=".25"/><stop offset="1" stop-color="#c3a255" stop-opacity=".6"/></linearGradient></defs>
 <g id="bg" aria-hidden="true"></g><g id="ly"></g><g id="effects" pointer-events="none"></g></svg><span class="stage-era ui" id="stage-era" data-era="0">THE DISTANT PAST</span>
-<div id="card" class="card" hidden><div><h3>Four rules</h3><ol><li>History can be replaced.</li><li>Completed time journeys survive.</li><li>A fulfilled wish survives at its original time.</li><li>Other consequences follow the revised history.</li></ol></div><div><h3>What differs</h3><p>Earlier attempts only reseal Demise. This adventure completes the wish, the defeat, and the containment in the sword. No physical sword reset and no exact repeat of the whole adventure are required.</p></div><div><h3>Limits</h3><ul><li>The earlier farewell and failure are hypothetical.</li><li>The traveler and wish rules are assumptions.</li><li>That the wish reaches Demise's remnant in the sword, and that Zelda's seal holds it until then, are the theory's readings.</li><li>The corrected present between the preserved crossings is left open.</li></ul></div></div>
+<div id="card" class="card" hidden><div><h3>Four rules</h3><ol><li>History can be replaced.</li><li>Completed time journeys survive.</li><li>A fulfilled wish survives at its original time.</li><li>Other consequences follow the revised history.</li></ol></div><div><h3>What differs</h3><p>The earlier attempt was this same journey as history first recorded it, and it ended in a resealing. This time Link changed the past before the final battle and completed the wish, the defeat, and the containment in the sword. No physical sword reset is needed, and nobody relives the earlier version.</p></div><div><h3>Limits</h3><ul><li>The earlier ending, and why it ended in a resealing, are hypothetical.</li><li>The traveler and wish rules are assumptions.</li><li>That the wish reaches Demise's remnant in the sword, and that Zelda's seal holds it until then, are the theory's readings.</li><li>The corrected present between the preserved crossings is left open.</li></ul></div></div>
 <div id="opening" class="card opening" hidden><p class="opening-lead">What if time preserves the travelers, but rewrites the world they return to?</p>
 <p><b>What this is.</b> A proposed reading of Skyward Sword's time travel: one history that can be revised, rather than a fixed loop or a set of branching timelines.</p>
 <p><b>What it tries to do.</b> Explain the details the game leaves open, such as Old Impa's early bracelet, the tree that suddenly exists, the dragon that was already dead, and the sleeping Zelda left behind after the final battle, with a few stated rules and without breaking established lore.</p>
@@ -74,7 +74,7 @@
 <div class="faq-item"><b>Why doesn't Old Impa warn anyone about what's coming?</b><p>In the corrected history she remembers the ending: Ghirahim taking Zelda through the gate, and Link finishing Demise in the past. That kidnapping is what puts Link there at the right moment, so she keeps quiet rather than risk the victory. This is the theory's reading of her choice, not something the game shows.</p></div>
 <div class="faq-item"><b>Does anyone make the wish again?</b><p>No. The statue descends once, at the original moment, as the surviving result of Link's wish (rule 3). In the corrected history, the same wish ends what is left of Demise in the sword.</p></div>
 <div class="faq-item"><b>Why don't Timeshift Stones rewrite history every time?</b><p>They show a local earlier state. Only Link's cure is treated as a lasting change; exactly where that line falls is an open question.</p></div>
-<div class="faq-item"><b>How many earlier attempts were there, and what happened to their sword?</b><p>Unknown. The theory needs only one earlier attempt and no sword reset; an earlier hero could simply have kept the blade.</p></div>
+<div class="faq-item"><b>Who made the earlier attempt, and why does nobody remember it?</b><p>The same three people: it was this journey as history first recorded it. Link changed it before he lived its ending, so no traveler carries it; only its traces stayed in the past, in Old Impa's bracelet and memories, and in the Imprisoned. Whether that version replaced an even earlier one is unknown.</p></div>
 <div class="faq-item"><b>Is this a closed time loop?</b><p>Not strictly. It is one history that can be revised and contains causal loops, with no parallel branches left behind.</p></div>
 <div class="faq-item"><b>Does this change Demise's curse or the later games?</b><p>No. The wish ends what remains of Demise at its moment, but the curse is a promise that his hatred will return, not a part of him. The curse, the Master Sword and the Triforce carry on as the game ends.</p></div>
 </div></div>
@@ -449,6 +449,30 @@ const ES_TEXT={
 // Version 3 (the sleeper continues): Latin American Spanish for what differs from version 2.
 // Loaded after es-419.js in script-v3.html; these entries replace or extend the shared catalog.
 Object.assign(ES_SCENES,{
+ 'P0':[
+ 'El origen del brazalete',
+ 'La anciana Impa ya lleva el brazalete que Zelda le entregará al final de esta aventura. Según la teoría, viene de un final anterior de esta misma travesía, uno que volvió a sellar a Demise, pero no acabó con él. La respuesta completa llega cuando termine la aventura.',
+ 'Encierro, escape, un nuevo sello y una despedida: un pasado propuesto, representado en un diagrama.',
+ 'Entonces, ¿de dónde salió el brazalete de la anciana Impa, si Zelda se lo entrega hasta el final? Esta teoría dice que viene de un final anterior de esta misma travesía: uno que volvió a sellar a Demise, pero nunca acabó con él. Tenlo presente: volveremos a esto cuando termine la aventura.'
+ ],
+ 'L1':[
+ 'El final que Impa recordaba',
+ 'La anciana Impa ya llevaba el brazalete antes de que esta aventura cambiara nada. Si su pasado hubiera contenido el final que acabamos de ver, Demise habría sido destruido hace mucho, y ningún Cautivo habría esperado bajo la Tierra del Presidio. Pero ahí estaba, junto con los huesos del dragón y la tierra vacía. Así que la despedida que ella recordaba pertenecía a otro final.',
+ 'Un brazalete, una bestia que ya no debería estar y la deducción que se desprende de ellos.',
+ 'Ahora podemos responder la pregunta del brazalete. La anciana Impa ya lo llevaba antes de que esta aventura cambiara nada. Si su pasado ya hubiera contenido el final que acabamos de ver, Demise habría sido destruido hace mucho, y no habría ningún Cautivo bajo la Tierra del Presidio. Pero ahí estaba, con los huesos del dragón y sin ningún árbol. Así que la despedida que ella recordaba pertenecía a otro final.'
+ ],
+ 'L2':[
+ 'La travesía tal como la registró la historia',
+ 'Ese final venía de esta misma travesía, tal como la historia la registró por primera vez. La misma Zelda huyó al pasado, el mismo Link la encontró y la misma Impa montó guardia. Pero en esa versión nadie plantó un brote ni curó a un dragón, y en la batalla final Demise solo volvió a ser sellado. Zelda se despidió con su brazalete, y el Cautivo sobrevivió hasta el presente donde comienza esta aventura.',
+ 'La misma travesía en gris: una huida, una primera visita, un nuevo sello, una despedida y una bestia que sobrevive.',
+ 'Ese final venía de esta misma travesía, tal como la historia la registró por primera vez. La misma Zelda huyó al pasado, el mismo Link la encontró y la misma Impa montó guardia. Pero en esa versión nadie plantó un brote ni curó a un dragón, y en la batalla final Demise solo volvió a ser sellado. Zelda se despidió con su brazalete, y el Cautivo sobrevivió hasta el presente donde comienza nuestra aventura.'
+ ],
+ 'L3':[
+ 'Por qué este intento es el último',
+ 'Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, modificó el pasado. Curar al dragón lo modificó de nuevo, y su victoria final reemplazó el nuevo sello. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza, así que ya no queda nada que corregir.',
+ 'Un árbol, un dragón sanado, una espada que suelta su carga y un ciclo que por fin se sostiene.',
+ 'Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, cambió el pasado. Curar al dragón lo cambió de nuevo, y su victoria final reemplazó el nuevo sello. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza. Ya no queda nada que corregir, y por eso este intento es el último.'
+ ],
  '00':[
  'Una historia que puede cambiar',
  'Una interpretación de los viajes en el tiempo de Skyward Sword. Los viajeros conservan sus viajes, aunque el mundo al que regresan puede cambiar. Unas cuantas reglas buscan explicar lo que el juego deja abierto.',
@@ -487,7 +511,7 @@ Object.assign(ES_SCENES,{
  ],
  '27':[
  'Lo que explica la teoría y lo que supone',
- 'Una despedida anterior explica el brazalete. Los viajes protegidos preservan a los viajeros, y un deseo que perdura hace caer la estatua y acaba con lo que queda de Demise. Son reglas propuestas por la teoría, no leyes que el juego confirme explícitamente.',
+ 'Un final anterior de esta misma travesía explica el brazalete. Los viajes protegidos preservan a los viajeros, y un deseo que perdura hace caer la estatua y acaba con lo que queda de Demise. Son reglas propuestas por la teoría, no leyes que el juego confirme explícitamente.',
  'Cuatro reglas, una diferencia y los límites de la teoría.',
  'Esa es la teoría. La historia puede reescribirse, pero los viajes en el tiempo sobreviven y un deseo cumplido conserva su resultado. El juego no confirma nada de esto. Es una posible manera de conectar las piezas sin contradecir lo establecido ni adentrarse demasiado en la especulación.'
  ],
@@ -526,7 +550,35 @@ Object.assign(ES_TEXT,{
  'NOTHING LEFT TO SEAL: SHE WAKES':'NADA MÁS QUE SELLAR: DESPIERTA',
  'Her earlier stage sleeps on, holding the seal on what is left of Demise; later Imprisoned removed (H2 becomes H3)':'Su etapa anterior sigue dormida, sosteniendo el sello sobre lo que queda de Demise; se elimina al Cautivo posterior (H2 pasa a ser H3)',
  'What is left of Demise stays sealed in the Master Sword':'Lo que queda de Demise permanece sellado en la Espada Maestra',
- 'The wish ends what is left of Demise; with nothing left to seal, Zelda wakes':'El deseo acaba con lo que queda de Demise; sin nada más que sellar, Zelda despierta'
+ 'The wish ends what is left of Demise; with nothing left to seal, Zelda wakes':'El deseo acaba con lo que queda de Demise; sin nada más que sellar, Zelda despierta',
+ // The earlier attempt, explained after the story (L1–L3).
+ 'Sealed Temple, as the adventure begins':'Templo del Presidio, al comenzar la aventura',
+ 'From the first history to the corrected one':'De la primera historia a la corregida',
+ 'The earlier attempt':'El intento anterior','THE EARLIER ATTEMPT':'EL INTENTO ANTERIOR',
+ 'After the story · The earlier attempt':'Después de la historia · El intento anterior',
+ 'H0 → H3 · the loop that holds':'H0 → H3 · el ciclo que se sostiene',
+ 'THE THEORY’S DEDUCTION':'LA DEDUCCIÓN DE LA TEORÍA',
+ 'PROPOSED EARLIER ENDING — NOT SHOWN IN THE GAME':'FINAL ANTERIOR PROPUESTO · NO APARECE EN EL JUEGO',
+ 'THE LOOP THAT FINALLY HOLDS':'EL CICLO QUE POR FIN SE SOSTIENE',
+ 'OLD IMPA, BEFORE ANYTHING CHANGED':'LA ANCIANA IMPA, ANTES DE QUE NADA CAMBIARA',
+ 'IF HER PAST HELD THE ENDING WE JUST WATCHED,':'SI SU PASADO CONTUVIERA EL FINAL QUE ACABAMOS DE VER,',
+ 'THE IMPRISONED WOULD ALREADY BE GONE.':'EL CAUTIVO YA NO EXISTIRÍA.',
+ 'BUT IT IS STILL THERE.':'PERO SIGUE AHÍ.',
+ 'SO SHE REMEMBERS A DIFFERENT ENDING.':'ASÍ QUE ELLA RECUERDA OTRO FINAL.',
+ 'THE SAME ESCAPE':'LA MISMA HUIDA','THE SAME FIRST VISIT':'LA MISMA PRIMERA VISITA','NO SEEDLING, NO CURE':'NI BROTE NI CURA',
+ 'DEMISE SEALED AGAIN':'DEMISE, SELLADO DE NUEVO','A FAREWELL, A BRACELET':'UNA DESPEDIDA, UN BRAZALETE',
+ 'THE IMPRISONED SURVIVES INTO THE PRESENT':'EL CAUTIVO SOBREVIVE HASTA EL PRESENTE',
+ 'THE BRACELET, ALREADY ON HER WRIST':'EL BRAZALETE, YA EN SU MUÑECA',
+ 'THE IMPRISONED, STILL SEALED BELOW':'EL CAUTIVO, AÚN SELLADO BAJO TIERRA',
+ 'THE DRAGON, ALREADY DEAD':'EL DRAGÓN, YA MUERTO','NO TREE':'NINGÚN ÁRBOL',
+ 'A SEEDLING PLANTED: THE FIRST CHANGE':'UN BROTE PLANTADO: EL PRIMER CAMBIO',
+ 'A DRAGON CURED':'UN DRAGÓN CURADO',
+ 'DEMISE DEFEATED, NOT RESEALED':'DEMISE DERROTADO, NO SELLADO DE NUEVO',
+ 'AN ENDING THE JOURNEY ACTUALLY REACHES':'UN FINAL QUE LA TRAVESÍA REALMENTE ALCANZA',
+ 'The earlier attempt was this same journey as history first recorded it, and it ended in a resealing. This time Link changed the past before the final battle and completed the wish, the defeat, and the containment in the sword. No physical sword reset is needed, and nobody relives the earlier version.':'El intento anterior fue esta misma travesía tal como la historia la registró por primera vez, y terminó con un nuevo sello. Esta vez Link cambió el pasado antes de la batalla final y completó el deseo, la derrota y el encierro en la espada. No hace falta reiniciar físicamente la espada, y nadie vuelve a vivir la versión anterior.',
+ 'The earlier ending, and why it ended in a resealing, are hypothetical.':'El final anterior, y por qué terminó con un nuevo sello, son hipotéticos.',
+ 'Who made the earlier attempt, and why does nobody remember it?':'¿Quién hizo el intento anterior y por qué nadie lo recuerda?',
+ "The same three people: it was this journey as history first recorded it. Link changed it before he lived its ending, so no traveler carries it; only its traces stayed in the past, in Old Impa's bracelet and memories, and in the Imprisoned. Whether that version replaced an even earlier one is unknown.":'Las mismas tres personas: era esta travesía tal como la historia la registró por primera vez. Link la cambió antes de vivir su final, así que ningún viajero la lleva consigo; solo quedaron sus huellas en el pasado: el brazalete y los recuerdos de la anciana Impa, y el Cautivo. No se sabe si esa versión reemplazó a otra todavía anterior.'
 });
 
 // Embedded with the catalog so the downloaded HTML also works offline.
@@ -930,7 +982,7 @@ const BACKDROPS={
  }},
  plain:{top:'#2c2924',bottom:'#34302a',paint:b=>{b.px(0,0,BG_W,BG_GROUND,'#2c2924');for(let y=4;y<BG_GROUND;y+=8)for(let x=4;x<BG_W;x+=8)b.px(x,y,1,1,'#3a362f');b.px(0,BG_GROUND,BG_W,1,'#4a443b');b.px(0,BG_GROUND+1,BG_W,BG_H-BG_GROUND-1,'#34302a')}}
 };
-const BACKDROP_OF={'00':'plain','00a':'landPast','00b':'landPast','01':'landPast','02':'desertPast','03':'templePast','04':'templePast','05':'templePast','06':'centuries','07':'templePresent','08a':'skyPresent','08b':'spring','09':'woodsPresent','P0':'plain','10':'desertPresent','11':'templePresent','12':'templePresent','13':'gorgePresent','14':'templePast','15':'templePresent','16':'gorgePresent','17':'woodsPresent','18':'woodsPresent','19':'templePast','20':'groundsPast','21':'storm','22':'templePast','23':'templePast','24':'centuries','W1':'woodsPresent','25':'templePresent','26':'templePresent','27':'plain','28':'plain','28b':'plain'};
+const BACKDROP_OF={'00':'plain','00a':'landPast','00b':'landPast','01':'landPast','02':'desertPast','03':'templePast','04':'templePast','05':'templePast','06':'centuries','07':'templePresent','08a':'skyPresent','08b':'spring','09':'woodsPresent','P0':'plain','10':'desertPresent','11':'templePresent','12':'templePresent','13':'gorgePresent','14':'templePast','15':'templePresent','16':'gorgePresent','17':'woodsPresent','18':'woodsPresent','19':'templePast','20':'groundsPast','21':'storm','22':'templePast','23':'templePast','24':'centuries','W1':'woodsPresent','25':'templePresent','26':'templePresent','L1':'plain','L2':'plain','L3':'plain','27':'plain','28':'plain','28b':'plain'};
 {const layer=document.getElementById('bg');let seed=11;for(const [name,b] of Object.entries(BACKDROPS)){b.el=mk('image',{href:paintBackdrop(seed++,b.paint),width:340,height:210,preserveAspectRatio:'none','image-rendering':'pixelated',class:'backdrop'},layer);b.el.style.display='none'}}
 // Restore the gorge's living ground only inside the animated Timeshift field.
 const gorgeClip=mk('clipPath',{id:'gorge-timeshift-clip',clipPathUnits:'userSpaceOnUse'},document.getElementById('bg'));
@@ -1006,7 +1058,7 @@ const S=[
  k:{li:[70,0,1,1,70,150,1,1,.2],stat:[115,65,1,.7,115,65,0,.7,2.1],oi:[235,150,1,1],crys:[300,140,1,1]},
  q:{li:[[0,'guard'],[.8,'overhead'],[1.7,'dive'],[3.3,'dive'],[4.2,'land'],[4.8,'idle']]},tg:[['hl','A BRACELET, ALREADY HERE',5.2,8.5,-10]]},
 {id:'P0',a:2,e:2,h:'P',th:1,d:10.5,l:'Proposed earlier versions of history',t:'Where the bracelet came from',
- c:'Old Impa already wears the bracelet that Zelda will give her at the end of this adventure. In this theory, it comes from an earlier attempt that resealed Demise but never finished him. This adventure goes further.',
+ c:'Old Impa already wears the bracelet that Zelda will give her at the end of this adventure. In this theory, it comes from an earlier ending of this same journey, one that resealed Demise but never finished him. The full answer comes after the adventure ends.',
  w:'Confinement, escape, resealing, a farewell: a proposed past, drawn as a diagram.',
  k:{},q:{ze:[[0,'cast']]},lk:{ip:-1}},
 {id:'10',a:2,e:1,h:'H0',l:'Temple of Time, Lanayru Desert',t:'The escape, seen from the future',run:1,
@@ -1060,7 +1112,7 @@ const S=[
 {id:'19',a:3,e:0,h:'H2',l:'Temple of Hylia',t:'Act One, a little later',cap:['gh','z2'],
  c:'For Link, a long adventure has passed. Here, the earlier visits are still recent. The kidnapped Zelda arrives in an era where her younger self is already asleep in the crystal.',
  w:'Two Zeldas in one era: one asleep, one dragged out of the gate.',
- k:{crys:[30,140,1,1],gate:[80,170,1,1],gh:[80,150,0,1,150,150,1,1,1.2,2.2],z2:[80,150,0,1,120,150,1,1,1.35,2.2],im:[285,192,1,1]},
+ k:{crys:[30,140,1,1],gate:[80,170,1,1],gh:[80,150,0,1,150,150,1,1,1.2,2.2],z2:[80,150,0,1,120,150,1,1,1.35,2.2]},
  q:{gh:[[0,'idle']],z2:[[0,'cast'],[4.6,'captive']]},lk:{z2:-1},
  tg:[['crys','ZELDA, ASLEEP',4.8,8.5,-62],['z2','ZELDA, JUST TAKEN',4.8,8.5]]},
 {id:'20',a:3,e:0,h:'H2',d:10,l:'Sealed Grounds',t:'Demise awakens',run:1,gait:{gr:'walk',gh:'walk'},
@@ -1107,8 +1159,23 @@ const S=[
  w:'Impa’s long watch ends; only her bracelet remains.',
  k:{gr:[80,150,1,1],li:[135,150,1,1],ze:[187,150,1,1],ped:[245,170,1,1],swd:[245,140,1,.8],oi:[304,150,1,1,304,150,0,1,1.8]},
  q:{oi:[[0,'old'],[2.7,'farewell'],[4.5,'farewell']]}},
+{id:'L1',a:3,e:5,h:'H0',th:1,d:12,l:'Sealed Temple, as the adventure begins',t:'The ending Impa remembered',
+ c:'Old Impa wore the bracelet before this adventure changed anything. If her past had held the ending we just watched, Demise would have been destroyed long ago, and no Imprisoned would have waited under the Sealed Grounds. It was there, along with the dragon’s bones and the empty soil. So the farewell she remembered belonged to a different ending.',
+ w:'A bracelet, a beast that should be gone, and the deduction that follows.',
+ k:{im:[62,192,1,1],oi:[160,150,1,1],soil:[222,170,1,1],bones:[290,170,1,.7]},
+ tg:[['oi','THE BRACELET, ALREADY ON HER WRIST',.5,12,-62],['im','THE IMPRISONED, STILL SEALED BELOW',7.6,12,-72],['bones','THE DRAGON, ALREADY DEAD',8.2,12,-32],['soil','NO TREE',8.8,12,-12]]},
+{id:'L2',a:3,e:5,h:'P',th:1,d:13,l:'Proposed earlier versions of history',t:'The journey as history first recorded it',
+ c:'That ending came from this same journey, as history first recorded it. The same Zelda fled into the past, the same Link met her, and the same Impa kept watch. But in that version nobody planted a seedling or cured a dragon, and in the final battle Demise was only sealed again. Zelda said goodbye with her bracelet, and the Imprisoned survived into the present where this adventure begins.',
+ w:'The same journey in grey: an escape, a first visit, a resealing, a farewell, and a beast that survives.',
+ k:{gate:[45,170,1,1],ze:[45,150,0,1,110,150,1,1,.2,1.4],ip:[45,150,0,1,150,150,1,1,.4,1.4],li:[45,150,0,1,195,150,1,1,1.4,1.6],seal:[275,192,0,.75,275,192,.9,.75,3.7,.8]},
+ q:{ze:[[0,'walkA'],[1.8,'idle'],[8.6,'cast'],[9.6,'idle']],ip:[[0,'walkB'],[2,'idle']],li:[[0,'walkA'],[4,'idle'],[6.2,'overhead'],[7,'strike'],[7.6,'idle']]},lk:{ze:[[0,1],[8.4,1]],ip:[[0,1],[8.4,-1]],li:1}},
+{id:'L3',a:3,e:5,h:'H0 → H3',th:1,d:13,l:'From the first history to the corrected one',t:'Why this attempt is the last',
+ c:'That version held only as long as the journey matched it. The first thing Link did differently, planting the seedling, revised the past. Curing the dragon revised it again, and his final victory replaced the resealing itself. Now the ending the past remembers is the one the journey actually reaches, so nothing is left to correct.',
+ w:'A tree, a healed dragon, a sword that lets go, and a loop that finally holds.',
+ k:{tree:[60,170,1,.1,60,170,1,.55,.6,2.5],ped:[255,170,1,1],swd:[255,140,1,.8]},
+ tg:[['tree','A SEEDLING PLANTED: THE FIRST CHANGE',1.6,13,-62],['lan','A DRAGON CURED',4.6,13,-50],['swd','DEMISE DEFEATED, NOT RESEALED',6.8,13,-44],['cross','AN ENDING THE JOURNEY ACTUALLY REACHES',9.6,13,16]]},
 {id:'27',a:3,e:3,h:'',d:14,l:'Closing assessment',t:'What this theory explains — and what it assumes',
- c:'An earlier farewell accounts for the bracelet. Protected journeys preserve the travelers, and a surviving wish brings the statue down and ends what is left of Demise. These are the theory’s proposed rules, not laws the game explicitly confirms.',
+ c:'An earlier ending of this same journey accounts for the bracelet. Protected journeys preserve the travelers, and a surviving wish brings the statue down and ends what is left of Demise. These are the theory’s proposed rules, not laws the game explicitly confirms.',
  w:'Four rules, one difference, and the limits of the theory.',
  k:{ped:[170,170,.25,1],swd:[170,140,.25,.8]}},
 {id:'28',a:3,e:3,h:'',d:20,l:'Closing FAQ',t:'Questions that might come up',
@@ -1138,7 +1205,7 @@ const NARRATION={
  '08a':'On Skyloft, Ghirahim summons a tornado that tears Zelda from the sky and drops her far below, onto the surface.',
  '08b':'Down there, young Impa finds her and keeps her safe. At the sacred springs, Zelda begins to learn her true nature: she is the reincarnation of the goddess Hylia.',
  '09':'Link draws the Goddess Sword and dives after her. At the Sealed Temple, an old woman is waiting, and behind her door the crystal is already there. Zelda’s trip into the past already belongs to this history.',
- 'P0':'So where does Old Impa’s bracelet come from, if Zelda only gives it to her at the very end? This theory suggests she received it during an earlier attempt, one that sealed Demise away again but never finished him.',
+ 'P0':'So where does Old Impa’s bracelet come from, if Zelda only gives it to her at the very end? This theory says it comes from an earlier ending of this same journey, one that sealed Demise away again but never finished him. Keep it in mind: we will come back to it once the adventure is over.',
  '10':'Ghirahim catches up with Zelda and Impa in the desert. Link holds him off while the two of them escape through the Gate of Time and destroy it. It is the arrival we saw earlier, seen from the other side.',
  '11':'Old Impa sends Link to the Sacred Flames. With the Master Sword reforged, he wakes the temple’s own Gate of Time and steps into the past, straight into the meeting with Zelda we have already seen.',
  '12':'Link comes back with a task. Zelda has asked him to find the Triforce and end Demise for good. To get there, he still has trials to face, and a song to learn.',
@@ -1157,12 +1224,15 @@ const NARRATION={
  'W1':'When this corrected history reaches the moment of Link’s wish, the statue still comes down, only now onto empty ground. The wish still does what Link asked: what is left of Demise, sealed in the sword, finally fades. With nothing left to seal, Zelda wakes from her crystal.',
  '25':'Link, Zelda and Groose come home. They remember the Imprisoned and everything they went through. Old Impa, in this theory, remembers a different vigil: guarding a sword and a sleeping girl, not fighting a beast.',
  '26':'Impa recognizes Zelda, and shows her the bracelet. Her duty is done, and she fades away, leaving it behind.',
+ 'L1':'Now we can answer the question about the bracelet. Old Impa wore it before this adventure changed anything. If her past had already held the ending we just watched, Demise would have been destroyed long ago, and there would have been no Imprisoned under the Sealed Grounds. But it was there, with the dragon’s bones and no tree. So the farewell she remembered belonged to a different ending.',
+ 'L2':'That ending came from this same journey, as history first recorded it. The same Zelda fled into the past, the same Link met her, and the same Impa kept watch. But in that version, nobody planted a seedling or cured a dragon, and in the final battle, Demise was only sealed away again. Zelda said goodbye with her bracelet, and the Imprisoned survived into the present where our adventure begins.',
+ 'L3':'That version held only as long as the journey matched it. The first thing Link did differently, planting the seedling, changed the past. Curing the dragon changed it again, and his final victory replaced the resealing itself. Now the ending the past remembers is the one the journey actually reaches. Nothing is left to correct, and that is why this attempt is the last.',
  '27':'So that is the theory. History can be rewritten, but journeys through time survive, and a fulfilled wish keeps its result. None of it is confirmed by the game. It’s simply one possible way to make the pieces fit without breaking established lore or getting too deep into speculation.',
  '28':'Before we finish, here are a few questions that might come up, with the short answers this theory would give.',
  '28b':'And a few more, about the wish, the Timeshift Stones, and how this theory fits with the rest of the series.'
 };
-const HIST={P:'P · earlier attempts',H0:'H0 · before the planting','H0 → H1':'H0 → H1 · the planting',H1:'H1 · after the planting','H1 → H2':'H1 → H2 · the cure',H2:'H2 · after the cure','H2 → H3':'H2 → H3 · the correction',H3:'H3 · after Demise’s defeat'};
-const ERA=['Distant past','Present','Inset','Assessment','Introduction'],ERA_BOTTOM=['THE DISTANT PAST','THE PRESENT','PROPOSED EARLIER HISTORY','CLOSING ASSESSMENT','INTRODUCTION'];
+const HIST={P:'P · earlier attempts',H0:'H0 · before the planting','H0 → H1':'H0 → H1 · the planting',H1:'H1 · after the planting','H1 → H2':'H1 → H2 · the cure',H2:'H2 · after the cure','H2 → H3':'H2 → H3 · the correction',H3:'H3 · after Demise’s defeat','H0 → H3':'H0 → H3 · the loop that holds'};
+const ERA=['Distant past','Present','Inset','Assessment','Introduction','The earlier attempt'],ERA_BOTTOM=['THE DISTANT PAST','THE PRESENT','PROPOSED EARLIER HISTORY','CLOSING ASSESSMENT','INTRODUCTION','THE EARLIER ATTEMPT'];
 const ACT=['','Act One · The past receives its visitors','Act Two · The future creates the journey','Act Three · The victory that revises the future'];
 const TRAVEL=1.7,DELAY=1.65,reducedMotion=matchMedia('(prefers-reduced-motion: reduce)'),seek=document.getElementById('seek');
 let i=0,pos=0,time=0,playing=false,autoplay=false,lastFrame=0,states={};
@@ -1210,6 +1280,8 @@ const IMPACT={
  '08a':t=>[ease((t-4.8)/.2)*(1-ease((t-5.6)/.6)),165,163],
  '08b':t=>[ease((t-3.1)/.3)*(1-ease((t-3.9)/.5))+ease((t-5.6)/.4)*(1-ease((t-7.4)/.5)),240,140],
  'P0':t=>t<5?[pulse(t,3.8,4.8,.3),170,110]:[pulse(t,5.2,6,.3),170,140],
+ 'L2':t=>[pulse(t,6.9,7.8,.3),275,170],
+ 'L3':t=>[pulse(t,7,8.1,.3),255,118],
  '10':t=>[ease((t-2.4)/.3)*(1-ease((t-3.6)/.5)),60,137],
  '11':t=>[ease((t-1.8)/.4)*(1-ease((t-3.4)/.8)),190,121],
  '12':t=>[pulse(t,.1,1.2,.3),60,138],
@@ -1236,9 +1308,14 @@ const SPELL={
  '20':t=>between(t,.6,2.6)&&['M94 136A26 8 0 1 0 146 136A26 8 0 1 0 94 136']
 };
 const SHARDS={'02':[60,138,2.4],'10':[60,138,2.4],'08a':[275,135,5.4],'20':[262,135,6.6]};
-const BANNER={P0:'PROPOSED EARLIER ATTEMPTS — NOT SHOWN IN THE GAME','22':'THE THEORY’S PROPOSED CORRECTION',W1:'CORRECTED HISTORY — THE SAME WISH, NO SECOND CASTING'};
-const BEATS=[[0,'THE BRACELET OLD IMPA ALREADY WEARS'],[2.1,'CONFINEMENT'],[3.7,'ESCAPE'],[5.1,'RESEALING'],[6.7,'A FAREWELL'],[8.7,'INHERITED BY THIS ADVENTURE']];
-const HAND_SWORD=['04','05','09','10','11','12','20','21','22'],PEDESTAL=['23','24','W1','25','26','27'];
+const BANNER={P0:'PROPOSED EARLIER ATTEMPTS — NOT SHOWN IN THE GAME','22':'THE THEORY’S PROPOSED CORRECTION',W1:'CORRECTED HISTORY — THE SAME WISH, NO SECOND CASTING',L1:'THE THEORY’S DEDUCTION',L2:'PROPOSED EARLIER ENDING — NOT SHOWN IN THE GAME',L3:'THE LOOP THAT FINALLY HOLDS'};
+// Fases que se leen al pie del escenario en los diagramas: el inserto P0 y la explicación del intento anterior.
+const BEATS={
+ P0:[[0,'THE BRACELET OLD IMPA ALREADY WEARS'],[2.1,'CONFINEMENT'],[3.7,'ESCAPE'],[5.1,'RESEALING'],[6.7,'A FAREWELL'],[8.7,'INHERITED BY THIS ADVENTURE']],
+ L1:[[0,'OLD IMPA, BEFORE ANYTHING CHANGED'],[2.6,'IF HER PAST HELD THE ENDING WE JUST WATCHED,'],[5,'THE IMPRISONED WOULD ALREADY BE GONE.'],[7.4,'BUT IT IS STILL THERE.'],[9.6,'SO SHE REMEMBERS A DIFFERENT ENDING.']],
+ L2:[[0,'THE SAME ESCAPE'],[2.3,'THE SAME FIRST VISIT'],[4.4,'NO SEEDLING, NO CURE'],[6,'DEMISE SEALED AGAIN'],[8.5,'A FAREWELL, A BRACELET'],[10.4,'THE IMPRISONED SURVIVES INTO THE PRESENT']]
+};
+const HAND_SWORD=['04','05','09','10','11','12','20','21','22','L2'],PEDESTAL=['23','24','W1','25','26','L3','27'];
 function setText(el,text){text=tr(text);if(el.dataset.text!==text){el.textContent=text;el.dataset.text=text}}
 // Rótulos que siguen a un actor o a un objeto: [id, texto, desde, hasta, desplazamiento vertical, desplazamiento horizontal].
 function drawTags(t){const list=S[i].tg||[];tagEls.forEach((el,n)=>{const tag=list[n];if(!tag){el.style.opacity=0;return}const [id,text,a,b,dy=-44,dx=0]=tag,st=states[id]||[0,0,0,1];setText(el,slideRef(text));const w=el.getComputedTextLength();el.setAttribute('x',clamp(st[0]+dx,w/2+3,337-w/2));el.setAttribute('y',st[1]+dy);el.style.opacity=pulse(t,a,b)*clamp(st[2]*2)})}
@@ -1251,7 +1328,8 @@ function render(t){
  states={};for(const id in E){const v=k[id],state=v?stateAt(v,t,captive===id):[0,0,0,1];if(v)gateFade(v,state,t);states[id]=state;setState(E[id],...state)}
  for(const id in actors){const a=actors[id],move=travelAt(id,t);if(move&&move.moving&&!move.dragged){const kind=s.gait?.[id]??(s.run&&captor!==id?'run':'walk'),gait=GAITS[kind];showFrame(a,gait.cycle[Math.floor(move.dist/gait.stride)%gait.cycle.length],kind)}else poseFigure(a,poseAt(id,t));a.rig.setAttribute('transform',`scale(${facingAt(id,t,move)} 1) rotate(${leanAt(move)} 0 20)`)}
  // Siluetas grises solo en el inserto P0: el pasado propuesto no tiene escenario ni rostros.
- E.ze.style.filter=E.ip.style.filter=sc==='P0'?'brightness(0) invert(.55)':'';
+ // También en L2: la versión anterior de la travesía, dibujada con siluetas grises.
+ E.ze.style.filter=E.ip.style.filter=E.li.style.filter=sc==='P0'||sc==='L2'?'brightness(0) invert(.55)':'';
  island.style.display=['00b','06','08a','09','24'].includes(sc)?'':'none';skyPeople.style.display=sc==='00b'||sc==='08a'?'':'none';skyPeople.style.opacity=sc==='00b'?ease((t-3)/1.6):1;skyPeople.children[1].style.display=sc==='08a'?'none':'';
  hyliaSword.style.display=sc==='00a'||sc==='01'?'':'none';hyliaSword.setAttribute('transform',`rotate(${sc==='00a'&&t<3?mix(-10,80,ease((t-2.25)/.3)):-12}) translate(0 -12) scale(.7)`);
  // Hylia se funde en Zelda en el mismo sitio, sin dejar de tocar el arpa (pies sobre el suelo pese a la escala .8).
@@ -1280,7 +1358,7 @@ function render(t){
  {const active=sc==='13'||sc==='16',field=states.bubble;gorgeLiving.style.display=active?'':'none';if(active){gorgeClipCircle.setAttribute('cx',field[0]);gorgeClipCircle.setAttribute('cy',field[1]);gorgeClipCircle.setAttribute('r',field[3]);gorgeLiving.style.opacity=field[2]}}
  E.tstone.style.filter=sc==='13'&&t>1.9||sc==='16'&&t>1.9&&t<6.9?'brightness(1.5) drop-shadow(0 0 2px #9fe3ef)':'';
  // El dragón: moribundo (desaturado) hasta que come el fruto; curado, se eleva y deja el desfiladero.
- const sick=sc==='13'?1:sc==='16'?1-ease((t-4.5)/1):0;E.lan.style.filter=sick>0?`saturate(${1-.75*sick}) brightness(${1-.25*sick})`:'';
+ const sick=sc==='13'?1:sc==='16'?1-ease((t-4.5)/1):sc==='L3'?1-ease((t-4.4)/1):0;E.lan.style.filter=sick>0?`saturate(${1-.75*sick}) brightness(${1-.25*sick})`:'';
  if(sc==='13')put('lan',205,140,ease((t-2.3)/.7),1.5);
  if(sc==='16')put('lan',205,mix(140,40,ease((t-5.6)/1.4)),ease((t-2.2)/.7)*(1-ease((t-6.2)/.8)),1.5);
  // Los huesos pertenecen a H0: desaparecen dentro del campo y, tras la cura, ya no vuelven.
@@ -1293,8 +1371,8 @@ function render(t){
  if(PEDESTAL.includes(sc)){put('swd',...states.swd,180);if(sc==='23'&&t<1.6)put('swd',mix(247,250,ease((t-.4)/1.2)),mix(139,151,ease((t-.4)/1.2)),1,.7,180)}
  if(sc==='23')put('fi',mix(272,250,ease((t-1.3)/1.6)),mix(128,143,ease((t-1.3)/1.6)),ease(t/.5)*(1-ease((t-1.8)/1.2)),mix(.7,.1,ease((t-1.7)/1.4)));
  // Lo que queda de Demise late en la espada desde el duelo (21) hasta el deseo (W1), donde se eleva y se deshace.
- const remnantAt={'22':[92,122],'23':[250,150],'24':[150,140],'W1':[190,140]}[sc];
- if(remnantAt){let [rx,ry]=remnantAt,o=.75+.25*Math.sin(t*3),size=.8+.08*Math.sin(t*2);if(sc==='22')o*=ease((t-1)/.8);if(sc==='23')o*=ease((t-1.6)/.8);if(sc==='W1'){const rise=ease((t-3.95)/1.05);ry-=34*rise;size*=1+.6*rise;o*=1-rise}put('remnant',rx,ry,o,size)}
+ const remnantAt={'22':[92,122],'23':[250,150],'24':[150,140],'W1':[190,140],'L3':[255,140]}[sc];
+ if(remnantAt){let [rx,ry]=remnantAt,o=.75+.25*Math.sin(t*3),size=.8+.08*Math.sin(t*2);if(sc==='22')o*=ease((t-1)/.8);if(sc==='23')o*=ease((t-1.6)/.8);if(sc==='W1'||sc==='L3'){const rise=ease((t-(sc==='W1'?3.95:7))/1.05);ry-=34*rise;size*=1+.6*rise;o*=1-rise}put('remnant',rx,ry,o,size)}
  // El sello de Zelda dormida también sujeta ese resto: un lazo entre la espada y el cristal, que se suelta en W1.
  const bondEnds={'22':[[96,120],[208,122]],'24':[[154,136],[288,122]],'W1':[[186,136],[132,122]]}[sc];
  if(bondEnds){const [[x1,y1],[x2,y2]]=bondEnds;bond.setAttribute('d',`M${x1} ${y1}Q${(x1+x2)/2} ${Math.min(y1,y2)-34} ${x2} ${y2}`);bond.setAttribute('stroke-dashoffset',-t*6);bond.style.opacity=.9*(sc==='22'?ease((t-2)/.8):sc==='24'?ease((t-1)/.8):1-ease((t-3.95)/.9))}else bond.style.opacity=0;
@@ -1332,6 +1410,14 @@ function render(t){
   put('seal',170,140,lid*(1-.65*esc),1);put('haze',170,140-55*esc,lid,1.6+.5*esc);
   put('ze',140,150,.6*fw,1);put('ip',200,150,.6*fw,1);
  }
+ // L1, la deducción: el brazalete en la muñeca de la Impa anciana; el Aprisionado se desvanece mientras se plantea que ya no debería estar, y vuelve.
+ if(sc==='L1'){const [x,y]=states.oi,o=ease((t-.4)/.6);placeBracelet(x+WRIST[0],y+WRIST[1],o,.38);put('hl',x+WRIST[0],y+WRIST[1],o*(.7+.3*Math.sin(t*5)),1);E.im.style.opacity=1-.8*pulse(t,5,7.4,.5)}
+ // L2, la travesía tal como la registró la historia: Demise sellado de nuevo, la despedida con el brazalete y el Aprisionado que sobrevive.
+ if(sc==='L2'){const sink=ease((t-6.1)/1.4);put('haze',275,mix(120,188,sink),ease((t-5.6)/.5)*(1-ease((t-7.6)/.6)),mix(1.2,.6,sink));
+  const pass=ease((t-8.7)/1);placeBracelet(mix(118,142,pass),mix(140,142,pass)-12*Math.sin(Math.PI*pass),pulse(t,8.5,10.4,.3),.6);
+  put('im',275,192,ease((t-10.4)/1),.85)}
+ // L3, el bucle que por fin se sostiene: el árbol crece, el dragón sana, la espada suelta el resto y un anillo dorado cierra el ciclo.
+ if(sc==='L3'){put('lan',152,mix(112,98,ease((t-4)/1.5)),ease((t-3.4)/.7),1.1);put('cross',165,177,.9*ease((t-9.2)/1),150)}
  // Destellos (chispas en espiral).
  const imp=IMPACT[sc]?.(t)||[0,170,120];sparks.style.opacity=imp[0];[...sparks.children].forEach((el,n)=>{const angle=n*2.399,r=8+(t%1.6)*13;el.setAttribute('cx',imp[1]+Math.cos(angle)*r);el.setAttribute('cy',imp[2]+Math.sin(angle)*r);el.setAttribute('fill','#bb9f62')});
  const swingStart=sc==='00a'?(between(t,2.25,2.65)?2.25:null):sc==='21'?(between(t,2.55,2.95)?2.55:between(t,3.65,4.05)?3.65:null):null;slash.style.opacity=swingStart===null?0:Math.sin((t-swingStart)/.4*Math.PI);slash.setAttribute('d',sc==='00a'?'M223 101Q268 111 247 153':'M243 101Q288 111 267 153');
@@ -1347,7 +1433,7 @@ function render(t){
  if(sc==='00a'){const sink=ease((t-3)/1.6);put('haze',250,mix(140,190,sink),.7*ease((t-2.7)/.6),mix(.9,.6,sink))}
  // Rótulos de la teoría: cartel superior, fases del inserto, marca del deseo, regla 5 y orden de las visitas.
  setText(banner,BANNER[sc]||'');banner.style.opacity=BANNER[sc]?1:0;
- if(sc==='P0'){let text=BEATS[0][1];for(const [at,b] of BEATS)if(t>=at)text=b;setText(beat,text);beat.style.opacity=1}else beat.style.opacity=0;
+ const beats=BEATS[sc];if(beats){let text=beats[0][1];for(const [at,b] of beats)if(t>=at)text=b;setText(beat,text);beat.style.opacity=1}else beat.style.opacity=0;
  timeMark.style.opacity=sc==='17'||sc==='W1'?1:0;
  ruleNote.style.opacity=sc==='22'?pulse(t,6.2,11.8):0;
  pastMarker.style.opacity=sc==='19'?1:0;pastDot.setAttribute('cx',mix(90,250,ease((t-.3)/2)));
@@ -1359,7 +1445,7 @@ const card=document.getElementById('card'),faq=document.getElementById('faq'),op
 // Las preguntas no caben en una sola tarjeta: 28 muestra las cinco sobre los personajes y 28b las cinco sobre las reglas.
 const FAQ_PART={'28':0,'28b':1};
 // La línea de tiempo agrupa las diapositivas por acto; el inserto P0 se marca aparte.
-const dt=document.getElementById('dt');S.forEach((s,n)=>{if(n===0||S[n-1].a!==s.a){if(n>0){const divider=document.createElement('span');divider.className='era-divider';dt.appendChild(divider)}const label=document.createElement('span');label.className='timeline-label';label.textContent=s.a?'Act '+['','I','II','III'][s.a]:'Intro';dt.appendChild(label)}const button=document.createElement('button');button.className='scene-dot'+(s.e===2?' inset':'');button.textContent=n+1;button.setAttribute('aria-label',`Scene ${n+1}: ${s.t}`);button.title=s.t;button.onclick=()=>go(n);dt.appendChild(button)});
+const dt=document.getElementById('dt');S.forEach((s,n)=>{if(n===0||S[n-1].a!==s.a){if(n>0){const divider=document.createElement('span');divider.className='era-divider';dt.appendChild(divider)}const label=document.createElement('span');label.className='timeline-label';label.textContent=s.a?'Act '+['','I','II','III'][s.a]:'Intro';dt.appendChild(label)}const button=document.createElement('button');button.className='scene-dot'+(s.e===2||s.e===5?' inset':'');button.textContent=n+1;button.setAttribute('aria-label',`Scene ${n+1}: ${s.t}`);button.title=s.t;button.onclick=()=>go(n);dt.appendChild(button)});
 // ===== Quién existe y cuándo: carriles por personaje sobre el calendario =====
 // Eje: pasado remoto a la izquierda, hueco de milenios y presente a la derecha. Cada punto es un momento del calendario.
 // f2 y g2: Link deja el pasado tras cada visita; rv: ritual de Ghirahim; k: derrota de Demise (la corrección).
@@ -1552,7 +1638,7 @@ function go(n,continueAll=false){pos=clamp(n,0,S.length-1);i=pos;const s=S[i],D=
  seek.max=D;document.getElementById('dur').textContent=D;prepareNarration(playing);
  document.getElementById('eb').textContent=ERA[s.e];document.getElementById('pl').textContent=s.l;document.getElementById('ct').textContent=String(pos+1).padStart(2,'0')+' / '+S.length;
  const hist=document.getElementById('hist');hist.textContent=HIST[s.h]||'';hist.hidden=!s.h;document.getElementById('theory').hidden=!s.th;card.hidden=s.id!=='27';faq.hidden=FAQ_PART[s.id]===undefined;if(!faq.hidden){faq.querySelector('.faq-title').textContent=tr(s.t);faq.querySelectorAll('.faq-item').forEach((item,n)=>item.hidden=Math.floor(n/5)!==FAQ_PART[s.id])}opening.hidden=s.id!=='00';showBackdrop(s.id);
- document.getElementById('chapter').textContent=s.e===2?'Act Two · An inset':s.e>=3?s.l:ACT[s.a];document.getElementById('tt').textContent=s.t;document.getElementById('cp').textContent=caption;document.getElementById('action').textContent=s.w;document.getElementById('svg-title').textContent=`${tr('Scene')} ${pos+1}: ${tr(s.t)}`;document.getElementById('svg-desc').textContent=caption+' '+tr(s.w);document.getElementById('stage-era').textContent=ERA_BOTTOM[s.e];document.getElementById('stage-era').dataset.era=s.e;document.querySelectorAll('.scene-dot').forEach((d,j)=>d.setAttribute('aria-current',String(j===pos)));document.getElementById('bp').disabled=pos===0;document.getElementById('bn').disabled=pos===S.length-1;drawTracks();render(time);updatePlay();localizeDOM()}
+ document.getElementById('chapter').textContent=s.e===2?'Act Two · An inset':s.e===5?'After the story · The earlier attempt':s.e>=3?s.l:ACT[s.a];document.getElementById('tt').textContent=s.t;document.getElementById('cp').textContent=caption;document.getElementById('action').textContent=s.w;document.getElementById('svg-title').textContent=`${tr('Scene')} ${pos+1}: ${tr(s.t)}`;document.getElementById('svg-desc').textContent=caption+' '+tr(s.w);document.getElementById('stage-era').textContent=ERA_BOTTOM[s.e];document.getElementById('stage-era').dataset.era=s.e;document.querySelectorAll('.scene-dot').forEach((d,j)=>d.setAttribute('aria-current',String(j===pos)));document.getElementById('bp').disabled=pos===0;document.getElementById('bn').disabled=pos===S.length-1;drawTracks();render(time);updatePlay();localizeDOM()}
 // La pausa calla la narración; al reanudar sigue desde la frase en la que iba.
 // Si una diapositiva ya se está reproduciendo sola, el primer clic pasa a reproducir todo en lugar de pausar.
 function toggle(){if(playing&&autoplay){playing=false;autoplay=false;stopNarration()}else if(playing)autoplay=true;else{if(time>=dur()&&narr.done){if(pos===S.length-1){go(0,true);return}time=0;prepareNarration(true)}else if(narr.on&&!narr.done)speakFrom(narr.idx);playing=true;autoplay=true;lastFrame=0}narrUI();updatePlay()}

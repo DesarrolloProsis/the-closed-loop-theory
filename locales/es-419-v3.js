@@ -1,6 +1,30 @@
 // Version 3 (the sleeper continues): Latin American Spanish for what differs from version 2.
 // Loaded after es-419.js in script-v3.html; these entries replace or extend the shared catalog.
 Object.assign(ES_SCENES,{
+ 'P0':[
+ 'El origen del brazalete',
+ 'La anciana Impa ya lleva el brazalete que Zelda le entregará al final de esta aventura. Según la teoría, viene de un final anterior de esta misma travesía, uno que volvió a sellar a Demise, pero no acabó con él. La respuesta completa llega cuando termine la aventura.',
+ 'Encierro, escape, un nuevo sello y una despedida: un pasado propuesto, representado en un diagrama.',
+ 'Entonces, ¿de dónde salió el brazalete de la anciana Impa, si Zelda se lo entrega hasta el final? Esta teoría dice que viene de un final anterior de esta misma travesía: uno que volvió a sellar a Demise, pero nunca acabó con él. Tenlo presente: volveremos a esto cuando termine la aventura.'
+ ],
+ 'L1':[
+ 'El final que Impa recordaba',
+ 'La anciana Impa ya llevaba el brazalete antes de que esta aventura cambiara nada. Si su pasado hubiera contenido el final que acabamos de ver, Demise habría sido destruido hace mucho, y ningún Cautivo habría esperado bajo la Tierra del Presidio. Pero ahí estaba, junto con los huesos del dragón y la tierra vacía. Así que la despedida que ella recordaba pertenecía a otro final.',
+ 'Un brazalete, una bestia que ya no debería estar y la deducción que se desprende de ellos.',
+ 'Ahora podemos responder la pregunta del brazalete. La anciana Impa ya lo llevaba antes de que esta aventura cambiara nada. Si su pasado ya hubiera contenido el final que acabamos de ver, Demise habría sido destruido hace mucho, y no habría ningún Cautivo bajo la Tierra del Presidio. Pero ahí estaba, con los huesos del dragón y sin ningún árbol. Así que la despedida que ella recordaba pertenecía a otro final.'
+ ],
+ 'L2':[
+ 'La travesía tal como la registró la historia',
+ 'Ese final venía de esta misma travesía, tal como la historia la registró por primera vez. La misma Zelda huyó al pasado, el mismo Link la encontró y la misma Impa montó guardia. Pero en esa versión nadie plantó un brote ni curó a un dragón, y en la batalla final Demise solo volvió a ser sellado. Zelda se despidió con su brazalete, y el Cautivo sobrevivió hasta el presente donde comienza esta aventura.',
+ 'La misma travesía en gris: una huida, una primera visita, un nuevo sello, una despedida y una bestia que sobrevive.',
+ 'Ese final venía de esta misma travesía, tal como la historia la registró por primera vez. La misma Zelda huyó al pasado, el mismo Link la encontró y la misma Impa montó guardia. Pero en esa versión nadie plantó un brote ni curó a un dragón, y en la batalla final Demise solo volvió a ser sellado. Zelda se despidió con su brazalete, y el Cautivo sobrevivió hasta el presente donde comienza nuestra aventura.'
+ ],
+ 'L3':[
+ 'Por qué este intento es el último',
+ 'Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, modificó el pasado. Curar al dragón lo modificó de nuevo, y su victoria final reemplazó el nuevo sello. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza, así que ya no queda nada que corregir.',
+ 'Un árbol, un dragón sanado, una espada que suelta su carga y un ciclo que por fin se sostiene.',
+ 'Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, cambió el pasado. Curar al dragón lo cambió de nuevo, y su victoria final reemplazó el nuevo sello. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza. Ya no queda nada que corregir, y por eso este intento es el último.'
+ ],
  '00':[
  'Una historia que puede cambiar',
  'Una interpretación de los viajes en el tiempo de Skyward Sword. Los viajeros conservan sus viajes, aunque el mundo al que regresan puede cambiar. Unas cuantas reglas buscan explicar lo que el juego deja abierto.',
@@ -39,7 +63,7 @@ Object.assign(ES_SCENES,{
  ],
  '27':[
  'Lo que explica la teoría y lo que supone',
- 'Una despedida anterior explica el brazalete. Los viajes protegidos preservan a los viajeros, y un deseo que perdura hace caer la estatua y acaba con lo que queda de Demise. Son reglas propuestas por la teoría, no leyes que el juego confirme explícitamente.',
+ 'Un final anterior de esta misma travesía explica el brazalete. Los viajes protegidos preservan a los viajeros, y un deseo que perdura hace caer la estatua y acaba con lo que queda de Demise. Son reglas propuestas por la teoría, no leyes que el juego confirme explícitamente.',
  'Cuatro reglas, una diferencia y los límites de la teoría.',
  'Esa es la teoría. La historia puede reescribirse, pero los viajes en el tiempo sobreviven y un deseo cumplido conserva su resultado. El juego no confirma nada de esto. Es una posible manera de conectar las piezas sin contradecir lo establecido ni adentrarse demasiado en la especulación.'
  ],
@@ -78,5 +102,33 @@ Object.assign(ES_TEXT,{
  'NOTHING LEFT TO SEAL: SHE WAKES':'NADA MÁS QUE SELLAR: DESPIERTA',
  'Her earlier stage sleeps on, holding the seal on what is left of Demise; later Imprisoned removed (H2 becomes H3)':'Su etapa anterior sigue dormida, sosteniendo el sello sobre lo que queda de Demise; se elimina al Cautivo posterior (H2 pasa a ser H3)',
  'What is left of Demise stays sealed in the Master Sword':'Lo que queda de Demise permanece sellado en la Espada Maestra',
- 'The wish ends what is left of Demise; with nothing left to seal, Zelda wakes':'El deseo acaba con lo que queda de Demise; sin nada más que sellar, Zelda despierta'
+ 'The wish ends what is left of Demise; with nothing left to seal, Zelda wakes':'El deseo acaba con lo que queda de Demise; sin nada más que sellar, Zelda despierta',
+ // The earlier attempt, explained after the story (L1–L3).
+ 'Sealed Temple, as the adventure begins':'Templo del Presidio, al comenzar la aventura',
+ 'From the first history to the corrected one':'De la primera historia a la corregida',
+ 'The earlier attempt':'El intento anterior','THE EARLIER ATTEMPT':'EL INTENTO ANTERIOR',
+ 'After the story · The earlier attempt':'Después de la historia · El intento anterior',
+ 'H0 → H3 · the loop that holds':'H0 → H3 · el ciclo que se sostiene',
+ 'THE THEORY’S DEDUCTION':'LA DEDUCCIÓN DE LA TEORÍA',
+ 'PROPOSED EARLIER ENDING — NOT SHOWN IN THE GAME':'FINAL ANTERIOR PROPUESTO · NO APARECE EN EL JUEGO',
+ 'THE LOOP THAT FINALLY HOLDS':'EL CICLO QUE POR FIN SE SOSTIENE',
+ 'OLD IMPA, BEFORE ANYTHING CHANGED':'LA ANCIANA IMPA, ANTES DE QUE NADA CAMBIARA',
+ 'IF HER PAST HELD THE ENDING WE JUST WATCHED,':'SI SU PASADO CONTUVIERA EL FINAL QUE ACABAMOS DE VER,',
+ 'THE IMPRISONED WOULD ALREADY BE GONE.':'EL CAUTIVO YA NO EXISTIRÍA.',
+ 'BUT IT IS STILL THERE.':'PERO SIGUE AHÍ.',
+ 'SO SHE REMEMBERS A DIFFERENT ENDING.':'ASÍ QUE ELLA RECUERDA OTRO FINAL.',
+ 'THE SAME ESCAPE':'LA MISMA HUIDA','THE SAME FIRST VISIT':'LA MISMA PRIMERA VISITA','NO SEEDLING, NO CURE':'NI BROTE NI CURA',
+ 'DEMISE SEALED AGAIN':'DEMISE, SELLADO DE NUEVO','A FAREWELL, A BRACELET':'UNA DESPEDIDA, UN BRAZALETE',
+ 'THE IMPRISONED SURVIVES INTO THE PRESENT':'EL CAUTIVO SOBREVIVE HASTA EL PRESENTE',
+ 'THE BRACELET, ALREADY ON HER WRIST':'EL BRAZALETE, YA EN SU MUÑECA',
+ 'THE IMPRISONED, STILL SEALED BELOW':'EL CAUTIVO, AÚN SELLADO BAJO TIERRA',
+ 'THE DRAGON, ALREADY DEAD':'EL DRAGÓN, YA MUERTO','NO TREE':'NINGÚN ÁRBOL',
+ 'A SEEDLING PLANTED: THE FIRST CHANGE':'UN BROTE PLANTADO: EL PRIMER CAMBIO',
+ 'A DRAGON CURED':'UN DRAGÓN CURADO',
+ 'DEMISE DEFEATED, NOT RESEALED':'DEMISE DERROTADO, NO SELLADO DE NUEVO',
+ 'AN ENDING THE JOURNEY ACTUALLY REACHES':'UN FINAL QUE LA TRAVESÍA REALMENTE ALCANZA',
+ 'The earlier attempt was this same journey as history first recorded it, and it ended in a resealing. This time Link changed the past before the final battle and completed the wish, the defeat, and the containment in the sword. No physical sword reset is needed, and nobody relives the earlier version.':'El intento anterior fue esta misma travesía tal como la historia la registró por primera vez, y terminó con un nuevo sello. Esta vez Link cambió el pasado antes de la batalla final y completó el deseo, la derrota y el encierro en la espada. No hace falta reiniciar físicamente la espada, y nadie vuelve a vivir la versión anterior.',
+ 'The earlier ending, and why it ended in a resealing, are hypothetical.':'El final anterior, y por qué terminó con un nuevo sello, son hipotéticos.',
+ 'Who made the earlier attempt, and why does nobody remember it?':'¿Quién hizo el intento anterior y por qué nadie lo recuerda?',
+ "The same three people: it was this journey as history first recorded it. Link changed it before he lived its ending, so no traveler carries it; only its traces stayed in the past, in Old Impa's bracelet and memories, and in the Imprisoned. Whether that version replaced an even earlier one is unknown.":'Las mismas tres personas: era esta travesía tal como la historia la registró por primera vez. Link la cambió antes de vivir su final, así que ningún viajero la lleva consigo; solo quedaron sus huellas en el pasado: el brazalete y los recuerdos de la anciana Impa, y el Cautivo. No se sabe si esa versión reemplazó a otra todavía anterior.'
 });

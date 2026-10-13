@@ -54,7 +54,7 @@ Link toma la Espada de la Diosa y salta tras ella. En el Templo del Presidio lo 
 
 ## 14. El origen del brazalete
 
-Entonces, ¿de dónde salió el brazalete de la anciana Impa, si Zelda se lo entrega hasta el final? Esta teoría propone que lo recibió durante un intento anterior: uno que volvió a sellar a Demise, pero nunca acabó con él.
+Entonces, ¿de dónde salió el brazalete de la anciana Impa, si Zelda se lo entrega hasta el final? Esta teoría dice que viene de un final anterior de esta misma travesía: uno que volvió a sellar a Demise, pero nunca acabó con él. Tenlo presente: volveremos a esto cuando termine la aventura.
 
 ## 15. La huida vista desde el futuro
 
@@ -128,14 +128,26 @@ Link, Zelda y Groose vuelven a casa. Recuerdan al Cautivo y todo lo que vivieron
 
 Impa reconoce a Zelda y le muestra el brazalete. Su misión terminó y se desvanece, dejándolo atrás.
 
-## 33. Lo que explica la teoría y lo que supone
+## 33. El final que Impa recordaba
+
+Ahora podemos responder la pregunta del brazalete. La anciana Impa ya lo llevaba antes de que esta aventura cambiara nada. Si su pasado ya hubiera contenido el final que acabamos de ver, Demise habría sido destruido hace mucho, y no habría ningún Cautivo bajo la Tierra del Presidio. Pero ahí estaba, con los huesos del dragón y sin ningún árbol. Así que la despedida que ella recordaba pertenecía a otro final.
+
+## 34. La travesía tal como la registró la historia
+
+Ese final venía de esta misma travesía, tal como la historia la registró por primera vez. La misma Zelda huyó al pasado, el mismo Link la encontró y la misma Impa montó guardia. Pero en esa versión nadie plantó un brote ni curó a un dragón, y en la batalla final Demise solo volvió a ser sellado. Zelda se despidió con su brazalete, y el Cautivo sobrevivió hasta el presente donde comienza nuestra aventura.
+
+## 35. Por qué este intento es el último
+
+Esa versión se sostuvo solo mientras la travesía coincidió con ella. Lo primero que Link hizo distinto, plantar el brote, cambió el pasado. Curar al dragón lo cambió de nuevo, y su victoria final reemplazó el nuevo sello. Ahora el final que recuerda el pasado es el que la travesía realmente alcanza. Ya no queda nada que corregir, y por eso este intento es el último.
+
+## 36. Lo que explica la teoría y lo que supone
 
 Esa es la teoría. La historia puede reescribirse, pero los viajes en el tiempo sobreviven y un deseo cumplido conserva su resultado. El juego no confirma nada de esto. Es una posible manera de conectar las piezas sin contradecir lo establecido ni adentrarse demasiado en la especulación.
 
-## 34. Preguntas que podrían surgir
+## 37. Preguntas que podrían surgir
 
 Antes de terminar, estas son algunas preguntas que podrían surgir, junto con las respuestas breves que daría esta teoría.
 
-## 35. Más preguntas, sobre las reglas
+## 38. Más preguntas, sobre las reglas
 
 Y algunas más, sobre el deseo, las piedras del tiempo y cómo encaja esta teoría con el resto de la serie.
